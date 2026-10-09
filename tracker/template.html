@@ -97,6 +97,7 @@ ol.entries .del { border: 0; background: none; color: var(--muted); cursor: poin
 .routine li { display: flex; justify-content: space-between; gap: 8px; }
 .routine .num { color: var(--muted); }
 .empty { color: var(--muted); font-size: .85rem; }
+.routine-list { margin: 6px 0 0; padding-left: 1.2rem; display: grid; gap: 4px; font-size: .88rem; }
 @media (prefers-reduced-motion: reduce) { .bar > i { transition: none; } }
 </style>
 
@@ -133,14 +134,18 @@ ol.entries .del { border: 0; background: none; color: var(--muted); cursor: poin
         <ol class="entries" id="entries"></ol>
       </section>
       <section class="panel">
+        <h3>Tune routine</h3>
+        <ol class="routine-list" id="tuneRoutine"></ol>
+      </section>
+      <section class="panel">
         <h3>45-minute session</h3>
         <ul class="routine">
           <li><span>Hands on pad (rudiments, Stick Control)</span><span class="num">10 min</span></li>
-          <li><span>Current unit focus</span><span class="num">15 min</span></li>
+          <li><span>This week's lesson items</span><span class="num">15 min</span></li>
           <li><span>Reading or comping</span><span class="num">10 min</span></li>
           <li><span>Play-along tune or musicianship</span><span class="num">10 min</span></li>
         </ul>
-        <p class="empty">5 sessions a week is about 4 hours. Record yourself once a week.</p>
+        <p class="empty">5 sessions a week is about 4 hours. UNT majors practice 3-4 hours a day, so expect each lesson week to take you 1-3 real weeks.</p>
       </section>
     </aside>
   </div>
@@ -149,13 +154,13 @@ ol.entries .del { border: 0; background: none; color: var(--muted); cursor: poin
 <script>
 const CURRICULUM = /*CURRICULUM*/null;
 const SEMS = CURRICULUM.semesters;
-const allItems = s => [...s.units.flatMap(u => u.items), ...s.musicianship, ...s.jury];
+const allItems = s => [...s.weeks.flatMap(w => w.items), ...s.transcriptionItems, ...s.musicianship, ...s.electives, ...s.jury];
 const TOTAL = SEMS.reduce((n, s) => n + allItems(s).length, 0);
 
-let state = { checked: {}, current: "s0" };
+let state = { checked: {}, current: "p1" };
 let log = { entries: [] };
 let db = null, progressRef = null, logRef = null;
-const LS_KEY = "unt-drums-v1";
+const LS_KEY = "unt-drums-v2";
 
 function lsLoad() { try { const v = JSON.parse(localStorage.getItem(LS_KEY) || "null"); if (v) { state = v.state || state; log = v.log || log; } } catch (e) {} }
 function lsSave() { try { localStorage.setItem(LS_KEY, JSON.stringify({ state, log })); } catch (e) {} }
@@ -200,20 +205,25 @@ function checklist(items) {
 
 function renderSem() {
   const s = SEMS.find(x => x.id === state.current) || SEMS[0];
-  const lessons = s.units.flatMap(u => u.items);
+  const lessons = s.weeks.flatMap(w => w.items);
+  const srcTag = s.source === "unt" ? "From the UNT 2022-23 syllabus" : "Self-study prep, not a UNT level";
   document.getElementById("sem").innerHTML = `
     <div class="sem-head">
-      <span class="eyebrow">${esc(s.untLevel)}</span>
+      <span class="eyebrow">${esc(s.untLevel)} · ${srcTag}</span>
       <h2>${esc(s.term)}</h2>
       <p class="theme">${esc(s.theme)}</p>
       <ul class="courses">${s.untCourses.map(c => `<li>${esc(c)}</li>`).join("")}</ul>
     </div>
-    <h3>Goals</h3>
-    <ul class="goals">${s.goals.map(g => `<li>${esc(g)}</li>`).join("")}</ul>
-    <h3>Drum set lessons <span class="num">${doneIn(lessons)} / ${lessons.length}</span></h3>
-    ${s.units.map(u => `<h4>${esc(u.name)} <span class="wk">wk ${esc(u.weeks)}</span></h4>${checklist(u.items)}`).join("")}
+    <div class="cols" style="margin-top:20px">
+      <div><h4>Barrier materials</h4><ul>${s.barriers.map(b => `<li>${esc(b)}</li>`).join("")}</ul>${s.tempos ? `<p class="empty">${esc(s.tempos)}</p>` : ""}</div>
+      <div><h4>Goals</h4><ul>${s.goals.map(g => `<li>${esc(g)}</li>`).join("")}</ul></div>
+    </div>
+    <h3>Weekly lessons <span class="num">${doneIn(lessons)} / ${lessons.length}</span></h3>
+    ${s.weeks.map(w => `<h4>Week ${esc(w.n)}${w.topic ? `: ${esc(w.topic)}` : ""}</h4>${checklist(w.items)}`).join("")}
+    ${s.transcriptionItems.length ? `<h3>${esc(s.transcription)} <span class="num">${doneIn(s.transcriptionItems)} / ${s.transcriptionItems.length}</span></h3>${checklist(s.transcriptionItems)}` : ""}
     <h3>Musicianship <span class="num">${doneIn(s.musicianship)} / ${s.musicianship.length}</span></h3>
     ${checklist(s.musicianship)}
+    ${s.electives.length ? `<h3>Electives <span class="num">your interests, not UNT</span></h3>${checklist(s.electives)}` : ""}
     <h3>Listening and tunes</h3>
     <div class="cols">
       <div><h4>Albums</h4><ul>${s.listening.map(l => `<li>${esc(l)}</li>`).join("")}</ul></div>
@@ -277,7 +287,9 @@ document.getElementById("logForm").addEventListener("submit", e => {
 });
 document.getElementById("logDate").value = ymd(new Date());
 
+document.getElementById("tuneRoutine").innerHTML = CURRICULUM.tuneRoutine.map(r => `<li>${esc(r)}</li>`).join("");
 lsLoad();
+if (!SEMS.some(s => s.id === state.current)) state.current = SEMS[0].id;
 renderAll();
 setSave("Saved on this device");
 
@@ -290,7 +302,7 @@ setSave("Saved on this device");
   const fresh = () => Date.now() - localEditAt > 3000;
   progressRef.onSnapshot(snap => {
     if (snap.metadata.hasPendingWrites || !fresh()) return;
-    if (snap.exists) { const d = snap.data(); state = { checked: { ...(d.checked || {}) }, current: d.current || "s0" }; lsSave(); renderAll(); }
+    if (snap.exists) { const d = snap.data(); state = { checked: { ...(d.checked || {}) }, current: SEMS.some(s => s.id === d.current) ? d.current : SEMS[0].id }; lsSave(); renderAll(); }
     setSave("Synced");
   }, () => setSave("Saved on this device"));
   logRef.onSnapshot(snap => {

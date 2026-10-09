@@ -1,27 +1,55 @@
 # Materials
 
-## Buy first (Semester 0-1)
+Books named in the UNT 2022-23 jazz drum set syllabus, in the order you need them.
 
-- [ ] Practice pad and metronome app (Soundbrenner, Pro Metronome, or similar)
-- [ ] Ted Reed, *Progressive Steps to Syncopation for the Modern Drummer* (used by UNT)
-- [ ] George Lawrence Stone, *Stick Control*
-- [ ] Charley Wilcoxon, *The All-American Drummer* (used by UNT)
-- [ ] John Riley, *The Art of Bop Drumming*
-- [ ] Wire brushes
-- [ ] Play-along app (iReal Pro) or Jamey Aebersold play-along volumes
+## Prep 1 (Foundations)
 
-## Add later
+- [ ] Practice pad and metronome app
+- [ ] George Lawrence Stone, *Stick Control* (not on the UNT list, used for beginner hands)
+- [ ] Ted Reed, *Progressive Steps to Syncopation for the Modern Drummer* (used through Year 3)
 
-- [ ] Ed Soph big band material, or Steve Houghton, *Studio and Big Band Drumming* (Semester 2)
-- [ ] Charley Wilcoxon, *Modern Rudimental Swing Solos* (Semester 4)
-- [ ] John Riley, *Beyond Bop Drumming* (Semester 4)
-- [ ] David Garibaldi, *Future Sounds* (Semester 3)
-- [ ] Malabe and Weiner, *Afro-Cuban Rhythms for Drumset* (Semester 3)
-- [ ] Gavin Harrison, *Rhythmic Illusions* (Semester 6)
+## Prep 2 (Deficient)
+
+- [ ] Ed Soph, *Musical Time*
+- [ ] Morgan, *The Jazz Drummer's Reading Workbook*
+
+## Year 1
+
+- [ ] Helbing, *Big Band Sight Reading* (etudes)
+- [ ] John Ramsay, *The Drummer's Complete Vocabulary as Taught by Alan Dawson* (the syllabus lists "Ramsay")
+- [ ] Ed Soph, *Big Band Primer*
+- [ ] Helbing, *Studies in Syncopation*
+- [ ] Charley Wilcoxon, *Modern Rudimental Swing Solos*
+- [ ] Brushes
+
+## Year 2
+
+- [ ] David Garibaldi, *Future Sounds*
+- [ ] Alberto Netto, *Brazilian Rhythms for Drum Set*
+- [ ] Guilherme Castro, *Brazilian Rhythm Section Training*
+- [ ] Sher Music, *The Latin Jazz Real Book* (LRB)
+
+## Year 3
+
+- [ ] Mark Guiliana, *Exploring Your Creativity on the Drumset*
+- [ ] Basic recording setup: 2-4 mics and an audio interface
+
+## Year 4
+
+- [ ] Horacio "El Negro" Hernandez, *Conversations in Clave*
+- [ ] Ruy Lopez-Nusa, *Ritmos de Cuba*
+
+## UNT handouts (not published)
+
+These are written by UNT faculty and given to students. You'd need a teacher (or a UNT student) to get them:
+
+- Davis: Single Stroke Pyramid with feet patterns, Vocabulary #1 and #2, Triplets Between the Limbs, Diddle Displacement
+- Aponte: Brazilian and Afro-Cuban Styles handouts
+
+Until you have them, substitutes: work the same concept from the Ramsay/Dawson book (rudiments with feet, vocabulary) and Garibaldi (triplets and displacement).
+
+## Every year
+
+- [ ] A Real Book (standard tunes) and iReal Pro for play-alongs
 - [ ] Transcription software (Transcribe! or Amazing Slow Downer)
-- [ ] Basic recording setup: 2-4 mics and an audio interface (Semester 5)
-
-## Free
-
-- musictheory.net (theory and ear training)
-- Spotify or Apple Music playlist of each semester's listening list
+- [ ] musictheory.net (theory and ear training, free)
