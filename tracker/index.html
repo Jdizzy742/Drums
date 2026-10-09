@@ -1,0 +1,301 @@
+<title>UNT Drum Set Path</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky semester rail across the top, one semester shown at a time below, practice log in a side column on wide screens. */
+:root {
+  --bg: #f3f5f8;
+  --surface: #ffffff;
+  --ink: #14213a;
+  --muted: #5a6478;
+  --line: #d9dee7;
+  --brass: #a8721a;
+  --brass-soft: #f4e7cf;
+  --done: #2f7a4f;
+  --done-soft: #dcefe3;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1422; --surface: #161e30; --ink: #e6e9f0; --muted: #98a2b6; --line: #2a3550;
+    --brass: #e0a94a; --brass-soft: #3a2f1c; --done: #6cc893; --done-soft: #1c3527; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1422; --surface: #161e30; --ink: #e6e9f0; --muted: #98a2b6; --line: #2a3550;
+  --brass: #e0a94a; --brass-soft: #3a2f1c; --done: #6cc893; --done-soft: #1c3527; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; }
+header.top { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: end; justify-content: space-between; }
+h1 { font-family: var(--display); font-weight: 700; font-size: 2.2rem; letter-spacing: .01em; margin: 0; line-height: 1.05; text-wrap: balance; }
+.sub { color: var(--muted); margin: 4px 0 0; }
+.overall { display: grid; gap: 4px; min-width: 220px; }
+.overall .lbl { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.bar { height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--brass); width: 0; transition: width .3s; }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.save { font-size: .8rem; color: var(--muted); }
+
+nav.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); margin-top: 20px; padding-block: 10px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+nav.rail ol { list-style: none; display: flex; gap: 6px; margin: 0; padding: 0; min-width: max-content; }
+nav.rail button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 6px; padding: 6px 10px; display: grid; gap: 2px; text-align: left; min-width: 92px; }
+nav.rail button .c { font-family: var(--display); font-weight: 700; font-size: 1.05rem; }
+nav.rail button .l { font-size: .72rem; color: var(--muted); }
+nav.rail button .mini { height: 3px; background: var(--line); border-radius: 2px; overflow: hidden; }
+nav.rail button .mini i { display: block; height: 100%; background: var(--brass); }
+nav.rail button[aria-current="true"] { border-color: var(--brass); box-shadow: inset 0 0 0 1px var(--brass); }
+nav.rail button.passed .mini i { background: var(--done); }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; }
+
+.grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 28px; margin-top: 24px; }
+@media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+.sem-head { display: grid; gap: 6px; }
+.eyebrow { font-family: var(--mono); font-size: .75rem; letter-spacing: .06em; color: var(--brass); text-transform: uppercase; }
+h2 { font-family: var(--display); font-weight: 700; font-size: 1.9rem; margin: 0; line-height: 1.1; }
+.theme { font-size: 1.05rem; margin: 0; max-width: 62ch; }
+.courses { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; padding: 0; list-style: none; }
+.courses li { font-size: .78rem; border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; color: var(--muted); background: var(--surface); }
+h3 { font-family: var(--display); font-weight: 500; font-size: 1.3rem; margin: 28px 0 8px; display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+h3 .num { font-size: .85rem; color: var(--muted); font-weight: 400; }
+h4 { font-size: .95rem; margin: 16px 0 6px; font-weight: 600; display: flex; gap: 8px; align-items: baseline; }
+h4 .wk { font-family: var(--mono); font-size: .75rem; color: var(--muted); font-weight: 400; }
+ul.goals { margin: 8px 0 0; padding-left: 1.1rem; max-width: 62ch; }
+ul.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+ul.checks label { display: flex; gap: 10px; align-items: flex-start; padding: 6px 8px; border-radius: 6px; cursor: pointer; }
+ul.checks label:hover { background: var(--surface); }
+ul.checks input { margin-top: 4px; width: 16px; height: 16px; accent-color: var(--done); flex: none; }
+ul.checks input:checked + span { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--line); }
+.jury { border: 1px solid var(--brass); background: var(--brass-soft); border-radius: 8px; padding: 4px 14px 14px; margin-top: 28px; }
+.jury h3 { margin-top: 12px; }
+.jury p { margin: 0 0 8px; font-size: .88rem; }
+.passed-tag { display: inline-block; font-size: .75rem; font-family: var(--mono); background: var(--done-soft); color: var(--done); border-radius: 4px; padding: 2px 8px; }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px 28px; }
+.cols ul { margin: 0; padding-left: 1.1rem; }
+
+aside { display: grid; gap: 20px; align-content: start; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+.panel h3 { margin-top: 0; }
+.week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin: 8px 0 4px; }
+.week div { text-align: center; font-size: .7rem; color: var(--muted); }
+.week b { display: block; height: 34px; border-radius: 4px; background: var(--line); position: relative; overflow: hidden; }
+.week b i { position: absolute; left: 0; right: 0; bottom: 0; background: var(--brass); }
+form.log { display: grid; gap: 8px; margin-top: 10px; }
+form.log .row { display: flex; gap: 8px; }
+form.log input, form.log textarea { font: inherit; width: 100%; min-width: 0; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+form.log textarea { min-height: 54px; resize: vertical; }
+.btn { font: inherit; font-weight: 600; cursor: pointer; border: 0; border-radius: 6px; padding: 8px 12px; background: var(--ink); color: var(--bg); }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); font-weight: 500; padding: 4px 10px; font-size: .85rem; }
+ol.entries { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; max-height: 320px; overflow-y: auto; }
+ol.entries li { font-size: .85rem; border-top: 1px solid var(--line); padding-top: 6px; display: grid; gap: 2px; }
+ol.entries .meta { display: flex; justify-content: space-between; gap: 8px; color: var(--muted); font-family: var(--mono); font-size: .75rem; }
+ol.entries .del { border: 0; background: none; color: var(--muted); cursor: pointer; font: inherit; font-size: .75rem; padding: 0; }
+.routine { margin: 6px 0 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: .88rem; }
+.routine li { display: flex; justify-content: space-between; gap: 8px; }
+.routine .num { color: var(--muted); }
+.empty { color: var(--muted); font-size: .85rem; }
+@media (prefers-reduced-motion: reduce) { .bar > i { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>UNT Jazz Drum Set Path</h1>
+      <p class="sub">A self-study Bachelor of Music, semester by semester. Pass each jury before moving on.</p>
+    </div>
+    <div class="overall">
+      <span class="lbl">Overall progress</span>
+      <div class="bar"><i id="overallBar"></i></div>
+      <span><span class="num" id="overallNum">0 / 0</span> items <span class="save" id="saveState">Loading...</span></span>
+    </div>
+  </header>
+
+  <nav class="rail" aria-label="Semesters"><ol id="rail"></ol></nav>
+
+  <div class="grid">
+    <main id="sem"></main>
+    <aside>
+      <section class="panel">
+        <h3>This week <span class="num" id="weekTotal">0 min</span></h3>
+        <div class="week" id="weekChart"></div>
+        <p class="empty" id="weekHint">Target: 180-300 min (3-5 hours)</p>
+        <form class="log" id="logForm">
+          <div class="row">
+            <input id="logDate" type="date" aria-label="Date" required>
+            <input id="logMin" type="number" min="5" max="600" step="5" placeholder="Minutes" aria-label="Minutes" required>
+          </div>
+          <textarea id="logNote" placeholder="What did you work on? Tempos reached?" aria-label="Notes"></textarea>
+          <button class="btn" type="submit">Log practice</button>
+        </form>
+        <ol class="entries" id="entries"></ol>
+      </section>
+      <section class="panel">
+        <h3>45-minute session</h3>
+        <ul class="routine">
+          <li><span>Hands on pad (rudiments, Stick Control)</span><span class="num">10 min</span></li>
+          <li><span>Current unit focus</span><span class="num">15 min</span></li>
+          <li><span>Reading or comping</span><span class="num">10 min</span></li>
+          <li><span>Play-along tune or musicianship</span><span class="num">10 min</span></li>
+        </ul>
+        <p class="empty">5 sessions a week is about 4 hours. Record yourself once a week.</p>
+      </section>
+    </aside>
+  </div>
+</div>
+
+<script>
+const CURRICULUM = {"title":"UNT Jazz Drum Set: Self-Study BM","weeklyHours":"3-5","semesters":[{"id":"s0","code":"Prep","term":"Semester 0: Pre-College Prep","untLevel":"Deficient Level","untCourses":["Pre-audition preparation (UNT requires students below Level 1 to pass Deficient barriers first)"],"theme":"Hands, time, and reading. Get to audition-ready basics.","goals":["Play steady time with a click without drifting","Read quarter, eighth, and simple syncopated rhythms","Play a basic jazz ride pattern with hi-hat on 2 and 4","Know the form of a 12-bar blues"],"units":[{"name":"Unit 1: Grip and strokes","weeks":"1-3","items":[{"id":"s0-u1-1","text":"Matched grip, fulcrum, and rebound on a practice pad (check in a mirror)"},{"id":"s0-u1-2","text":"Four basic strokes: full, down, tap, up. 5 min daily, quarter = 60-80"},{"id":"s0-u1-3","text":"Single strokes (RLRL) eighth notes, 60 to 100 bpm"},{"id":"s0-u1-4","text":"Double strokes (RRLL) eighth notes, 60 to 90 bpm"},{"id":"s0-u1-5","text":"Kit setup: throne height, pedal and cymbal positions, basic tuning"}]},{"name":"Unit 2: Time and basic grooves","weeks":"4-6","items":[{"id":"s0-u2-1","text":"Eighth-note rock groove, 70 to 110 bpm, 2 min unbroken with click"},{"id":"s0-u2-2","text":"Bass drum variations: 8 patterns from Syncopation (Reed) bass drum studies or similar"},{"id":"s0-u2-3","text":"One-bar fills on snare and toms that land on beat 1 cleanly"},{"id":"s0-u2-4","text":"Click on 2 and 4 only: feel it as the backbeat for 1 minute"}]},{"name":"Unit 3: Reading","weeks":"7-9","items":[{"id":"s0-u3-1","text":"Count out loud: quarters, eighths, rests, ties (1 e & a)"},{"id":"s0-u3-2","text":"Syncopation (Reed): first quarter- and eighth-note reading lessons on snare, 60-80 bpm"},{"id":"s0-u3-3","text":"Stick Control (Stone) p.5 exercises 1-12 at 80 bpm"},{"id":"s0-u3-4","text":"Rudiments: paradiddle, flam, drag, five-stroke roll, slow and even"}]},{"name":"Unit 4: First jazz time","weeks":"10-12","items":[{"id":"s0-u4-1","text":"Jazz ride pattern (spang-spang-a-lang) with hi-hat on 2 and 4, 100-140 bpm"},{"id":"s0-u4-2","text":"Feather the bass drum on all 4 beats (barely audible)"},{"id":"s0-u4-3","text":"Play time through a 12-bar blues play-along, counting bars out loud"},{"id":"s0-u4-4","text":"Trade 4s: 4 bars time, 4 bars simple fill, keep the form"}]}],"musicianship":[{"id":"s0-m-1","text":"Learn note names on the treble and bass clef (musictheory.net lessons)"},{"id":"s0-m-2","text":"Learn the major scale construction (W-W-H-W-W-W-H)"},{"id":"s0-m-3","text":"Learn song form: 12-bar blues and 32-bar AABA"}],"listening":["Miles Davis, Kind of Blue (Jimmy Cobb)","Art Blakey and the Jazz Messengers, Moanin' (Art Blakey)","Count Basie, The Atomic Mr. Basie (Sonny Payne)"],"tunes":["C Jam Blues","Sonnymoon for Two","Moanin'"],"jury":[{"id":"s0-j-1","text":"Rock groove, 100 bpm, 2 min with click, with a fill every 8 bars"},{"id":"s0-j-2","text":"Jazz time over 3 choruses of blues at 120 bpm with a play-along, no lost form"},{"id":"s0-j-3","text":"Singles, doubles, paradiddles on pad at 90 bpm eighth notes"},{"id":"s0-j-4","text":"Read one Syncopation (Reed) page at 70 bpm without stopping"},{"id":"s0-j-5","text":"Record the jury and keep the video in your log"}],"file":"00-prep.md"},{"id":"s1","code":"Y1 Fall","term":"Year 1, Fall","untLevel":"Level 1","untCourses":["Applied Drum Set (private lessons)","MUTH 1400/1500 Theory I + Aural Skills I","MUJS 1131 Jazz Performance Fundamentals","Keyboard Skills I","Large ensemble (lab band)"],"theme":"The ride cymbal is the center of the band.","goals":["Steady swing time from 80 to 180 bpm","Basic comping on snare and bass drum","Medium-swing brushes","Hear and keep form on blues and AABA tunes"],"units":[{"name":"Unit 1: Ride cymbal","weeks":"1-3","items":[{"id":"s1-u1-1","text":"Ride pattern alone with click on 2 and 4, 80 to 180 bpm: even, swung, relaxed"},{"id":"s1-u1-2","text":"Add hi-hat 2 and 4 plus feathered bass drum"},{"id":"s1-u1-3","text":"Listen and copy: play along with 'So What' (Jimmy Cobb) and 'Moanin'' (Blakey)"}]},{"name":"Unit 2: Comping","weeks":"4-6","items":[{"id":"s1-u2-1","text":"Syncopation (Reed) syncopation lessons read on snare under ride and hi-hat, 100-140 bpm"},{"id":"s1-u2-2","text":"Same exercises read on bass drum under ride and hi-hat"},{"id":"s1-u2-3","text":"John Riley, The Art of Bop Drumming: first comping exercises"}]},{"name":"Unit 3: Brushes and Latin","weeks":"7-9","items":[{"id":"s1-u3-1","text":"Medium-swing brush pattern (sweep plus 2 and 4 pat), 100-140 bpm"},{"id":"s1-u3-2","text":"Bossa nova: cross-stick clave, bass drum 1 and 3 pattern, 120-160 bpm"},{"id":"s1-u3-3","text":"Basic samba on the kit (Ed Soph Big Band Primer or similar), 80-100 bpm half-note feel"}]},{"name":"Unit 4: Fills and trading","weeks":"10-12","items":[{"id":"s1-u4-1","text":"Two-bar fills in swing that set up beat 1"},{"id":"s1-u4-2","text":"Trade 4s over blues and AABA, keep your place in the form"},{"id":"s1-u4-3","text":"Wilcoxon, The All-American Drummer: solos 1-5 on pad"},{"id":"s1-u4-4","text":"Stick Control p.5-7 exercises 1-24 at 100 bpm"}]}],"musicianship":[{"id":"s1-m-1","text":"Theory I: intervals, major and minor scales, triads"},{"id":"s1-m-2","text":"Aural I: sing major scale and intervals up to a 5th"},{"id":"s1-m-3","text":"Keyboard I: C, F, G major scales hands separately"},{"id":"s1-m-4","text":"Sing the melody of each tune while playing time"},{"id":"s1-m-5","text":"Transcribe: write out 8 bars of Jimmy Cobb's ride and comping on 'So What'"}],"listening":["Miles Davis, Milestones (Philly Joe Jones)","Sonny Rollins, Saxophone Colossus (Max Roach)","Oscar Peterson, Night Train (Ed Thigpen, brushes)"],"tunes":["Blue Monk","Now's the Time","Autumn Leaves","Satin Doll"],"jury":[{"id":"s1-j-1","text":"Swing time at 100, 140, and 180 bpm, 2 choruses each"},{"id":"s1-j-2","text":"Comp from a Syncopation page at 120 bpm"},{"id":"s1-j-3","text":"Brushes, medium swing, 2 choruses"},{"id":"s1-j-4","text":"Bossa nova and samba grooves, 16 bars each"},{"id":"s1-j-5","text":"Trade 4s over a full tune with a play-along"},{"id":"s1-j-6","text":"Sight-read a short snare etude"}],"file":"01-y1-fall.md"},{"id":"s2","code":"Y1 Spring","term":"Year 1, Spring","untLevel":"Level 2.1","untCourses":["Applied Drum Set","MUTH 1600/1700 Theory II + Aural Skills II","MUJS 1132 Jazz Performance Fundamentals II","Keyboard Skills II","Large ensemble (lab band)"],"theme":"Big band drumming and the shuffle family.","goals":["Read a big band chart and set up figures","Shuffle and triplet feels","Ballad brushes","Afro-Cuban 6/8 basics"],"units":[{"name":"Unit 1: Shuffles and triplets","weeks":"1-3","items":[{"id":"s2-u1-1","text":"Syncopation (Reed) shuffle and triplet exercises (UNT assigns p.10 here), 80-120 bpm"},{"id":"s2-u1-2","text":"Texas shuffle and half-time shuffle grooves"},{"id":"s2-u1-3","text":"Stick Control triplet section, 80 bpm"}]},{"name":"Unit 2: Big band reading","weeks":"4-7","items":[{"id":"s2-u2-1","text":"Short vs long figures: how to play each on the kit"},{"id":"s2-u2-2","text":"Set-ups: one-beat and two-beat setups into ensemble hits"},{"id":"s2-u2-3","text":"Ed Soph, Big Band Primer (or Steve Houghton, Studio and Big Band Drumming): read 3 charts"},{"id":"s2-u2-4","text":"Play along with a Basie recording reading the chart"}]},{"name":"Unit 3: Brushes and up-tempo","weeks":"8-10","items":[{"id":"s2-u3-1","text":"Ballad brushes: circular sweep at 50-70 bpm"},{"id":"s2-u3-2","text":"Up-tempo ride: push from 180 to 220 bpm, relaxed"},{"id":"s2-u3-3","text":"Two-feel vs four-feel: switch on the bridge"}]},{"name":"Unit 4: Afro-Cuban 6/8 and rudiments","weeks":"11-12","items":[{"id":"s2-u4-1","text":"Bembe bell pattern in 6/8 with bass drum and hi-hat"},{"id":"s2-u4-2","text":"Clave: son and rumba, 2-3 and 3-2"},{"id":"s2-u4-3","text":"Wilcoxon All-American Drummer solos 6-12"}]}],"musicianship":[{"id":"s2-m-1","text":"Theory II: diatonic seventh chords, chord symbols, ii-V-I"},{"id":"s2-m-2","text":"Aural II: identify maj7, m7, dom7 by ear"},{"id":"s2-m-3","text":"Keyboard II: ii-V-I shell voicings (root, 3rd, 7th) in C, F, Bb"},{"id":"s2-m-4","text":"Transcribe: Philly Joe Jones 4-bar trades on a Miles tune"}],"listening":["Count Basie, Basie Straight Ahead (Harold Jones)","Thad Jones/Mel Lewis Orchestra, Consummation (Mel Lewis)","Duke Ellington, Ellington at Newport (Sam Woodyard)"],"tunes":["Blue Bossa","St. Thomas","Footprints","Take the A Train"],"jury":[{"id":"s2-j-1","text":"Read and play a big band chart with a recording"},{"id":"s2-j-2","text":"Swing time at 220 bpm, 2 choruses"},{"id":"s2-j-3","text":"Shuffle groove and ballad brushes"},{"id":"s2-j-4","text":"6/8 Afro-Cuban groove with clave"},{"id":"s2-j-5","text":"Sight-read a short big band excerpt"}],"file":"02-y1-spring.md"},{"id":"s3","code":"Y2 Fall","term":"Year 2, Fall","untLevel":"Level 2.2","untCourses":["Applied Drum Set","MUJS 2400/2410 Jazz Theory III + Aural Skills III","MUJS Jazz Improvisation I","MUJS 1013 Keyboard Skills III","Jazz ensemble or combo"],"theme":"Independence and melodic soloing. Add funk and gospel.","goals":["Four-way coordination under the ride","Solo over the form of a tune","Jazz waltz","Funk ghost notes and linear grooves"],"units":[{"name":"Unit 1: Independence","weeks":"1-3","items":[{"id":"s3-u1-1","text":"Riley, Art of Bop Drumming: snare/bass drum coordination studies"},{"id":"s3-u1-2","text":"Wilcoxon rudimental patterns with feet added (UNT pairs Wilcoxon with foot patterns here)"},{"id":"s3-u1-3","text":"Hi-hat on all 4 beats and on 1 and 3 variations"}]},{"name":"Unit 2: Melodic soloing","weeks":"4-6","items":[{"id":"s3-u2-1","text":"Solo over 12-bar blues keeping the form, singing the melody in your head"},{"id":"s3-u2-2","text":"Motif development: take one 2-beat idea and vary it for a chorus"},{"id":"s3-u2-3","text":"Transcribe and play Max Roach trades on 'Blues Walk' (Clifford Brown and Max Roach)"}]},{"name":"Unit 3: Waltz and Latin","weeks":"7-9","items":[{"id":"s3-u3-1","text":"Jazz waltz ride pattern and comping, 120-180 bpm"},{"id":"s3-u3-2","text":"Songo groove (Soph Big Band Primer or Malabe/Weiner, Afro-Cuban Rhythms for Drumset)"},{"id":"s3-u3-3","text":"Samba with brushes"}]},{"name":"Unit 4: Funk and gospel","weeks":"10-12","items":[{"id":"s3-u4-1","text":"Ghost notes: 16th-note grooves with accented backbeat, 80-100 bpm"},{"id":"s3-u4-2","text":"Purdie shuffle (half-time triplet ghost groove)"},{"id":"s3-u4-3","text":"Linear grooves (David Garibaldi, Future Sounds: first section)"},{"id":"s3-u4-4","text":"Gospel basics: 6-stroke roll as a fill around the kit"}]}],"musicianship":[{"id":"s3-m-1","text":"Jazz Theory III: chord-scale relationships, modes, tritone substitution"},{"id":"s3-m-2","text":"Aural III: sing roots of a ii-V-I, hear the bridge of rhythm changes"},{"id":"s3-m-3","text":"Improv I: learn and sing 3 bebop heads by memory"},{"id":"s3-m-4","text":"Keyboard III: shell voicings in all 12 keys (slowly)"}],"listening":["Clifford Brown and Max Roach, Study in Brown (Max Roach)","Bill Evans, Sunday at the Village Vanguard (Paul Motian)","Tower of Power, Tower of Power (David Garibaldi)"],"tunes":["All the Things You Are","Solar","Oleo","Cantaloupe Island"],"jury":[{"id":"s3-j-1","text":"Solo one chorus over blues and one over AABA, form intact"},{"id":"s3-j-2","text":"Jazz waltz with comping, 2 choruses"},{"id":"s3-j-3","text":"Songo and samba with brushes"},{"id":"s3-j-4","text":"One funk groove with ghost notes, one linear groove"},{"id":"s3-j-5","text":"Play the Max Roach transcription with the record"}],"file":"03-y2-fall.md"},{"id":"s4","code":"Y2 Spring","term":"Year 2, Spring","untLevel":"Level 3.1","untCourses":["Applied Drum Set","MUJS 2500/2510 Jazz Theory IV + Aural Skills IV","MUJS Jazz Improvisation II","MUJS 3070 History of Jazz","MUJS 1014 Keyboard Skills IV","Jazz ensemble or combo"],"theme":"The sophomore checkpoint. Odd meters and jazz history.","goals":["Comfortable in 5/4 and 7/4","Broken-time and interactive comping","Up-tempo time at 260 bpm","Know the drummers who shaped each jazz era"],"units":[{"name":"Unit 1: Odd meters","weeks":"1-3","items":[{"id":"s4-u1-1","text":"5/4 swing: play 'Take Five' with the record"},{"id":"s4-u1-2","text":"7/4 as 4+3 and 3+4, swing and straight"},{"id":"s4-u1-3","text":"Count and sing the subdivisions while playing"}]},{"name":"Unit 2: Beyond bop","weeks":"4-6","items":[{"id":"s4-u2-1","text":"John Riley, Beyond Bop Drumming: broken-time studies"},{"id":"s4-u2-2","text":"Comp in response to a soloist (play-along with a horn solo)"},{"id":"s4-u2-3","text":"Up-tempo: 220 to 260 bpm, lighter touch"}]},{"name":"Unit 3: Jazz history (drummers)","weeks":"7-9","items":[{"id":"s4-u3-1","text":"New Orleans and swing: Baby Dodds, Chick Webb, Jo Jones"},{"id":"s4-u3-2","text":"Bebop: Kenny Clarke, Max Roach, Roy Haynes"},{"id":"s4-u3-3","text":"Hard bop and post-bop: Art Blakey, Philly Joe Jones, Elvin Jones, Tony Williams"},{"id":"s4-u3-4","text":"Play 8 bars in each drummer's style"}]},{"name":"Unit 4: Funk and hands","weeks":"10-12","items":[{"id":"s4-u4-1","text":"Steve Gadd and Bernard Purdie-style grooves"},{"id":"s4-u4-2","text":"Wilcoxon, Modern Rudimental Swing Solos: 2 solos"},{"id":"s4-u4-3","text":"Transcribe Art Blakey's solo on 'Moanin''"}]}],"musicianship":[{"id":"s4-m-1","text":"Jazz Theory IV: reharmonization basics, modal harmony"},{"id":"s4-m-2","text":"Aural IV: hear form changes and key changes in a tune"},{"id":"s4-m-3","text":"Improv II: sing a 2-chorus solo over blues"},{"id":"s4-m-4","text":"History: build a 20-track timeline playlist, one drummer per track"}],"listening":["Dave Brubeck, Time Out (Joe Morello)","Miles Davis, Four and More (Tony Williams)","John Coltrane, Coltrane's Sound (Elvin Jones)"],"tunes":["Take Five","Speak No Evil","Cherokee","Chameleon"],"jury":[{"id":"s4-j-1","text":"Sophomore checkpoint: 15-min program with 3 contrasting tunes"},{"id":"s4-j-2","text":"Swing time at 260 bpm"},{"id":"s4-j-3","text":"5/4 and 7/4 grooves with fills"},{"id":"s4-j-4","text":"Play the Blakey transcription with the record"},{"id":"s4-j-5","text":"Explain and demonstrate 3 drummers' styles"}],"file":"04-y2-spring.md"},{"id":"s5","code":"Y3 Fall","term":"Year 3, Fall","untLevel":"Level 3.2","untCourses":["Applied Drum Set","MUJS 3360 Advanced Jazz Improvisation I","MUJS Jazz Arranging I","Jazz Chamber Music (combo)","MUAE 3100 DAW / recording","MUJS 3470 Jazz Lecture Series"],"theme":"Polyrhythm, recording yourself, and leading a combo.","goals":["Elvin-style triplet phrasing and 3-over-4","Record and mix a trio play-along","Lead intros, endings, and count-offs","Gospel chops vocabulary"],"units":[{"name":"Unit 1: Triplet concept","weeks":"1-3","items":[{"id":"s5-u1-1","text":"Triplets split between hands and feet in swing"},{"id":"s5-u1-2","text":"3-over-4 polyrhythm: dotted quarter on ride over swing"},{"id":"s5-u1-3","text":"Transcribe one chorus of Elvin Jones comping on 'Crescent'"}]},{"name":"Unit 2: Recording","weeks":"4-6","items":[{"id":"s5-u2-1","text":"Set up a DAW (GarageBand, Reaper, or Logic)"},{"id":"s5-u2-2","text":"Mic the kit: 2-4 mics (overheads plus kick)"},{"id":"s5-u2-3","text":"Record and mix yourself with a trio play-along"}]},{"name":"Unit 3: Combo leadership","weeks":"7-9","items":[{"id":"s5-u3-1","text":"Count-offs at any tempo, steady from the first beat"},{"id":"s5-u3-2","text":"Common intros and endings (tag, vamp, Basie ending)"},{"id":"s5-u3-3","text":"Play with real musicians: join a jam session or community band"}]},{"name":"Unit 4: Gospel chops","weeks":"10-12","items":[{"id":"s5-u4-1","text":"Fast singles and doubles around the kit (sextuplets)"},{"id":"s5-u4-2","text":"Hand-foot combinations (RLK, RLRLKK)"},{"id":"s5-u4-3","text":"Gospel shed-style fills inside a groove, musically placed"}]}],"musicianship":[{"id":"s5-m-1","text":"Advanced Improv I: sing and play rhythm of a famous horn solo"},{"id":"s5-m-2","text":"Arranging I: write a lead sheet arrangement of a blues with intro and ending"},{"id":"s5-m-3","text":"Write a drum chart for your arrangement"},{"id":"s5-m-4","text":"Lecture series: watch 3 drummer clinics and take notes"}],"listening":["John Coltrane, Crescent (Elvin Jones)","Herbie Hancock, Maiden Voyage (Tony Williams)","Kirk Franklin and gospel drum shed videos (gospel chops vocabulary)"],"tunes":["Crescent","Maiden Voyage","Inner Urge","Joy Spring"],"jury":[{"id":"s5-j-1","text":"Play the Elvin transcription with the record"},{"id":"s5-j-2","text":"Submit a recorded and mixed trio track"},{"id":"s5-j-3","text":"Lead a tune with your own intro and ending"},{"id":"s5-j-4","text":"Demonstrate 3-over-4 in time"},{"id":"s5-j-5","text":"A musical 16-bar gospel chops feature"}],"file":"05-y3-fall.md"},{"id":"s6","code":"Y3 Spring","term":"Year 3, Spring","untLevel":"Level 4.1","untCourses":["Applied Drum Set","MUJS 3370 Advanced Jazz Improvisation II","MUJS 3620 Jazz Arranging II","MUMH 3520 Issues in Western Music History","Jazz ensemble or combo"],"theme":"Modern jazz and progressive metal: odd groupings and illusions.","goals":["Odd time in 7/8, 9/8, 11/8","Polymeter and metric modulation","Modern jazz drummer vocabulary","Write an original tune"],"units":[{"name":"Unit 1: Odd eighth-note meters","weeks":"1-3","items":[{"id":"s6-u1-1","text":"7/8, 9/8, and 11/8 grooves with different groupings"},{"id":"s6-u1-2","text":"Solo over a vamp in 7/8"},{"id":"s6-u1-3","text":"Play along with a prog track (Tool 'Schism' or Dream Theater)"}]},{"name":"Unit 2: Illusions","weeks":"4-6","items":[{"id":"s6-u2-1","text":"Gavin Harrison, Rhythmic Illusions: first chapters"},{"id":"s6-u2-2","text":"Polymeter: groupings of 5 or 7 over 4/4 (Meshuggah-style)"},{"id":"s6-u2-3","text":"Metric modulation: swing quarter to dotted-quarter pulse"}]},{"name":"Unit 3: Modern jazz","weeks":"7-9","items":[{"id":"s6-u3-1","text":"Study Brian Blade, Bill Stewart, Jeff 'Tain' Watts"},{"id":"s6-u3-2","text":"Transcribe 16 bars from a modern drummer of your choice"},{"id":"s6-u3-3","text":"Afro-Cuban: Mozambique and cascara with clave"}]},{"name":"Unit 4: Feet","weeks":"10-12","items":[{"id":"s6-u4-1","text":"Bass drum endurance: 16ths at 100-140 bpm (double pedal if you have one)"},{"id":"s6-u4-2","text":"Heel-toe or slide technique basics"},{"id":"s6-u4-3","text":"Hi-hat foot splashes and patterns under grooves"}]}],"musicianship":[{"id":"s6-m-1","text":"Advanced Improv II: compose a drum solo with a clear shape"},{"id":"s6-m-2","text":"Arranging II: write an original tune (lead sheet)"},{"id":"s6-m-3","text":"Music history: how rhythm in Western music shaped jazz and rock"}],"listening":["Joshua Redman, Wish (Billy Higgins) and Brian Blade Fellowship","Branford Marsalis, Crazy People Music (Jeff 'Tain' Watts)","Porcupine Tree, Fear of a Blank Planet (Gavin Harrison)"],"tunes":["Your original tune","Footprints in 7/8","Afro Blue","Nefertiti"],"jury":[{"id":"s6-j-1","text":"Grooves and fills in 7/8, 9/8, 11/8"},{"id":"s6-j-2","text":"Demonstrate a polymeter and a metric modulation"},{"id":"s6-j-3","text":"Perform your original tune (with play-along or band)"},{"id":"s6-j-4","text":"Play the modern drummer transcription"},{"id":"s6-j-5","text":"Mozambique groove with clave"}],"file":"06-y3-spring.md"},{"id":"s7","code":"Y4 Fall","term":"Year 4, Fall","untLevel":"Level 4.2","untCourses":["Applied Drum Set","MUJS 3800 Jazz Conducting and Ensemble Techniques","Jazz ensemble or combo","Senior recital planning"],"theme":"Your sound. Pull everything together.","goals":["Personal sound: tuning, cymbals, touch","Fluent in every style from the past 7 semesters","Record a 3-song demo","Pick and arrange the senior recital program"],"units":[{"name":"Unit 1: Sound","weeks":"1-3","items":[{"id":"s7-u1-1","text":"Tune the kit for jazz and for funk; record both"},{"id":"s7-u1-2","text":"Dynamics: play every groove at pp, mf, ff"},{"id":"s7-u1-3","text":"Choose and describe your cymbal sound"}]},{"name":"Unit 2: Style review","weeks":"4-6","items":[{"id":"s7-u2-1","text":"Run every jury from S0 to S6 once; note weak spots"},{"id":"s7-u2-2","text":"Fix the 3 weakest items"},{"id":"s7-u2-3","text":"Swing at 300 bpm (stretch goal)"}]},{"name":"Unit 3: Leading a band","weeks":"7-9","items":[{"id":"s7-u3-1","text":"Run a rehearsal: give tempos, cues, and feedback"},{"id":"s7-u3-2","text":"Conduct (or count off and cue) a big band chart"}]},{"name":"Unit 4: Demo","weeks":"10-12","items":[{"id":"s7-u4-1","text":"Record a 3-song demo in 3 styles"},{"id":"s7-u4-2","text":"Choose 6-8 recital tunes and write set notes"}]}],"musicianship":[{"id":"s7-m-1","text":"Conducting: basic beat patterns in 2, 3, 4"},{"id":"s7-m-2","text":"Arrange 2 recital tunes for your band"}],"listening":["Chris Dave, Robert Glasper Experiment, Black Radio","Antonio Sanchez, Migration","Nate Smith, Kinfolk"],"tunes":["Recital program tunes"],"jury":[{"id":"s7-j-1","text":"Full style review: swing, brushes, Latin, funk, odd meter"},{"id":"s7-j-2","text":"Present the 3-song demo"},{"id":"s7-j-3","text":"Recital program approved (by teacher or self-review)"}],"file":"07-y4-fall.md"},{"id":"s8","code":"Y4 Spring","term":"Year 4, Spring","untLevel":"Senior Recital","untCourses":["Applied Drum Set","MUJS 4720 Senior Recital Capstone","Jazz ensemble or combo"],"theme":"The senior recital.","goals":["Perform a 45-minute recital","Show range: swing, brushes, Latin, funk, odd meter, original","Record it as your capstone"],"units":[{"name":"Unit 1: Rehearse","weeks":"1-6","items":[{"id":"s8-u1-1","text":"Weekly run-throughs of the full program"},{"id":"s8-u1-2","text":"Book a venue, band, and date"}]},{"name":"Unit 2: Preview","weeks":"7-10","items":[{"id":"s8-u2-1","text":"Preview performance for friends or teacher"},{"id":"s8-u2-2","text":"Fix issues from the preview"}]},{"name":"Unit 3: Perform","weeks":"11-14","items":[{"id":"s8-u3-1","text":"Perform the recital"},{"id":"s8-u3-2","text":"Record and archive it"}]}],"musicianship":[{"id":"s8-m-1","text":"Write program notes for each tune"}],"listening":["Re-listen to every album from Semester 0. Notice what you hear now."],"tunes":["Your recital program"],"jury":[{"id":"s8-j-1","text":"Senior recital performed and recorded"}],"file":"08-y4-spring.md"}]};
+const SEMS = CURRICULUM.semesters;
+const allItems = s => [...s.units.flatMap(u => u.items), ...s.musicianship, ...s.jury];
+const TOTAL = SEMS.reduce((n, s) => n + allItems(s).length, 0);
+
+let state = { checked: {}, current: "s0" };
+let log = { entries: [] };
+let db = null, progressRef = null, logRef = null;
+const LS_KEY = "unt-drums-v1";
+
+function lsLoad() { try { const v = JSON.parse(localStorage.getItem(LS_KEY) || "null"); if (v) { state = v.state || state; log = v.log || log; } } catch (e) {} }
+function lsSave() { try { localStorage.setItem(LS_KEY, JSON.stringify({ state, log })); } catch (e) {} }
+
+// One write at a time per doc, coalesced.
+function makeSaver(getRef, getData) {
+  let timer = null, busy = false, dirty = false;
+  async function flush() {
+    if (busy) { dirty = true; return; }
+    busy = true; dirty = false; setSave("Saving...");
+    try { await getRef().set(JSON.parse(JSON.stringify(getData()))); setSave("Saved"); }
+    catch (e) { setSave(e && e.code === "invalid_argument" ? "Read-only view" : "Not saved, will retry"); if (e && e.code === "unavailable") dirty = true; }
+    busy = false;
+    if (dirty) { clearTimeout(timer); timer = setTimeout(flush, 800); }
+  }
+  return {
+    schedule() { lsSave(); if (!getRef()) return; clearTimeout(timer); timer = setTimeout(flush, 600); }
+  };
+}
+let localEditAt = 0;
+const saveProgress = makeSaver(() => progressRef, () => state);
+const saveLog = makeSaver(() => logRef, () => log);
+function setSave(t) { document.getElementById("saveState").textContent = "· " + t; }
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const pct = (d, t) => t ? Math.round(d / t * 100) : 0;
+const doneIn = items => items.filter(i => state.checked[i.id]).length;
+const juryPassed = s => s.jury.every(i => state.checked[i.id]);
+
+function renderRail() {
+  document.getElementById("rail").innerHTML = SEMS.map(s => {
+    const items = allItems(s);
+    return `<li><button type="button" data-sem="${s.id}" aria-current="${s.id === state.current}" class="${juryPassed(s) ? "passed" : ""}">
+      <span class="c">${esc(s.code)}</span><span class="l">${esc(s.untLevel)}</span>
+      <span class="mini"><i style="width:${pct(doneIn(items), items.length)}%"></i></span></button></li>`;
+  }).join("");
+}
+
+function checklist(items) {
+  return `<ul class="checks">${items.map(i => `<li><label><input type="checkbox" id="cb-${i.id}" data-id="${i.id}" ${state.checked[i.id] ? "checked" : ""}><span>${esc(i.text)}</span></label></li>`).join("")}</ul>`;
+}
+
+function renderSem() {
+  const s = SEMS.find(x => x.id === state.current) || SEMS[0];
+  const lessons = s.units.flatMap(u => u.items);
+  document.getElementById("sem").innerHTML = `
+    <div class="sem-head">
+      <span class="eyebrow">${esc(s.untLevel)}</span>
+      <h2>${esc(s.term)}</h2>
+      <p class="theme">${esc(s.theme)}</p>
+      <ul class="courses">${s.untCourses.map(c => `<li>${esc(c)}</li>`).join("")}</ul>
+    </div>
+    <h3>Goals</h3>
+    <ul class="goals">${s.goals.map(g => `<li>${esc(g)}</li>`).join("")}</ul>
+    <h3>Drum set lessons <span class="num">${doneIn(lessons)} / ${lessons.length}</span></h3>
+    ${s.units.map(u => `<h4>${esc(u.name)} <span class="wk">wk ${esc(u.weeks)}</span></h4>${checklist(u.items)}`).join("")}
+    <h3>Musicianship <span class="num">${doneIn(s.musicianship)} / ${s.musicianship.length}</span></h3>
+    ${checklist(s.musicianship)}
+    <h3>Listening and tunes</h3>
+    <div class="cols">
+      <div><h4>Albums</h4><ul>${s.listening.map(l => `<li>${esc(l)}</li>`).join("")}</ul></div>
+      <div><h4>Tunes</h4><ul>${s.tunes.map(t => `<li>${esc(t)}</li>`).join("")}</ul></div>
+    </div>
+    <section class="jury">
+      <h3>Jury <span class="num">${juryPassed(s) ? '<span class="passed-tag">Passed</span>' : `${doneIn(s.jury)} / ${s.jury.length}`}</span></h3>
+      <p>Weeks 13-16. Record it, review it with your teacher if you have one, and only check an item when it is solid.</p>
+      ${checklist(s.jury)}
+    </section>`;
+}
+
+function renderOverall() {
+  const done = SEMS.reduce((n, s) => n + doneIn(allItems(s)), 0);
+  document.getElementById("overallBar").style.width = pct(done, TOTAL) + "%";
+  document.getElementById("overallNum").textContent = `${done} / ${TOTAL}`;
+}
+
+function ymd(d) { return d.toISOString().slice(0, 10); }
+function weekStart() { const d = new Date(); d.setHours(12, 0, 0, 0); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return d; }
+
+function renderLog() {
+  const start = weekStart();
+  const days = [...Array(7)].map((_, i) => { const d = new Date(start); d.setDate(start.getDate() + i); return ymd(d); });
+  const mins = days.map(day => log.entries.filter(e => e.date === day).reduce((n, e) => n + (e.minutes || 0), 0));
+  const total = mins.reduce((a, b) => a + b, 0);
+  document.getElementById("weekTotal").textContent = `${total} min`;
+  document.getElementById("weekChart").innerHTML = mins.map((m, i) =>
+    `<div><b title="${m} min"><i style="height:${Math.min(100, m / 75 * 100)}%"></i></b>${"MTWTFSS"[i]}</div>`).join("");
+  document.getElementById("weekHint").textContent = total >= 180 ? "Weekly target reached." : `Target 180-300 min. ${180 - total} min to go.`;
+  const list = [...log.entries].sort((a, b) => b.date.localeCompare(a.date) || b.at - a.at).slice(0, 50);
+  document.getElementById("entries").innerHTML = list.length ? list.map(e => `<li>
+      <span class="meta"><span>${esc(e.date)} · ${e.minutes} min · ${esc((SEMS.find(s => s.id === e.sem) || {}).code || "")}</span><button class="del" type="button" data-del="${e.at}">Remove</button></span>
+      ${e.note ? `<span>${esc(e.note)}</span>` : ""}</li>`).join("") : `<li class="empty">No sessions yet. Log your first practice above.</li>`;
+}
+
+function renderAll() { renderRail(); renderSem(); renderOverall(); renderLog(); }
+
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-sem]");
+  if (b) { state.current = b.dataset.sem; localEditAt = Date.now(); renderAll(); saveProgress.schedule(); window.scrollTo({ top: 0 }); return; }
+  const d = e.target.closest("[data-del]");
+  if (d) { log.entries = log.entries.filter(x => String(x.at) !== d.dataset.del); localEditAt = Date.now(); renderLog(); saveLog.schedule(); }
+});
+document.addEventListener("change", e => {
+  const id = e.target.dataset && e.target.dataset.id;
+  if (!id) return;
+  if (e.target.checked) state.checked[id] = ymd(new Date()); else delete state.checked[id];
+  localEditAt = Date.now();
+  renderRail(); renderOverall(); renderSem(); saveProgress.schedule();
+  document.getElementById("cb-" + id)?.focus();
+});
+document.getElementById("logForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const minutes = parseInt(document.getElementById("logMin").value, 10);
+  if (!minutes) return;
+  log.entries.push({ at: Date.now(), date: document.getElementById("logDate").value, minutes, note: document.getElementById("logNote").value.trim().slice(0, 500), sem: state.current });
+  if (log.entries.length > 600) log.entries = log.entries.slice(-600);
+  document.getElementById("logMin").value = ""; document.getElementById("logNote").value = "";
+  localEditAt = Date.now(); renderLog(); saveLog.schedule();
+});
+document.getElementById("logDate").value = ymd(new Date());
+
+lsLoad();
+renderAll();
+setSave("Saved on this device");
+
+(async () => {
+  if (!window.claude || !window.claude.use) return;
+  db = await window.claude.use("db");
+  if (!db) return;
+  progressRef = db.doc("progress/main");
+  logRef = db.doc("practice/log");
+  const fresh = () => Date.now() - localEditAt > 3000;
+  progressRef.onSnapshot(snap => {
+    if (snap.metadata.hasPendingWrites || !fresh()) return;
+    if (snap.exists) { const d = snap.data(); state = { checked: { ...(d.checked || {}) }, current: d.current || "s0" }; lsSave(); renderAll(); }
+    setSave("Synced");
+  }, () => setSave("Saved on this device"));
+  logRef.onSnapshot(snap => {
+    if (snap.metadata.hasPendingWrites || !fresh()) return;
+    if (snap.exists) { log = { entries: [...((snap.data().entries) || [])] }; lsSave(); renderLog(); }
+  }, () => {});
+})();
+</script>

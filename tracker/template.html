@@ -1,0 +1,301 @@
+<title>UNT Drum Set Path</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky semester rail across the top, one semester shown at a time below, practice log in a side column on wide screens. */
+:root {
+  --bg: #f3f5f8;
+  --surface: #ffffff;
+  --ink: #14213a;
+  --muted: #5a6478;
+  --line: #d9dee7;
+  --brass: #a8721a;
+  --brass-soft: #f4e7cf;
+  --done: #2f7a4f;
+  --done-soft: #dcefe3;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1422; --surface: #161e30; --ink: #e6e9f0; --muted: #98a2b6; --line: #2a3550;
+    --brass: #e0a94a; --brass-soft: #3a2f1c; --done: #6cc893; --done-soft: #1c3527; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1422; --surface: #161e30; --ink: #e6e9f0; --muted: #98a2b6; --line: #2a3550;
+  --brass: #e0a94a; --brass-soft: #3a2f1c; --done: #6cc893; --done-soft: #1c3527; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; }
+header.top { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: end; justify-content: space-between; }
+h1 { font-family: var(--display); font-weight: 700; font-size: 2.2rem; letter-spacing: .01em; margin: 0; line-height: 1.05; text-wrap: balance; }
+.sub { color: var(--muted); margin: 4px 0 0; }
+.overall { display: grid; gap: 4px; min-width: 220px; }
+.overall .lbl { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.bar { height: 8px; background: var(--line); border-radius: 4px; overflow: hidden; }
+.bar > i { display: block; height: 100%; background: var(--brass); width: 0; transition: width .3s; }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.save { font-size: .8rem; color: var(--muted); }
+
+nav.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); margin-top: 20px; padding-block: 10px; border-bottom: 1px solid var(--line); overflow-x: auto; }
+nav.rail ol { list-style: none; display: flex; gap: 6px; margin: 0; padding: 0; min-width: max-content; }
+nav.rail button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 6px; padding: 6px 10px; display: grid; gap: 2px; text-align: left; min-width: 92px; }
+nav.rail button .c { font-family: var(--display); font-weight: 700; font-size: 1.05rem; }
+nav.rail button .l { font-size: .72rem; color: var(--muted); }
+nav.rail button .mini { height: 3px; background: var(--line); border-radius: 2px; overflow: hidden; }
+nav.rail button .mini i { display: block; height: 100%; background: var(--brass); }
+nav.rail button[aria-current="true"] { border-color: var(--brass); box-shadow: inset 0 0 0 1px var(--brass); }
+nav.rail button.passed .mini i { background: var(--done); }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; }
+
+.grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 28px; margin-top: 24px; }
+@media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+.sem-head { display: grid; gap: 6px; }
+.eyebrow { font-family: var(--mono); font-size: .75rem; letter-spacing: .06em; color: var(--brass); text-transform: uppercase; }
+h2 { font-family: var(--display); font-weight: 700; font-size: 1.9rem; margin: 0; line-height: 1.1; }
+.theme { font-size: 1.05rem; margin: 0; max-width: 62ch; }
+.courses { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; padding: 0; list-style: none; }
+.courses li { font-size: .78rem; border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; color: var(--muted); background: var(--surface); }
+h3 { font-family: var(--display); font-weight: 500; font-size: 1.3rem; margin: 28px 0 8px; display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+h3 .num { font-size: .85rem; color: var(--muted); font-weight: 400; }
+h4 { font-size: .95rem; margin: 16px 0 6px; font-weight: 600; display: flex; gap: 8px; align-items: baseline; }
+h4 .wk { font-family: var(--mono); font-size: .75rem; color: var(--muted); font-weight: 400; }
+ul.goals { margin: 8px 0 0; padding-left: 1.1rem; max-width: 62ch; }
+ul.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+ul.checks label { display: flex; gap: 10px; align-items: flex-start; padding: 6px 8px; border-radius: 6px; cursor: pointer; }
+ul.checks label:hover { background: var(--surface); }
+ul.checks input { margin-top: 4px; width: 16px; height: 16px; accent-color: var(--done); flex: none; }
+ul.checks input:checked + span { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--line); }
+.jury { border: 1px solid var(--brass); background: var(--brass-soft); border-radius: 8px; padding: 4px 14px 14px; margin-top: 28px; }
+.jury h3 { margin-top: 12px; }
+.jury p { margin: 0 0 8px; font-size: .88rem; }
+.passed-tag { display: inline-block; font-size: .75rem; font-family: var(--mono); background: var(--done-soft); color: var(--done); border-radius: 4px; padding: 2px 8px; }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px 28px; }
+.cols ul { margin: 0; padding-left: 1.1rem; }
+
+aside { display: grid; gap: 20px; align-content: start; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+.panel h3 { margin-top: 0; }
+.week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin: 8px 0 4px; }
+.week div { text-align: center; font-size: .7rem; color: var(--muted); }
+.week b { display: block; height: 34px; border-radius: 4px; background: var(--line); position: relative; overflow: hidden; }
+.week b i { position: absolute; left: 0; right: 0; bottom: 0; background: var(--brass); }
+form.log { display: grid; gap: 8px; margin-top: 10px; }
+form.log .row { display: flex; gap: 8px; }
+form.log input, form.log textarea { font: inherit; width: 100%; min-width: 0; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--ink); }
+form.log textarea { min-height: 54px; resize: vertical; }
+.btn { font: inherit; font-weight: 600; cursor: pointer; border: 0; border-radius: 6px; padding: 8px 12px; background: var(--ink); color: var(--bg); }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); font-weight: 500; padding: 4px 10px; font-size: .85rem; }
+ol.entries { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; max-height: 320px; overflow-y: auto; }
+ol.entries li { font-size: .85rem; border-top: 1px solid var(--line); padding-top: 6px; display: grid; gap: 2px; }
+ol.entries .meta { display: flex; justify-content: space-between; gap: 8px; color: var(--muted); font-family: var(--mono); font-size: .75rem; }
+ol.entries .del { border: 0; background: none; color: var(--muted); cursor: pointer; font: inherit; font-size: .75rem; padding: 0; }
+.routine { margin: 6px 0 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: .88rem; }
+.routine li { display: flex; justify-content: space-between; gap: 8px; }
+.routine .num { color: var(--muted); }
+.empty { color: var(--muted); font-size: .85rem; }
+@media (prefers-reduced-motion: reduce) { .bar > i { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>UNT Jazz Drum Set Path</h1>
+      <p class="sub">A self-study Bachelor of Music, semester by semester. Pass each jury before moving on.</p>
+    </div>
+    <div class="overall">
+      <span class="lbl">Overall progress</span>
+      <div class="bar"><i id="overallBar"></i></div>
+      <span><span class="num" id="overallNum">0 / 0</span> items <span class="save" id="saveState">Loading...</span></span>
+    </div>
+  </header>
+
+  <nav class="rail" aria-label="Semesters"><ol id="rail"></ol></nav>
+
+  <div class="grid">
+    <main id="sem"></main>
+    <aside>
+      <section class="panel">
+        <h3>This week <span class="num" id="weekTotal">0 min</span></h3>
+        <div class="week" id="weekChart"></div>
+        <p class="empty" id="weekHint">Target: 180-300 min (3-5 hours)</p>
+        <form class="log" id="logForm">
+          <div class="row">
+            <input id="logDate" type="date" aria-label="Date" required>
+            <input id="logMin" type="number" min="5" max="600" step="5" placeholder="Minutes" aria-label="Minutes" required>
+          </div>
+          <textarea id="logNote" placeholder="What did you work on? Tempos reached?" aria-label="Notes"></textarea>
+          <button class="btn" type="submit">Log practice</button>
+        </form>
+        <ol class="entries" id="entries"></ol>
+      </section>
+      <section class="panel">
+        <h3>45-minute session</h3>
+        <ul class="routine">
+          <li><span>Hands on pad (rudiments, Stick Control)</span><span class="num">10 min</span></li>
+          <li><span>Current unit focus</span><span class="num">15 min</span></li>
+          <li><span>Reading or comping</span><span class="num">10 min</span></li>
+          <li><span>Play-along tune or musicianship</span><span class="num">10 min</span></li>
+        </ul>
+        <p class="empty">5 sessions a week is about 4 hours. Record yourself once a week.</p>
+      </section>
+    </aside>
+  </div>
+</div>
+
+<script>
+const CURRICULUM = /*CURRICULUM*/null;
+const SEMS = CURRICULUM.semesters;
+const allItems = s => [...s.units.flatMap(u => u.items), ...s.musicianship, ...s.jury];
+const TOTAL = SEMS.reduce((n, s) => n + allItems(s).length, 0);
+
+let state = { checked: {}, current: "s0" };
+let log = { entries: [] };
+let db = null, progressRef = null, logRef = null;
+const LS_KEY = "unt-drums-v1";
+
+function lsLoad() { try { const v = JSON.parse(localStorage.getItem(LS_KEY) || "null"); if (v) { state = v.state || state; log = v.log || log; } } catch (e) {} }
+function lsSave() { try { localStorage.setItem(LS_KEY, JSON.stringify({ state, log })); } catch (e) {} }
+
+// One write at a time per doc, coalesced.
+function makeSaver(getRef, getData) {
+  let timer = null, busy = false, dirty = false;
+  async function flush() {
+    if (busy) { dirty = true; return; }
+    busy = true; dirty = false; setSave("Saving...");
+    try { await getRef().set(JSON.parse(JSON.stringify(getData()))); setSave("Saved"); }
+    catch (e) { setSave(e && e.code === "invalid_argument" ? "Read-only view" : "Not saved, will retry"); if (e && e.code === "unavailable") dirty = true; }
+    busy = false;
+    if (dirty) { clearTimeout(timer); timer = setTimeout(flush, 800); }
+  }
+  return {
+    schedule() { lsSave(); if (!getRef()) return; clearTimeout(timer); timer = setTimeout(flush, 600); }
+  };
+}
+let localEditAt = 0;
+const saveProgress = makeSaver(() => progressRef, () => state);
+const saveLog = makeSaver(() => logRef, () => log);
+function setSave(t) { document.getElementById("saveState").textContent = "· " + t; }
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const pct = (d, t) => t ? Math.round(d / t * 100) : 0;
+const doneIn = items => items.filter(i => state.checked[i.id]).length;
+const juryPassed = s => s.jury.every(i => state.checked[i.id]);
+
+function renderRail() {
+  document.getElementById("rail").innerHTML = SEMS.map(s => {
+    const items = allItems(s);
+    return `<li><button type="button" data-sem="${s.id}" aria-current="${s.id === state.current}" class="${juryPassed(s) ? "passed" : ""}">
+      <span class="c">${esc(s.code)}</span><span class="l">${esc(s.untLevel)}</span>
+      <span class="mini"><i style="width:${pct(doneIn(items), items.length)}%"></i></span></button></li>`;
+  }).join("");
+}
+
+function checklist(items) {
+  return `<ul class="checks">${items.map(i => `<li><label><input type="checkbox" id="cb-${i.id}" data-id="${i.id}" ${state.checked[i.id] ? "checked" : ""}><span>${esc(i.text)}</span></label></li>`).join("")}</ul>`;
+}
+
+function renderSem() {
+  const s = SEMS.find(x => x.id === state.current) || SEMS[0];
+  const lessons = s.units.flatMap(u => u.items);
+  document.getElementById("sem").innerHTML = `
+    <div class="sem-head">
+      <span class="eyebrow">${esc(s.untLevel)}</span>
+      <h2>${esc(s.term)}</h2>
+      <p class="theme">${esc(s.theme)}</p>
+      <ul class="courses">${s.untCourses.map(c => `<li>${esc(c)}</li>`).join("")}</ul>
+    </div>
+    <h3>Goals</h3>
+    <ul class="goals">${s.goals.map(g => `<li>${esc(g)}</li>`).join("")}</ul>
+    <h3>Drum set lessons <span class="num">${doneIn(lessons)} / ${lessons.length}</span></h3>
+    ${s.units.map(u => `<h4>${esc(u.name)} <span class="wk">wk ${esc(u.weeks)}</span></h4>${checklist(u.items)}`).join("")}
+    <h3>Musicianship <span class="num">${doneIn(s.musicianship)} / ${s.musicianship.length}</span></h3>
+    ${checklist(s.musicianship)}
+    <h3>Listening and tunes</h3>
+    <div class="cols">
+      <div><h4>Albums</h4><ul>${s.listening.map(l => `<li>${esc(l)}</li>`).join("")}</ul></div>
+      <div><h4>Tunes</h4><ul>${s.tunes.map(t => `<li>${esc(t)}</li>`).join("")}</ul></div>
+    </div>
+    <section class="jury">
+      <h3>Jury <span class="num">${juryPassed(s) ? '<span class="passed-tag">Passed</span>' : `${doneIn(s.jury)} / ${s.jury.length}`}</span></h3>
+      <p>Weeks 13-16. Record it, review it with your teacher if you have one, and only check an item when it is solid.</p>
+      ${checklist(s.jury)}
+    </section>`;
+}
+
+function renderOverall() {
+  const done = SEMS.reduce((n, s) => n + doneIn(allItems(s)), 0);
+  document.getElementById("overallBar").style.width = pct(done, TOTAL) + "%";
+  document.getElementById("overallNum").textContent = `${done} / ${TOTAL}`;
+}
+
+function ymd(d) { return d.toISOString().slice(0, 10); }
+function weekStart() { const d = new Date(); d.setHours(12, 0, 0, 0); d.setDate(d.getDate() - ((d.getDay() + 6) % 7)); return d; }
+
+function renderLog() {
+  const start = weekStart();
+  const days = [...Array(7)].map((_, i) => { const d = new Date(start); d.setDate(start.getDate() + i); return ymd(d); });
+  const mins = days.map(day => log.entries.filter(e => e.date === day).reduce((n, e) => n + (e.minutes || 0), 0));
+  const total = mins.reduce((a, b) => a + b, 0);
+  document.getElementById("weekTotal").textContent = `${total} min`;
+  document.getElementById("weekChart").innerHTML = mins.map((m, i) =>
+    `<div><b title="${m} min"><i style="height:${Math.min(100, m / 75 * 100)}%"></i></b>${"MTWTFSS"[i]}</div>`).join("");
+  document.getElementById("weekHint").textContent = total >= 180 ? "Weekly target reached." : `Target 180-300 min. ${180 - total} min to go.`;
+  const list = [...log.entries].sort((a, b) => b.date.localeCompare(a.date) || b.at - a.at).slice(0, 50);
+  document.getElementById("entries").innerHTML = list.length ? list.map(e => `<li>
+      <span class="meta"><span>${esc(e.date)} · ${e.minutes} min · ${esc((SEMS.find(s => s.id === e.sem) || {}).code || "")}</span><button class="del" type="button" data-del="${e.at}">Remove</button></span>
+      ${e.note ? `<span>${esc(e.note)}</span>` : ""}</li>`).join("") : `<li class="empty">No sessions yet. Log your first practice above.</li>`;
+}
+
+function renderAll() { renderRail(); renderSem(); renderOverall(); renderLog(); }
+
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-sem]");
+  if (b) { state.current = b.dataset.sem; localEditAt = Date.now(); renderAll(); saveProgress.schedule(); window.scrollTo({ top: 0 }); return; }
+  const d = e.target.closest("[data-del]");
+  if (d) { log.entries = log.entries.filter(x => String(x.at) !== d.dataset.del); localEditAt = Date.now(); renderLog(); saveLog.schedule(); }
+});
+document.addEventListener("change", e => {
+  const id = e.target.dataset && e.target.dataset.id;
+  if (!id) return;
+  if (e.target.checked) state.checked[id] = ymd(new Date()); else delete state.checked[id];
+  localEditAt = Date.now();
+  renderRail(); renderOverall(); renderSem(); saveProgress.schedule();
+  document.getElementById("cb-" + id)?.focus();
+});
+document.getElementById("logForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const minutes = parseInt(document.getElementById("logMin").value, 10);
+  if (!minutes) return;
+  log.entries.push({ at: Date.now(), date: document.getElementById("logDate").value, minutes, note: document.getElementById("logNote").value.trim().slice(0, 500), sem: state.current });
+  if (log.entries.length > 600) log.entries = log.entries.slice(-600);
+  document.getElementById("logMin").value = ""; document.getElementById("logNote").value = "";
+  localEditAt = Date.now(); renderLog(); saveLog.schedule();
+});
+document.getElementById("logDate").value = ymd(new Date());
+
+lsLoad();
+renderAll();
+setSave("Saved on this device");
+
+(async () => {
+  if (!window.claude || !window.claude.use) return;
+  db = await window.claude.use("db");
+  if (!db) return;
+  progressRef = db.doc("progress/main");
+  logRef = db.doc("practice/log");
+  const fresh = () => Date.now() - localEditAt > 3000;
+  progressRef.onSnapshot(snap => {
+    if (snap.metadata.hasPendingWrites || !fresh()) return;
+    if (snap.exists) { const d = snap.data(); state = { checked: { ...(d.checked || {}) }, current: d.current || "s0" }; lsSave(); renderAll(); }
+    setSave("Synced");
+  }, () => setSave("Saved on this device"));
+  logRef.onSnapshot(snap => {
+    if (snap.metadata.hasPendingWrites || !fresh()) return;
+    if (snap.exists) { log = { entries: [...((snap.data().entries) || [])] }; lsSave(); renderLog(); }
+  }, () => {});
+})();
+</script>
