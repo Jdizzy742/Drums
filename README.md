@@ -73,7 +73,7 @@ UNT jazz drummers also pass snare and rudimental barriers. These run alongside t
 
 ## Not covered
 
-- Mallets (Deficient, Level 1, Level 2): UNT requires these for jazz majors, but they need a marimba or xylophone.
+- Mallets (Deficient, Level 1, Level 2): UNT requires these for jazz majors. Skipped by choice since they need a marimba or xylophone.
 - Timpani: not required for jazz studies majors.
 - University core courses (math, science, English, government, history). Only the music-related ones are included.
 
