@@ -93,6 +93,27 @@
 - [ ] Jazz Improvisation II (MUJS 2370): sing a 2-chorus solo over blues
 - [ ] History of Jazz (MUJS 3070): 20-track drummer timeline from Baby Dodds to Brian Blade
 
+## Snare Level 2 (UNT syllabus)
+- Peters, Advanced Snare Drum Studies #4, 8, 10, 11, 17, 20, 25
+- Carroll, Orchestral Repertoire for the Snare Drum pp.7, 35, 62, 66, 70, 78
+- Stone, Accents and Rebounds pp.4-6, 12-14
+- PAS rudiments
+
+- [ ] Peters Advanced: #4, 8, 10
+- [ ] Peters Advanced: #11, 17, 20, 25
+- [ ] Carroll orchestral excerpts: pp.7, 35, 62
+- [ ] Carroll orchestral excerpts: pp.66, 70, 78
+- [ ] Accents and Rebounds pp.4-6
+- [ ] Accents and Rebounds pp.12-14
+- [ ] PAS rudiments at Level 2 tempos
+
+**Barrier:**
+
+- [ ] Any Peters Advanced etude on request
+- [ ] Two Carroll excerpts
+- [ ] Accents and Rebounds pages
+- [ ] Rudiments on request
+
 ## Listening
 - Elis Regina and Tom Jobim, Elis and Tom
 - Airto Moreira, Free

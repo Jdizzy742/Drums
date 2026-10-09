@@ -116,6 +116,23 @@
 - [ ] Keyboard Skills II (MUAG 1012): ii-V-I shell voicings in C, F, Bb
 - [ ] Jazz Performance Fundamentals II (MUJS 1132): sing and play tunes by ear
 
+## Snare Level 1 (UNT syllabus)
+- Stone, Stick Control
+- Cirone, Portraits in Rhythm
+- Pratt, 14 Modern Contest Solos
+- PAS rudiments (faster tempo targets than Deficient)
+
+- [ ] Stick Control: triplets and short roll sections
+- [ ] Portraits in Rhythm: first 6 etudes (UNT's exact numbers weren't in the search results)
+- [ ] Pratt, 14 Modern Contest Solos: 2 solos
+- [ ] PAS rudiments at Level 1 tempos
+
+**Barrier:**
+
+- [ ] A Portraits in Rhythm etude
+- [ ] A Pratt solo
+- [ ] Rudiments on request
+
 ## Listening
 - Dr. John or Rebirth Brass Band (second line)
 - Ahmad Jamal, At the Pershing (Poinciana, Vernel Fournier)

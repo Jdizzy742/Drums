@@ -1,15 +1,17 @@
 # Materials
 
-Books named in the UNT 2022-23 jazz drum set syllabus, in the order you need them.
+Books named in UNT's jazz drum set (2022-23) and snare (2018) syllabi, in the order you need them.
 
 ## Prep 1 (Foundations)
 
 - [ ] Practice pad and metronome app
-- [ ] George Lawrence Stone, *Stick Control* (not on the UNT list, used for beginner hands)
+- [ ] George Lawrence Stone, *Stick Control* (UNT snare Deficient and Level 1)
 - [ ] Ted Reed, *Progressive Steps to Syncopation for the Modern Drummer* (used through Year 3)
 
 ## Prep 2 (Deficient)
 
+- [ ] Mitchell Peters, *Intermediate Snare Drum Studies* (snare track)
+- [ ] Charley Wilcoxon, *The All-American Drummer* (snare track)
 - [ ] Ed Soph, *Musical Time*
 - [ ] Morgan, *The Jazz Drummer's Reading Workbook*
 
@@ -21,6 +23,14 @@ Books named in the UNT 2022-23 jazz drum set syllabus, in the order you need the
 - [ ] Helbing, *Studies in Syncopation*
 - [ ] Charley Wilcoxon, *Modern Rudimental Swing Solos*
 - [ ] Brushes
+
+## Snare track, Year 1-3
+
+- [ ] Anthony Cirone, *Portraits in Rhythm* (Snare Level 1)
+- [ ] John S. Pratt, *14 Modern Contest Solos* (Snare Level 1, Rudimental)
+- [ ] Mitchell Peters, *Advanced Snare Drum Studies* (Snare Level 2)
+- [ ] Raynor Carroll, *Orchestral Repertoire for the Snare Drum* (Snare Level 2)
+- [ ] George Lawrence Stone, *Accents and Rebounds* (Snare Level 2)
 
 ## Year 2
 

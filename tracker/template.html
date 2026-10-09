@@ -97,6 +97,8 @@ ol.entries .del { border: 0; background: none; color: var(--muted); cursor: poin
 .routine li { display: flex; justify-content: space-between; gap: 8px; }
 .routine .num { color: var(--muted); }
 .empty { color: var(--muted); font-size: .85rem; }
+.side-track { border-top: 2px solid var(--line); margin-top: 28px; }
+.side-track h3 { margin-top: 16px; }
 .routine-list { margin: 6px 0 0; padding-left: 1.2rem; display: grid; gap: 4px; font-size: .88rem; }
 @media (prefers-reduced-motion: reduce) { .bar > i { transition: none; } }
 </style>
@@ -140,7 +142,7 @@ ol.entries .del { border: 0; background: none; color: var(--muted); cursor: poin
       <section class="panel">
         <h3>45-minute session</h3>
         <ul class="routine">
-          <li><span>Hands on pad (rudiments, Stick Control)</span><span class="num">10 min</span></li>
+          <li><span>Hands: snare or rudimental track</span><span class="num">10 min</span></li>
           <li><span>This week's lesson items</span><span class="num">15 min</span></li>
           <li><span>Reading or comping</span><span class="num">10 min</span></li>
           <li><span>Play-along tune or musicianship</span><span class="num">10 min</span></li>
@@ -154,7 +156,7 @@ ol.entries .del { border: 0; background: none; color: var(--muted); cursor: poin
 <script>
 const CURRICULUM = /*CURRICULUM*/null;
 const SEMS = CURRICULUM.semesters;
-const allItems = s => [...s.weeks.flatMap(w => w.items), ...s.transcriptionItems, ...s.musicianship, ...s.electives, ...s.jury];
+const allItems = s => [...s.weeks.flatMap(w => w.items), ...s.transcriptionItems, ...s.musicianship, ...s.electives, ...s.secondary.flatMap(x => [...x.items, ...x.jury]), ...s.jury];
 const TOTAL = SEMS.reduce((n, s) => n + allItems(s).length, 0);
 
 let state = { checked: {}, current: "p1" };
@@ -223,6 +225,10 @@ function renderSem() {
     ${s.transcriptionItems.length ? `<h3>${esc(s.transcription)} <span class="num">${doneIn(s.transcriptionItems)} / ${s.transcriptionItems.length}</span></h3>${checklist(s.transcriptionItems)}` : ""}
     <h3>Musicianship <span class="num">${doneIn(s.musicianship)} / ${s.musicianship.length}</span></h3>
     ${checklist(s.musicianship)}
+    ${s.secondary.map(x => { const all = [...x.items, ...x.jury]; const tag = { unt: "UNT syllabus", synthesis: "self-study version", reported: "based on UNT's reported audition" }[x.source];
+      return `<section class="side-track"><h3>${esc(x.level)} <span class="num">${doneIn(all)} / ${all.length}</span></h3>
+      <p class="empty">${esc(tag)} · ${x.materials.map(esc).join(" · ")}</p>${checklist(x.items)}
+      ${x.jury.length ? `<h4>Barrier</h4>${checklist(x.jury)}` : ""}</section>`; }).join("")}
     ${s.electives.length ? `<h3>Electives <span class="num">your interests, not UNT</span></h3>${checklist(s.electives)}` : ""}
     <h3>Listening and tunes</h3>
     <div class="cols">

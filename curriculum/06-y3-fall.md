@@ -111,6 +111,24 @@
 - [ ] Fundamentals of DAW (MUAE 3100): mic the kit (2-4 mics), record and mix a trio play-along
 - [ ] Jazz Lecture Series (MUJS 3470): watch 3 drummer clinics and take notes
 
+## Rudimental Development Level 1 (self-study version)
+- UNT requires this level for jazz majors, but its syllabus wasn't available. This is a self-study version.
+- PAS 40 rudiments
+- Pratt, 14 Modern Contest Solos
+- Wilcoxon, The All-American Drummer
+
+- [ ] All 40 PAS rudiments, open-close-open (slow to fast to slow)
+- [ ] Rudiments with feet patterns (bass drum and hi-hat quarter notes)
+- [ ] Pratt: 2 more contest solos
+- [ ] Wilcoxon All-American Drummer: 2 more solos
+- [ ] Apply rudiments on the drum set: 3 solo ideas using flams, drags, and paradiddles
+
+**Barrier:**
+
+- [ ] Any 10 PAS rudiments on request, open-close-open
+- [ ] One Pratt and one Wilcoxon solo
+- [ ] Short rudimental drum set solo
+
 ## Electives (your interests, not UNT)
 - [ ] Gospel chops: sextuplet singles and doubles around the kit
 - [ ] Hand-foot combinations (RLK, RLRLKK) placed musically inside a groove

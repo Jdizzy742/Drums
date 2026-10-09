@@ -2,12 +2,30 @@
   "title": "UNT Jazz Drum Set: Self-Study BM",
   "weeklyHours": "3-5",
   "transcriptionSteps": [
-    {"week": 3, "text": "Choose your jury transcription"},
-    {"week": 5, "text": "First draft written out"},
-    {"week": 8, "text": "Revised draft"},
-    {"week": 10, "text": "Playable at a slow tempo"},
-    {"week": 12, "text": "Memorized and playable with the recording"},
-    {"week": 13, "text": "Record it and save the video (UNT: upload)"}
+    {
+      "week": 3,
+      "text": "Choose your jury transcription"
+    },
+    {
+      "week": 5,
+      "text": "First draft written out"
+    },
+    {
+      "week": 8,
+      "text": "Revised draft"
+    },
+    {
+      "week": 10,
+      "text": "Playable at a slow tempo"
+    },
+    {
+      "week": 12,
+      "text": "Memorized and playable with the recording"
+    },
+    {
+      "week": 13,
+      "text": "Record it and save the video (UNT: upload)"
+    }
   ],
   "tuneRoutine": [
     "Sing the melody accurately (lyrics not required)",
@@ -25,9 +43,15 @@
       "term": "Prep 1: Foundations",
       "untLevel": "Pre-UNT (beginner)",
       "source": "synthesis",
-      "untCourses": ["Not a UNT level. Gets a beginner ready to start UNT's Deficient level."],
+      "untCourses": [
+        "Not a UNT level. Gets a beginner ready to start UNT's Deficient level."
+      ],
       "theme": "Hands, time, and reading.",
-      "barriers": ["Steady time with a click", "Basic rudiments", "Quarter and eighth-note reading"],
+      "barriers": [
+        "Steady time with a click",
+        "Basic rudiments",
+        "Quarter and eighth-note reading"
+      ],
       "goals": [
         "Play steady time with a click without drifting",
         "Read quarter, eighth, and simple syncopated rhythms",
@@ -35,37 +59,113 @@
         "Know the form of a 12-bar blues"
       ],
       "weeks": [
-        {"n": "1-3", "topic": "Grip and strokes", "items": [
-          {"id": "p1-a-1", "text": "Matched grip, fulcrum, and rebound on a practice pad (check in a mirror)"},
-          {"id": "p1-a-2", "text": "Four basic strokes: full, down, tap, up. Quarter = 60-80"},
-          {"id": "p1-a-3", "text": "Single strokes (RLRL) eighth notes, 60 to 100 bpm"},
-          {"id": "p1-a-4", "text": "Double strokes (RRLL) eighth notes, 60 to 90 bpm"},
-          {"id": "p1-a-5", "text": "Kit setup: throne height, pedal and cymbal positions, basic tuning"}
-        ]},
-        {"n": "4-6", "topic": "Time and basic grooves", "items": [
-          {"id": "p1-b-1", "text": "Eighth-note rock groove, 70 to 110 bpm, 2 min unbroken with click"},
-          {"id": "p1-b-2", "text": "8 bass drum variations under that groove"},
-          {"id": "p1-b-3", "text": "One-bar fills on snare and toms that land on beat 1 cleanly"},
-          {"id": "p1-b-4", "text": "Click on 2 and 4 only: feel it as the backbeat for 1 minute"}
-        ]},
-        {"n": "7-9", "topic": "Reading", "items": [
-          {"id": "p1-c-1", "text": "Count out loud: quarters, eighths, rests, ties (1 e & a)"},
-          {"id": "p1-c-2", "text": "Reed, Syncopation: first quarter- and eighth-note reading lessons on snare, 60-80 bpm"},
-          {"id": "p1-c-3", "text": "Stone, Stick Control p.5 exercises 1-12 at 80 bpm"},
-          {"id": "p1-c-4", "text": "Rudiments: paradiddle, flam, drag, five-stroke roll, slow and even"}
-        ]},
-        {"n": "10-12", "topic": "First jazz time", "items": [
-          {"id": "p1-d-1", "text": "Jazz ride pattern with hi-hat on 2 and 4, 100-140 bpm"},
-          {"id": "p1-d-2", "text": "Feather the bass drum on all 4 beats (barely audible)"},
-          {"id": "p1-d-3", "text": "Play time through a 12-bar blues play-along, counting bars out loud"},
-          {"id": "p1-d-4", "text": "Preview Reed p.10: shuffle on bass drum, very slow"}
-        ]}
+        {
+          "n": "1-3",
+          "topic": "Grip and strokes",
+          "items": [
+            {
+              "id": "p1-a-1",
+              "text": "Matched grip, fulcrum, and rebound on a practice pad (check in a mirror)"
+            },
+            {
+              "id": "p1-a-2",
+              "text": "Four basic strokes: full, down, tap, up. Quarter = 60-80"
+            },
+            {
+              "id": "p1-a-3",
+              "text": "Single strokes (RLRL) eighth notes, 60 to 100 bpm"
+            },
+            {
+              "id": "p1-a-4",
+              "text": "Double strokes (RRLL) eighth notes, 60 to 90 bpm"
+            },
+            {
+              "id": "p1-a-5",
+              "text": "Kit setup: throne height, pedal and cymbal positions, basic tuning"
+            }
+          ]
+        },
+        {
+          "n": "4-6",
+          "topic": "Time and basic grooves",
+          "items": [
+            {
+              "id": "p1-b-1",
+              "text": "Eighth-note rock groove, 70 to 110 bpm, 2 min unbroken with click"
+            },
+            {
+              "id": "p1-b-2",
+              "text": "8 bass drum variations under that groove"
+            },
+            {
+              "id": "p1-b-3",
+              "text": "One-bar fills on snare and toms that land on beat 1 cleanly"
+            },
+            {
+              "id": "p1-b-4",
+              "text": "Click on 2 and 4 only: feel it as the backbeat for 1 minute"
+            }
+          ]
+        },
+        {
+          "n": "7-9",
+          "topic": "Reading",
+          "items": [
+            {
+              "id": "p1-c-1",
+              "text": "Count out loud: quarters, eighths, rests, ties (1 e & a)"
+            },
+            {
+              "id": "p1-c-2",
+              "text": "Reed, Syncopation: first quarter- and eighth-note reading lessons on snare, 60-80 bpm"
+            },
+            {
+              "id": "p1-c-3",
+              "text": "Stone, Stick Control p.5 exercises 1-12 at 80 bpm"
+            },
+            {
+              "id": "p1-c-4",
+              "text": "Rudiments: paradiddle, flam, drag, five-stroke roll, slow and even"
+            }
+          ]
+        },
+        {
+          "n": "10-12",
+          "topic": "First jazz time",
+          "items": [
+            {
+              "id": "p1-d-1",
+              "text": "Jazz ride pattern with hi-hat on 2 and 4, 100-140 bpm"
+            },
+            {
+              "id": "p1-d-2",
+              "text": "Feather the bass drum on all 4 beats (barely audible)"
+            },
+            {
+              "id": "p1-d-3",
+              "text": "Play time through a 12-bar blues play-along, counting bars out loud"
+            },
+            {
+              "id": "p1-d-4",
+              "text": "Preview Reed p.10: shuffle on bass drum, very slow"
+            }
+          ]
+        }
       ],
       "transcription": null,
       "musicianship": [
-        {"id": "p1-m-1", "text": "Note names on treble and bass clef (musictheory.net)"},
-        {"id": "p1-m-2", "text": "Major scale construction (W-W-H-W-W-W-H)"},
-        {"id": "p1-m-3", "text": "Song forms: 12-bar blues and 32-bar AABA"}
+        {
+          "id": "p1-m-1",
+          "text": "Note names on treble and bass clef (musictheory.net)"
+        },
+        {
+          "id": "p1-m-2",
+          "text": "Major scale construction (W-W-H-W-W-W-H)"
+        },
+        {
+          "id": "p1-m-3",
+          "text": "Song forms: 12-bar blues and 32-bar AABA"
+        }
       ],
       "electives": [],
       "listening": [
@@ -73,13 +173,29 @@
         "Art Blakey and the Jazz Messengers, Moanin' (Art Blakey)",
         "Count Basie, The Atomic Mr. Basie (Sonny Payne)"
       ],
-      "tunes": ["C Jam Blues", "Sonnymoon for Two"],
+      "tunes": [
+        "C Jam Blues",
+        "Sonnymoon for Two"
+      ],
       "jury": [
-        {"id": "p1-j-1", "text": "Rock groove, 100 bpm, 2 min with click, fill every 8 bars"},
-        {"id": "p1-j-2", "text": "Jazz time over 3 choruses of blues at 120 bpm, no lost form"},
-        {"id": "p1-j-3", "text": "Singles, doubles, paradiddles on pad at 90 bpm eighth notes"},
-        {"id": "p1-j-4", "text": "Read one page of Reed at 70 bpm without stopping"}
-      ]
+        {
+          "id": "p1-j-1",
+          "text": "Rock groove, 100 bpm, 2 min with click, fill every 8 bars"
+        },
+        {
+          "id": "p1-j-2",
+          "text": "Jazz time over 3 choruses of blues at 120 bpm, no lost form"
+        },
+        {
+          "id": "p1-j-3",
+          "text": "Singles, doubles, paradiddles on pad at 90 bpm eighth notes"
+        },
+        {
+          "id": "p1-j-4",
+          "text": "Read one page of Reed at 70 bpm without stopping"
+        }
+      ],
+      "secondary": []
     },
     {
       "id": "p2",
@@ -87,7 +203,9 @@
       "term": "Prep 2: Deficient Level",
       "untLevel": "UNT Deficient",
       "source": "unt",
-      "untCourses": ["UNT applied lessons, Deficient barrier (some students start here, some start at Level 1)"],
+      "untCourses": [
+        "UNT applied lessons, Deficient barrier (some students start here, some start at Level 1)"
+      ],
       "theme": "Reading, shuffle, and comping in samba and songo feels.",
       "barriers": [
         "Soph, Musical Time (ex. 1-70), all with samba and songo bass drum",
@@ -102,83 +220,266 @@
         "Transcribe a drummer's comping"
       ],
       "weeks": [
-        {"n": "1", "items": [
-          {"id": "p2-w1-1", "text": "Soph, Musical Time ex. 1-10"},
-          {"id": "p2-w1-2", "text": "Reed p.10: shuffle bass drum, shuffle left hand, 2nd and 3rd triplets in left hand"},
-          {"id": "p2-w1-3", "text": "Morgan p.7-8"},
-          {"id": "p2-w1-4", "text": "Play-along: Freddie Freeloader"}
-        ]},
-        {"n": "2", "items": [
-          {"id": "p2-w2-1", "text": "Soph ex. 11-20"},
-          {"id": "p2-w2-2", "text": "Reed p.10: shuffle bass drum, shuffle left hand, triplets in left hand"},
-          {"id": "p2-w2-3", "text": "Morgan p.9-10"},
-          {"id": "p2-w2-4", "text": "Play-along: Freddie Freeloader"}
-        ]},
-        {"n": "3", "items": [
-          {"id": "p2-w3-1", "text": "Soph ex. 21-30"},
-          {"id": "p2-w3-2", "text": "Reed p.10 variations continued"},
-          {"id": "p2-w3-3", "text": "Morgan p.11-12"},
-          {"id": "p2-w3-4", "text": "Play-along: In the Mood"}
-        ]},
-        {"n": "4", "items": [
-          {"id": "p2-w4-1", "text": "Soph ex. 21-30"},
-          {"id": "p2-w4-2", "text": "Reed p.38 ex. 1 three ways (snare, bass drum, snare/bass unison), 50-100 bpm"},
-          {"id": "p2-w4-3", "text": "Morgan p.13-14"},
-          {"id": "p2-w4-4", "text": "Play-along: In the Mood"}
-        ]},
-        {"n": "5", "items": [
-          {"id": "p2-w5-1", "text": "Soph ex. 31-40 (review ex. 15-17)"},
-          {"id": "p2-w5-2", "text": "Reed p.38 ex. 1 three ways, 50-100 bpm"},
-          {"id": "p2-w5-3", "text": "Morgan p.15-16"},
-          {"id": "p2-w5-4", "text": "Play-along: Jumpin' at the Woodside"}
-        ]},
-        {"n": "6", "items": [
-          {"id": "p2-w6-1", "text": "Soph ex. 31-40"},
-          {"id": "p2-w6-2", "text": "Reed p.38 alternating snare/bass and bass/snare, 50-85 bpm"},
-          {"id": "p2-w6-3", "text": "Morgan p.17-19"},
-          {"id": "p2-w6-4", "text": "Play-along: Jumpin' at the Woodside"}
-        ]},
-        {"n": "7", "items": [
-          {"id": "p2-w7-1", "text": "Soph ex. 41-50"},
-          {"id": "p2-w7-2", "text": "Reed p.38 alternating, 85-120 bpm, with samba bass drum"},
-          {"id": "p2-w7-3", "text": "Morgan p.21-22"},
-          {"id": "p2-w7-4", "text": "Play-along: Walkin'"}
-        ]},
-        {"n": "8", "items": [
-          {"id": "p2-w8-1", "text": "Soph ex. 41-50"},
-          {"id": "p2-w8-2", "text": "Reed p.38 ex. 1 with samba bass drum (hands unison, ride pattern, reverse ride pattern)"},
-          {"id": "p2-w8-3", "text": "Morgan p.29-30"},
-          {"id": "p2-w8-4", "text": "Play-along: Walkin'"}
-        ]},
-        {"n": "9", "items": [
-          {"id": "p2-w9-1", "text": "Soph ex. 51-60"},
-          {"id": "p2-w9-2", "text": "Reed p.38 ex. 1 with samba bass drum"},
-          {"id": "p2-w9-3", "text": "Morgan p.31-32"},
-          {"id": "p2-w9-4", "text": "Play-along: Autumn Leaves"}
-        ]},
-        {"n": "10", "items": [
-          {"id": "p2-w10-1", "text": "Soph ex. 51-60"},
-          {"id": "p2-w10-2", "text": "Reed p.38 ex. 1 with samba and songo bass drum"},
-          {"id": "p2-w10-3", "text": "Play-along: Autumn Leaves"}
-        ]},
-        {"n": "11", "items": [
-          {"id": "p2-w11-1", "text": "Soph ex. 61-70"},
-          {"id": "p2-w11-2", "text": "Reed p.38 ex. 1 with songo bass drum, orchestrated around the drums"},
-          {"id": "p2-w11-3", "text": "Play-along: This I Dig of You"}
-        ]},
-        {"n": "12", "items": [
-          {"id": "p2-w12-1", "text": "Soph ex. 61-70, review all"},
-          {"id": "p2-w12-2", "text": "Play-along: This I Dig of You"}
-        ]},
-        {"n": "13", "items": [
-          {"id": "p2-w13-1", "text": "Review everything for the jury"}
-        ]}
+        {
+          "n": "1",
+          "items": [
+            {
+              "id": "p2-w1-1",
+              "text": "Soph, Musical Time ex. 1-10"
+            },
+            {
+              "id": "p2-w1-2",
+              "text": "Reed p.10: shuffle bass drum, shuffle left hand, 2nd and 3rd triplets in left hand"
+            },
+            {
+              "id": "p2-w1-3",
+              "text": "Morgan p.7-8"
+            },
+            {
+              "id": "p2-w1-4",
+              "text": "Play-along: Freddie Freeloader"
+            }
+          ]
+        },
+        {
+          "n": "2",
+          "items": [
+            {
+              "id": "p2-w2-1",
+              "text": "Soph ex. 11-20"
+            },
+            {
+              "id": "p2-w2-2",
+              "text": "Reed p.10: shuffle bass drum, shuffle left hand, triplets in left hand"
+            },
+            {
+              "id": "p2-w2-3",
+              "text": "Morgan p.9-10"
+            },
+            {
+              "id": "p2-w2-4",
+              "text": "Play-along: Freddie Freeloader"
+            }
+          ]
+        },
+        {
+          "n": "3",
+          "items": [
+            {
+              "id": "p2-w3-1",
+              "text": "Soph ex. 21-30"
+            },
+            {
+              "id": "p2-w3-2",
+              "text": "Reed p.10 variations continued"
+            },
+            {
+              "id": "p2-w3-3",
+              "text": "Morgan p.11-12"
+            },
+            {
+              "id": "p2-w3-4",
+              "text": "Play-along: In the Mood"
+            }
+          ]
+        },
+        {
+          "n": "4",
+          "items": [
+            {
+              "id": "p2-w4-1",
+              "text": "Soph ex. 21-30"
+            },
+            {
+              "id": "p2-w4-2",
+              "text": "Reed p.38 ex. 1 three ways (snare, bass drum, snare/bass unison), 50-100 bpm"
+            },
+            {
+              "id": "p2-w4-3",
+              "text": "Morgan p.13-14"
+            },
+            {
+              "id": "p2-w4-4",
+              "text": "Play-along: In the Mood"
+            }
+          ]
+        },
+        {
+          "n": "5",
+          "items": [
+            {
+              "id": "p2-w5-1",
+              "text": "Soph ex. 31-40 (review ex. 15-17)"
+            },
+            {
+              "id": "p2-w5-2",
+              "text": "Reed p.38 ex. 1 three ways, 50-100 bpm"
+            },
+            {
+              "id": "p2-w5-3",
+              "text": "Morgan p.15-16"
+            },
+            {
+              "id": "p2-w5-4",
+              "text": "Play-along: Jumpin' at the Woodside"
+            }
+          ]
+        },
+        {
+          "n": "6",
+          "items": [
+            {
+              "id": "p2-w6-1",
+              "text": "Soph ex. 31-40"
+            },
+            {
+              "id": "p2-w6-2",
+              "text": "Reed p.38 alternating snare/bass and bass/snare, 50-85 bpm"
+            },
+            {
+              "id": "p2-w6-3",
+              "text": "Morgan p.17-19"
+            },
+            {
+              "id": "p2-w6-4",
+              "text": "Play-along: Jumpin' at the Woodside"
+            }
+          ]
+        },
+        {
+          "n": "7",
+          "items": [
+            {
+              "id": "p2-w7-1",
+              "text": "Soph ex. 41-50"
+            },
+            {
+              "id": "p2-w7-2",
+              "text": "Reed p.38 alternating, 85-120 bpm, with samba bass drum"
+            },
+            {
+              "id": "p2-w7-3",
+              "text": "Morgan p.21-22"
+            },
+            {
+              "id": "p2-w7-4",
+              "text": "Play-along: Walkin'"
+            }
+          ]
+        },
+        {
+          "n": "8",
+          "items": [
+            {
+              "id": "p2-w8-1",
+              "text": "Soph ex. 41-50"
+            },
+            {
+              "id": "p2-w8-2",
+              "text": "Reed p.38 ex. 1 with samba bass drum (hands unison, ride pattern, reverse ride pattern)"
+            },
+            {
+              "id": "p2-w8-3",
+              "text": "Morgan p.29-30"
+            },
+            {
+              "id": "p2-w8-4",
+              "text": "Play-along: Walkin'"
+            }
+          ]
+        },
+        {
+          "n": "9",
+          "items": [
+            {
+              "id": "p2-w9-1",
+              "text": "Soph ex. 51-60"
+            },
+            {
+              "id": "p2-w9-2",
+              "text": "Reed p.38 ex. 1 with samba bass drum"
+            },
+            {
+              "id": "p2-w9-3",
+              "text": "Morgan p.31-32"
+            },
+            {
+              "id": "p2-w9-4",
+              "text": "Play-along: Autumn Leaves"
+            }
+          ]
+        },
+        {
+          "n": "10",
+          "items": [
+            {
+              "id": "p2-w10-1",
+              "text": "Soph ex. 51-60"
+            },
+            {
+              "id": "p2-w10-2",
+              "text": "Reed p.38 ex. 1 with samba and songo bass drum"
+            },
+            {
+              "id": "p2-w10-3",
+              "text": "Play-along: Autumn Leaves"
+            }
+          ]
+        },
+        {
+          "n": "11",
+          "items": [
+            {
+              "id": "p2-w11-1",
+              "text": "Soph ex. 61-70"
+            },
+            {
+              "id": "p2-w11-2",
+              "text": "Reed p.38 ex. 1 with songo bass drum, orchestrated around the drums"
+            },
+            {
+              "id": "p2-w11-3",
+              "text": "Play-along: This I Dig of You"
+            }
+          ]
+        },
+        {
+          "n": "12",
+          "items": [
+            {
+              "id": "p2-w12-1",
+              "text": "Soph ex. 61-70, review all"
+            },
+            {
+              "id": "p2-w12-2",
+              "text": "Play-along: This I Dig of You"
+            }
+          ]
+        },
+        {
+          "n": "13",
+          "items": [
+            {
+              "id": "p2-w13-1",
+              "text": "Review everything for the jury"
+            }
+          ]
+        }
       ],
       "transcription": "Comping transcription",
       "musicianship": [
-        {"id": "p2-m-1", "text": "Key signatures and all 12 major scales (written)"},
-        {"id": "p2-m-2", "text": "Learn the piano keyboard layout; play C, F, G major scales"},
-        {"id": "p2-m-3", "text": "Sing the melody of every play-along tune"}
+        {
+          "id": "p2-m-1",
+          "text": "Key signatures and all 12 major scales (written)"
+        },
+        {
+          "id": "p2-m-2",
+          "text": "Learn the piano keyboard layout; play C, F, G major scales"
+        },
+        {
+          "id": "p2-m-3",
+          "text": "Sing the melody of every play-along tune"
+        }
       ],
       "electives": [],
       "listening": [
@@ -188,14 +489,123 @@
         "Cannonball Adderley, Somethin' Else (Autumn Leaves, Art Blakey)",
         "Hank Mobley, Soul Station (This I Dig of You, Art Blakey)"
       ],
-      "tunes": ["Freddie Freeloader", "In the Mood", "Jumpin' at the Woodside", "Walkin'", "Autumn Leaves", "This I Dig of You"],
+      "tunes": [
+        "Freddie Freeloader",
+        "In the Mood",
+        "Jumpin' at the Woodside",
+        "Walkin'",
+        "Autumn Leaves",
+        "This I Dig of You"
+      ],
       "jury": [
-        {"id": "p2-j-1", "text": "Any Soph Musical Time exercise 1-70 on request, with samba and songo bass drum"},
-        {"id": "p2-j-2", "text": "Reed p.10 shuffle and triplet variations"},
-        {"id": "p2-j-3", "text": "Reed p.38 ex. 1, all variations, up to 120 bpm"},
-        {"id": "p2-j-4", "text": "Sight-read from Morgan"},
-        {"id": "p2-j-5", "text": "Comping transcription played with the recording"},
-        {"id": "p2-j-6", "text": "Any play-along from the list"}
+        {
+          "id": "p2-j-1",
+          "text": "Any Soph Musical Time exercise 1-70 on request, with samba and songo bass drum"
+        },
+        {
+          "id": "p2-j-2",
+          "text": "Reed p.10 shuffle and triplet variations"
+        },
+        {
+          "id": "p2-j-3",
+          "text": "Reed p.38 ex. 1, all variations, up to 120 bpm"
+        },
+        {
+          "id": "p2-j-4",
+          "text": "Sight-read from Morgan"
+        },
+        {
+          "id": "p2-j-5",
+          "text": "Comping transcription played with the recording"
+        },
+        {
+          "id": "p2-j-6",
+          "text": "Any play-along from the list"
+        }
+      ],
+      "secondary": [
+        {
+          "track": "Snare",
+          "level": "Snare Deficient",
+          "source": "unt",
+          "materials": [
+            "Peters, Intermediate Snare Drum Studies",
+            "Wilcoxon, The All-American Drummer",
+            "Stone, Stick Control",
+            "PAS 40 International Drum Rudiments"
+          ],
+          "items": [
+            {
+              "id": "sn-def-1",
+              "text": "Peters Intermediate: exercises I, II, III, V, VI, IX, XI"
+            },
+            {
+              "id": "sn-def-2",
+              "text": "Peters Intermediate: etudes 1, 2, 5, 10, 11, 20, 29"
+            },
+            {
+              "id": "sn-def-3",
+              "text": "Wilcoxon All-American Drummer: 4 solos (my pick: start with the first 10)"
+            },
+            {
+              "id": "sn-def-4",
+              "text": "Stick Control: single beat combinations p.5-7 at 100+ bpm"
+            },
+            {
+              "id": "sn-def-5",
+              "text": "PAS rudiments: singles, doubles, paradiddles, flams, drags, slow to fast to slow"
+            }
+          ],
+          "jury": [
+            {
+              "id": "sn-def-j-1",
+              "text": "Any assigned Peters exercise or etude on request"
+            },
+            {
+              "id": "sn-def-j-2",
+              "text": "One Wilcoxon solo"
+            },
+            {
+              "id": "sn-def-j-3",
+              "text": "Rudiments on request"
+            }
+          ]
+        },
+        {
+          "track": "Audition",
+          "level": "Mock UNT audition",
+          "source": "reported",
+          "materials": [
+            "Based on UNT's reported undergraduate percussion audition. Jazz applicants submit a screening video."
+          ],
+          "items": [
+            {
+              "id": "aud-1",
+              "text": "Screening video: a Wilcoxon or Pratt rudimental etude on snare"
+            },
+            {
+              "id": "aud-2",
+              "text": "Concert snare etude (Peters Intermediate Snare Drum Studies)"
+            },
+            {
+              "id": "aud-3",
+              "text": "Concert roll: pp to ff to pp, one continuous roll"
+            },
+            {
+              "id": "aud-4",
+              "text": "Rudiments clean at a moderate tempo: singles, doubles, flams"
+            },
+            {
+              "id": "aud-5",
+              "text": "Sight-read a snare excerpt"
+            },
+            {
+              "id": "aud-6",
+              "text": "Drum set: swing at 3 tempos, brushes, a Latin groove, trade 4s with a play-along"
+            }
+          ],
+          "jury": []
+        }
       ]
     },
     {
@@ -227,101 +637,338 @@
         "Samba and songo flows on tunes"
       ],
       "weeks": [
-        {"n": "1", "items": [
-          {"id": "s1-w1-1", "text": "Single Stroke Pyramid with feet patterns 1 and 2, 80 bpm"},
-          {"id": "s1-w1-2", "text": "Helbing Big Band etude 1"},
-          {"id": "s1-w1-3", "text": "Ramsay (Alan Dawson vocabulary) p.11-12"},
-          {"id": "s1-w1-4", "text": "Reed p.38 at 120 bpm with quarter notes and ride pattern on ride (left hand alone, snare/bass alternating and unison)"},
-          {"id": "s1-w1-5", "text": "Play-along: Wives and Lovers (swing)"},
-          {"id": "s1-w1-6", "text": "Tune: Anthropology (full tune routine)"}
-        ]},
-        {"n": "2", "items": [
-          {"id": "s1-w2-1", "text": "Pyramid, feet patterns 1 and 2, 90 bpm"},
-          {"id": "s1-w2-2", "text": "Ramsay p.13-14"},
-          {"id": "s1-w2-3", "text": "Reed p.38 at 120 bpm"},
-          {"id": "s1-w2-4", "text": "Helbing etude 1"},
-          {"id": "s1-w2-5", "text": "Play-along: Wives and Lovers"},
-          {"id": "s1-w2-6", "text": "Tune: Anthropology"}
-        ]},
-        {"n": "3", "items": [
-          {"id": "s1-w3-1", "text": "Pyramid, feet patterns 1 and 2, 100 bpm"},
-          {"id": "s1-w3-2", "text": "Ramsay p.15-16"},
-          {"id": "s1-w3-3", "text": "Helbing etude 1"},
-          {"id": "s1-w3-4", "text": "Play-along: Overture from The Nutcracker (Ellington, swing)"},
-          {"id": "s1-w3-5", "text": "Tune: All the Things You Are, learn the lyrics for phrasing"}
-        ]},
-        {"n": "4", "items": [
-          {"id": "s1-w4-1", "text": "Pyramid, feet patterns 3 and 4"},
-          {"id": "s1-w4-2", "text": "Ramsay p.17-18"},
-          {"id": "s1-w4-3", "text": "Reed p.38 at 130 bpm"},
-          {"id": "s1-w4-4", "text": "Play-along: Basie, Corner Pocket (whole arrangement) and Walkin'"},
-          {"id": "s1-w4-5", "text": "Tune: All the Things You Are"}
-        ]},
-        {"n": "5", "items": [
-          {"id": "s1-w5-1", "text": "Pyramid, feet patterns 5 and 6"},
-          {"id": "s1-w5-2", "text": "Davis Vocabulary #1"},
-          {"id": "s1-w5-3", "text": "Ramsay p.19-20"},
-          {"id": "s1-w5-4", "text": "Play-along: Basie, Straight Ahead (whole arrangement) and Walkin'"},
-          {"id": "s1-w5-5", "text": "Tune: Moose the Mooche"}
-        ]},
-        {"n": "6", "items": [
-          {"id": "s1-w6-1", "text": "Pyramid, feet patterns 5 and 6"},
-          {"id": "s1-w6-2", "text": "Helbing etude 2"},
-          {"id": "s1-w6-3", "text": "Reed p.38 at 150 bpm"},
-          {"id": "s1-w6-4", "text": "Vocabulary #1 memorized"},
-          {"id": "s1-w6-5", "text": "Ramsay p.21-23"},
-          {"id": "s1-w6-6", "text": "Play-along: Don't Get Sassy (shuffle)"}
-        ]},
-        {"n": "7", "items": [
-          {"id": "s1-w7-1", "text": "Pyramid, feet pattern 7"},
-          {"id": "s1-w7-2", "text": "Reed p.38 ex. 1 with samba bass drum (hands unison, ride pattern, reverse ride)"},
-          {"id": "s1-w7-3", "text": "Helbing etude 20"},
-          {"id": "s1-w7-4", "text": "Play-along: Um Sabeco (samba, practice with Reed p.38)"},
-          {"id": "s1-w7-5", "text": "Tune: There Will Never Be Another You"}
-        ]},
-        {"n": "8", "items": [
-          {"id": "s1-w8-1", "text": "Pyramid, feet pattern 8"},
-          {"id": "s1-w8-2", "text": "Reed p.38 ex. 1 with samba bass drum"},
-          {"id": "s1-w8-3", "text": "Helbing etude 21"},
-          {"id": "s1-w8-4", "text": "Play-along: Um Sabeco"},
-          {"id": "s1-w8-5", "text": "Tune: Au Privave (solo using Vocabulary #1)"}
-        ]},
-        {"n": "9", "items": [
-          {"id": "s1-w9-1", "text": "Pyramid, feet pattern 8"},
-          {"id": "s1-w9-2", "text": "Reed p.39 ex. 2 with samba bass drum, orchestrated around the kit"},
-          {"id": "s1-w9-3", "text": "Helbing etude 12"},
-          {"id": "s1-w9-4", "text": "Play-along: O Pato"},
-          {"id": "s1-w9-5", "text": "Tune: Night and Day (samba flow)"}
-        ]},
-        {"n": "10", "items": [
-          {"id": "s1-w10-1", "text": "Pyramid, feet pattern 9"},
-          {"id": "s1-w10-2", "text": "Reed p.40 ex. 3 with songo bass drum (line in left hand)"},
-          {"id": "s1-w10-3", "text": "Helbing etude 16"},
-          {"id": "s1-w10-4", "text": "Play-along: Mambo Inn (Afro-Cuban, practice with Reed p.40)"},
-          {"id": "s1-w10-5", "text": "Tune: What Is This Thing Called Love (Afro-Cuban flow)"}
-        ]},
-        {"n": "11", "items": [
-          {"id": "s1-w11-1", "text": "Pyramid, feet pattern 9"},
-          {"id": "s1-w11-2", "text": "Reed p.41 ex. 4 with songo bass drum (line in left hand)"},
-          {"id": "s1-w11-3", "text": "Helbing etude 17"},
-          {"id": "s1-w11-4", "text": "Play-along: Bamboleate"}
-        ]},
-        {"n": "12", "items": [
-          {"id": "s1-w12-1", "text": "Reed p.42 ex. 5 with songo bass drum, orchestrated around the kit"},
-          {"id": "s1-w12-2", "text": "Play-along: Suite Sandrine, Part III (songo, from 2:00)"},
-          {"id": "s1-w12-3", "text": "Review for jury and barrier exam"}
-        ]},
-        {"n": "13", "items": [
-          {"id": "s1-w13-1", "text": "Review for jury and barrier exam"}
-        ]}
+        {
+          "n": "1",
+          "items": [
+            {
+              "id": "s1-w1-1",
+              "text": "Single Stroke Pyramid with feet patterns 1 and 2, 80 bpm"
+            },
+            {
+              "id": "s1-w1-2",
+              "text": "Helbing Big Band etude 1"
+            },
+            {
+              "id": "s1-w1-3",
+              "text": "Ramsay (Alan Dawson vocabulary) p.11-12"
+            },
+            {
+              "id": "s1-w1-4",
+              "text": "Reed p.38 at 120 bpm with quarter notes and ride pattern on ride (left hand alone, snare/bass alternating and unison)"
+            },
+            {
+              "id": "s1-w1-5",
+              "text": "Play-along: Wives and Lovers (swing)"
+            },
+            {
+              "id": "s1-w1-6",
+              "text": "Tune: Anthropology (full tune routine)"
+            }
+          ]
+        },
+        {
+          "n": "2",
+          "items": [
+            {
+              "id": "s1-w2-1",
+              "text": "Pyramid, feet patterns 1 and 2, 90 bpm"
+            },
+            {
+              "id": "s1-w2-2",
+              "text": "Ramsay p.13-14"
+            },
+            {
+              "id": "s1-w2-3",
+              "text": "Reed p.38 at 120 bpm"
+            },
+            {
+              "id": "s1-w2-4",
+              "text": "Helbing etude 1"
+            },
+            {
+              "id": "s1-w2-5",
+              "text": "Play-along: Wives and Lovers"
+            },
+            {
+              "id": "s1-w2-6",
+              "text": "Tune: Anthropology"
+            }
+          ]
+        },
+        {
+          "n": "3",
+          "items": [
+            {
+              "id": "s1-w3-1",
+              "text": "Pyramid, feet patterns 1 and 2, 100 bpm"
+            },
+            {
+              "id": "s1-w3-2",
+              "text": "Ramsay p.15-16"
+            },
+            {
+              "id": "s1-w3-3",
+              "text": "Helbing etude 1"
+            },
+            {
+              "id": "s1-w3-4",
+              "text": "Play-along: Overture from The Nutcracker (Ellington, swing)"
+            },
+            {
+              "id": "s1-w3-5",
+              "text": "Tune: All the Things You Are, learn the lyrics for phrasing"
+            }
+          ]
+        },
+        {
+          "n": "4",
+          "items": [
+            {
+              "id": "s1-w4-1",
+              "text": "Pyramid, feet patterns 3 and 4"
+            },
+            {
+              "id": "s1-w4-2",
+              "text": "Ramsay p.17-18"
+            },
+            {
+              "id": "s1-w4-3",
+              "text": "Reed p.38 at 130 bpm"
+            },
+            {
+              "id": "s1-w4-4",
+              "text": "Play-along: Basie, Corner Pocket (whole arrangement) and Walkin'"
+            },
+            {
+              "id": "s1-w4-5",
+              "text": "Tune: All the Things You Are"
+            }
+          ]
+        },
+        {
+          "n": "5",
+          "items": [
+            {
+              "id": "s1-w5-1",
+              "text": "Pyramid, feet patterns 5 and 6"
+            },
+            {
+              "id": "s1-w5-2",
+              "text": "Davis Vocabulary #1"
+            },
+            {
+              "id": "s1-w5-3",
+              "text": "Ramsay p.19-20"
+            },
+            {
+              "id": "s1-w5-4",
+              "text": "Play-along: Basie, Straight Ahead (whole arrangement) and Walkin'"
+            },
+            {
+              "id": "s1-w5-5",
+              "text": "Tune: Moose the Mooche"
+            }
+          ]
+        },
+        {
+          "n": "6",
+          "items": [
+            {
+              "id": "s1-w6-1",
+              "text": "Pyramid, feet patterns 5 and 6"
+            },
+            {
+              "id": "s1-w6-2",
+              "text": "Helbing etude 2"
+            },
+            {
+              "id": "s1-w6-3",
+              "text": "Reed p.38 at 150 bpm"
+            },
+            {
+              "id": "s1-w6-4",
+              "text": "Vocabulary #1 memorized"
+            },
+            {
+              "id": "s1-w6-5",
+              "text": "Ramsay p.21-23"
+            },
+            {
+              "id": "s1-w6-6",
+              "text": "Play-along: Don't Get Sassy (shuffle)"
+            }
+          ]
+        },
+        {
+          "n": "7",
+          "items": [
+            {
+              "id": "s1-w7-1",
+              "text": "Pyramid, feet pattern 7"
+            },
+            {
+              "id": "s1-w7-2",
+              "text": "Reed p.38 ex. 1 with samba bass drum (hands unison, ride pattern, reverse ride)"
+            },
+            {
+              "id": "s1-w7-3",
+              "text": "Helbing etude 20"
+            },
+            {
+              "id": "s1-w7-4",
+              "text": "Play-along: Um Sabeco (samba, practice with Reed p.38)"
+            },
+            {
+              "id": "s1-w7-5",
+              "text": "Tune: There Will Never Be Another You"
+            }
+          ]
+        },
+        {
+          "n": "8",
+          "items": [
+            {
+              "id": "s1-w8-1",
+              "text": "Pyramid, feet pattern 8"
+            },
+            {
+              "id": "s1-w8-2",
+              "text": "Reed p.38 ex. 1 with samba bass drum"
+            },
+            {
+              "id": "s1-w8-3",
+              "text": "Helbing etude 21"
+            },
+            {
+              "id": "s1-w8-4",
+              "text": "Play-along: Um Sabeco"
+            },
+            {
+              "id": "s1-w8-5",
+              "text": "Tune: Au Privave (solo using Vocabulary #1)"
+            }
+          ]
+        },
+        {
+          "n": "9",
+          "items": [
+            {
+              "id": "s1-w9-1",
+              "text": "Pyramid, feet pattern 8"
+            },
+            {
+              "id": "s1-w9-2",
+              "text": "Reed p.39 ex. 2 with samba bass drum, orchestrated around the kit"
+            },
+            {
+              "id": "s1-w9-3",
+              "text": "Helbing etude 12"
+            },
+            {
+              "id": "s1-w9-4",
+              "text": "Play-along: O Pato"
+            },
+            {
+              "id": "s1-w9-5",
+              "text": "Tune: Night and Day (samba flow)"
+            }
+          ]
+        },
+        {
+          "n": "10",
+          "items": [
+            {
+              "id": "s1-w10-1",
+              "text": "Pyramid, feet pattern 9"
+            },
+            {
+              "id": "s1-w10-2",
+              "text": "Reed p.40 ex. 3 with songo bass drum (line in left hand)"
+            },
+            {
+              "id": "s1-w10-3",
+              "text": "Helbing etude 16"
+            },
+            {
+              "id": "s1-w10-4",
+              "text": "Play-along: Mambo Inn (Afro-Cuban, practice with Reed p.40)"
+            },
+            {
+              "id": "s1-w10-5",
+              "text": "Tune: What Is This Thing Called Love (Afro-Cuban flow)"
+            }
+          ]
+        },
+        {
+          "n": "11",
+          "items": [
+            {
+              "id": "s1-w11-1",
+              "text": "Pyramid, feet pattern 9"
+            },
+            {
+              "id": "s1-w11-2",
+              "text": "Reed p.41 ex. 4 with songo bass drum (line in left hand)"
+            },
+            {
+              "id": "s1-w11-3",
+              "text": "Helbing etude 17"
+            },
+            {
+              "id": "s1-w11-4",
+              "text": "Play-along: Bamboleate"
+            }
+          ]
+        },
+        {
+          "n": "12",
+          "items": [
+            {
+              "id": "s1-w12-1",
+              "text": "Reed p.42 ex. 5 with songo bass drum, orchestrated around the kit"
+            },
+            {
+              "id": "s1-w12-2",
+              "text": "Play-along: Suite Sandrine, Part III (songo, from 2:00)"
+            },
+            {
+              "id": "s1-w12-3",
+              "text": "Review for jury and barrier exam"
+            }
+          ]
+        },
+        {
+          "n": "13",
+          "items": [
+            {
+              "id": "s1-w13-1",
+              "text": "Review for jury and barrier exam"
+            }
+          ]
+        }
       ],
       "transcription": "Jury transcription",
       "musicianship": [
-        {"id": "s1-m-1", "text": "Theory I (MUTH 1400): intervals, scales, triads, seventh chords"},
-        {"id": "s1-m-2", "text": "Aural Skills I (MUTH 1410): sing scales and intervals, rhythmic dictation"},
-        {"id": "s1-m-3", "text": "Keyboard Skills I (MUAG 1011): major scales, basic triads"},
-        {"id": "s1-m-4", "text": "Jazz Performance Fundamentals (MUJS 1131): sing and play tune melodies by ear"},
-        {"id": "s1-m-5", "text": "Large ensemble: play with a community big band, or full Basie charts with recordings"}
+        {
+          "id": "s1-m-1",
+          "text": "Theory I (MUTH 1400): intervals, scales, triads, seventh chords"
+        },
+        {
+          "id": "s1-m-2",
+          "text": "Aural Skills I (MUTH 1410): sing scales and intervals, rhythmic dictation"
+        },
+        {
+          "id": "s1-m-3",
+          "text": "Keyboard Skills I (MUAG 1011): major scales, basic triads"
+        },
+        {
+          "id": "s1-m-4",
+          "text": "Jazz Performance Fundamentals (MUJS 1131): sing and play tune melodies by ear"
+        },
+        {
+          "id": "s1-m-5",
+          "text": "Large ensemble: play with a community big band, or full Basie charts with recordings"
+        }
       ],
       "electives": [],
       "listening": [
@@ -329,15 +976,42 @@
         "Charlie Parker, Bird and Diz / Dizzy Gillespie, Anthropology (Max Roach)",
         "Duke Ellington, The Nutcracker Suite (Sam Woodyard)"
       ],
-      "tunes": ["Anthropology", "All the Things You Are", "Moose the Mooche", "There Will Never Be Another You", "Au Privave", "Night and Day", "What Is This Thing Called Love"],
+      "tunes": [
+        "Anthropology",
+        "All the Things You Are",
+        "Moose the Mooche",
+        "There Will Never Be Another You",
+        "Au Privave",
+        "Night and Day",
+        "What Is This Thing Called Love"
+      ],
       "jury": [
-        {"id": "s1-j-1", "text": "Helbing etudes 1, 12, 16, 17, 20, 21"},
-        {"id": "s1-j-2", "text": "Single Stroke Pyramid with feet patterns 1-9"},
-        {"id": "s1-j-3", "text": "Reed p.38-41, all assigned variations"},
-        {"id": "s1-j-4", "text": "Vocabulary #1, 1-8, memorized"},
-        {"id": "s1-j-5", "text": "Jury transcription with the recording"},
-        {"id": "s1-j-6", "text": "Any tune or play-along from the semester"}
-      ]
+        {
+          "id": "s1-j-1",
+          "text": "Helbing etudes 1, 12, 16, 17, 20, 21"
+        },
+        {
+          "id": "s1-j-2",
+          "text": "Single Stroke Pyramid with feet patterns 1-9"
+        },
+        {
+          "id": "s1-j-3",
+          "text": "Reed p.38-41, all assigned variations"
+        },
+        {
+          "id": "s1-j-4",
+          "text": "Vocabulary #1, 1-8, memorized"
+        },
+        {
+          "id": "s1-j-5",
+          "text": "Jury transcription with the recording"
+        },
+        {
+          "id": "s1-j-6",
+          "text": "Any tune or play-along from the semester"
+        }
+      ],
+      "secondary": []
     },
     {
       "id": "s2",
@@ -369,87 +1043,285 @@
         "Solo with Vocabulary #2"
       ],
       "weeks": [
-        {"n": "1", "items": [
-          {"id": "s2-w1-1", "text": "Helbing Big Band etude 11"},
-          {"id": "s2-w1-2", "text": "Helbing Syncopation p.19, 2nd line, on snare drum"},
-          {"id": "s2-w1-3", "text": "Soph Big Band Primer p.29 samba"},
-          {"id": "s2-w1-4", "text": "Play-along: Bourbon Street Parade (second line)"}
-        ]},
-        {"n": "2", "items": [
-          {"id": "s2-w2-1", "text": "Helbing Syncopation p.20 with second-line groove variations"},
-          {"id": "s2-w2-2", "text": "Soph p.30 samba"},
-          {"id": "s2-w2-3", "text": "Brushes: medium swing"},
-          {"id": "s2-w2-4", "text": "Play-along: I Feel Like Funkin' It Up (second line)"}
-        ]},
-        {"n": "3", "items": [
-          {"id": "s2-w3-1", "text": "Helbing Big Band etude 7"},
-          {"id": "s2-w3-2", "text": "Helbing Syncopation p.20 second-line variations"},
-          {"id": "s2-w3-3", "text": "Soph p.31 songo"},
-          {"id": "s2-w3-4", "text": "Tune: If I Should Lose You"},
-          {"id": "s2-w3-5", "text": "Play-along: Poinciana (second-line derived groove)"}
-        ]},
-        {"n": "4", "items": [
-          {"id": "s2-w4-1", "text": "Soph p.32 songo"},
-          {"id": "s2-w4-2", "text": "Brushes: ballad"},
-          {"id": "s2-w4-3", "text": "Tune: Body and Soul"},
-          {"id": "s2-w4-4", "text": "Play-along: Wayne's Thang (second-line derived groove)"}
-        ]},
-        {"n": "5", "items": [
-          {"id": "s2-w5-1", "text": "Wilcoxon p.14 with feet patterns 1 and 2"},
-          {"id": "s2-w5-2", "text": "Davis Vocabulary #2"},
-          {"id": "s2-w5-3", "text": "Helbing Big Band etude 13"},
-          {"id": "s2-w5-4", "text": "Soph p.31 mambo"},
-          {"id": "s2-w5-5", "text": "Tune: Like Someone in Love"},
-          {"id": "s2-w5-6", "text": "Play-along: Valse Hot (traditional 3/4)"}
-        ]},
-        {"n": "6", "items": [
-          {"id": "s2-w6-1", "text": "Wilcoxon p.14 with feet patterns 3 and 4"},
-          {"id": "s2-w6-2", "text": "Vocabulary #2 at various tempos"},
-          {"id": "s2-w6-3", "text": "Brushes: up-tempo (half note = 120-150)"},
-          {"id": "s2-w6-4", "text": "Soph p.32 mambo"},
-          {"id": "s2-w6-5", "text": "Tune: I Hear a Rhapsody"},
-          {"id": "s2-w6-6", "text": "Play-along: Land of the Lonely"}
-        ]},
-        {"n": "7", "items": [
-          {"id": "s2-w7-1", "text": "Wilcoxon p.14 with feet patterns 5 and 6"},
-          {"id": "s2-w7-2", "text": "Vocabulary #2 memorized"},
-          {"id": "s2-w7-3", "text": "Soph p.33 swing (quarter = 85)"},
-          {"id": "s2-w7-4", "text": "Tune: I'm Old Fashioned"},
-          {"id": "s2-w7-5", "text": "Play-along: Afro-Blue (6/8)"}
-        ]},
-        {"n": "8", "items": [
-          {"id": "s2-w8-1", "text": "Wilcoxon p.14 orchestrated around the kit with feet patterns 8 and 9"},
-          {"id": "s2-w8-2", "text": "Vocabulary #2: mix and match phrases"},
-          {"id": "s2-w8-3", "text": "Helbing Big Band etude 24"},
-          {"id": "s2-w8-4", "text": "Soph p.34"},
-          {"id": "s2-w8-5", "text": "Tune: Groovin' High (solo using Vocabulary #2)"},
-          {"id": "s2-w8-6", "text": "Play-along: Seven Stars (open 6/8)"}
-        ]},
-        {"n": "9", "items": [
-          {"id": "s2-w9-1", "text": "Wilcoxon p.14 on cymbals"},
-          {"id": "s2-w9-2", "text": "Helbing Big Band etude 22"},
-          {"id": "s2-w9-3", "text": "Tune: East of the Sun"},
-          {"id": "s2-w9-4", "text": "Play-along: One More Once (cha-cha-cha)"}
-        ]},
-        {"n": "10", "items": [
-          {"id": "s2-w10-1", "text": "Wilcoxon p.14 with brushes"},
-          {"id": "s2-w10-2", "text": "Helbing Big Band etude 14"},
-          {"id": "s2-w10-3", "text": "Tune: Dexterity"}
-        ]},
-        {"n": "11", "items": [
-          {"id": "s2-w11-1", "text": "Single Stroke Pyramid with feet patterns 10 and 11"},
-          {"id": "s2-w11-2", "text": "Review for jury and barrier exam"}
-        ]},
-        {"n": "12-13", "items": [
-          {"id": "s2-w12-1", "text": "Review for jury and barrier exam"}
-        ]}
+        {
+          "n": "1",
+          "items": [
+            {
+              "id": "s2-w1-1",
+              "text": "Helbing Big Band etude 11"
+            },
+            {
+              "id": "s2-w1-2",
+              "text": "Helbing Syncopation p.19, 2nd line, on snare drum"
+            },
+            {
+              "id": "s2-w1-3",
+              "text": "Soph Big Band Primer p.29 samba"
+            },
+            {
+              "id": "s2-w1-4",
+              "text": "Play-along: Bourbon Street Parade (second line)"
+            }
+          ]
+        },
+        {
+          "n": "2",
+          "items": [
+            {
+              "id": "s2-w2-1",
+              "text": "Helbing Syncopation p.20 with second-line groove variations"
+            },
+            {
+              "id": "s2-w2-2",
+              "text": "Soph p.30 samba"
+            },
+            {
+              "id": "s2-w2-3",
+              "text": "Brushes: medium swing"
+            },
+            {
+              "id": "s2-w2-4",
+              "text": "Play-along: I Feel Like Funkin' It Up (second line)"
+            }
+          ]
+        },
+        {
+          "n": "3",
+          "items": [
+            {
+              "id": "s2-w3-1",
+              "text": "Helbing Big Band etude 7"
+            },
+            {
+              "id": "s2-w3-2",
+              "text": "Helbing Syncopation p.20 second-line variations"
+            },
+            {
+              "id": "s2-w3-3",
+              "text": "Soph p.31 songo"
+            },
+            {
+              "id": "s2-w3-4",
+              "text": "Tune: If I Should Lose You"
+            },
+            {
+              "id": "s2-w3-5",
+              "text": "Play-along: Poinciana (second-line derived groove)"
+            }
+          ]
+        },
+        {
+          "n": "4",
+          "items": [
+            {
+              "id": "s2-w4-1",
+              "text": "Soph p.32 songo"
+            },
+            {
+              "id": "s2-w4-2",
+              "text": "Brushes: ballad"
+            },
+            {
+              "id": "s2-w4-3",
+              "text": "Tune: Body and Soul"
+            },
+            {
+              "id": "s2-w4-4",
+              "text": "Play-along: Wayne's Thang (second-line derived groove)"
+            }
+          ]
+        },
+        {
+          "n": "5",
+          "items": [
+            {
+              "id": "s2-w5-1",
+              "text": "Wilcoxon p.14 with feet patterns 1 and 2"
+            },
+            {
+              "id": "s2-w5-2",
+              "text": "Davis Vocabulary #2"
+            },
+            {
+              "id": "s2-w5-3",
+              "text": "Helbing Big Band etude 13"
+            },
+            {
+              "id": "s2-w5-4",
+              "text": "Soph p.31 mambo"
+            },
+            {
+              "id": "s2-w5-5",
+              "text": "Tune: Like Someone in Love"
+            },
+            {
+              "id": "s2-w5-6",
+              "text": "Play-along: Valse Hot (traditional 3/4)"
+            }
+          ]
+        },
+        {
+          "n": "6",
+          "items": [
+            {
+              "id": "s2-w6-1",
+              "text": "Wilcoxon p.14 with feet patterns 3 and 4"
+            },
+            {
+              "id": "s2-w6-2",
+              "text": "Vocabulary #2 at various tempos"
+            },
+            {
+              "id": "s2-w6-3",
+              "text": "Brushes: up-tempo (half note = 120-150)"
+            },
+            {
+              "id": "s2-w6-4",
+              "text": "Soph p.32 mambo"
+            },
+            {
+              "id": "s2-w6-5",
+              "text": "Tune: I Hear a Rhapsody"
+            },
+            {
+              "id": "s2-w6-6",
+              "text": "Play-along: Land of the Lonely"
+            }
+          ]
+        },
+        {
+          "n": "7",
+          "items": [
+            {
+              "id": "s2-w7-1",
+              "text": "Wilcoxon p.14 with feet patterns 5 and 6"
+            },
+            {
+              "id": "s2-w7-2",
+              "text": "Vocabulary #2 memorized"
+            },
+            {
+              "id": "s2-w7-3",
+              "text": "Soph p.33 swing (quarter = 85)"
+            },
+            {
+              "id": "s2-w7-4",
+              "text": "Tune: I'm Old Fashioned"
+            },
+            {
+              "id": "s2-w7-5",
+              "text": "Play-along: Afro-Blue (6/8)"
+            }
+          ]
+        },
+        {
+          "n": "8",
+          "items": [
+            {
+              "id": "s2-w8-1",
+              "text": "Wilcoxon p.14 orchestrated around the kit with feet patterns 8 and 9"
+            },
+            {
+              "id": "s2-w8-2",
+              "text": "Vocabulary #2: mix and match phrases"
+            },
+            {
+              "id": "s2-w8-3",
+              "text": "Helbing Big Band etude 24"
+            },
+            {
+              "id": "s2-w8-4",
+              "text": "Soph p.34"
+            },
+            {
+              "id": "s2-w8-5",
+              "text": "Tune: Groovin' High (solo using Vocabulary #2)"
+            },
+            {
+              "id": "s2-w8-6",
+              "text": "Play-along: Seven Stars (open 6/8)"
+            }
+          ]
+        },
+        {
+          "n": "9",
+          "items": [
+            {
+              "id": "s2-w9-1",
+              "text": "Wilcoxon p.14 on cymbals"
+            },
+            {
+              "id": "s2-w9-2",
+              "text": "Helbing Big Band etude 22"
+            },
+            {
+              "id": "s2-w9-3",
+              "text": "Tune: East of the Sun"
+            },
+            {
+              "id": "s2-w9-4",
+              "text": "Play-along: One More Once (cha-cha-cha)"
+            }
+          ]
+        },
+        {
+          "n": "10",
+          "items": [
+            {
+              "id": "s2-w10-1",
+              "text": "Wilcoxon p.14 with brushes"
+            },
+            {
+              "id": "s2-w10-2",
+              "text": "Helbing Big Band etude 14"
+            },
+            {
+              "id": "s2-w10-3",
+              "text": "Tune: Dexterity"
+            }
+          ]
+        },
+        {
+          "n": "11",
+          "items": [
+            {
+              "id": "s2-w11-1",
+              "text": "Single Stroke Pyramid with feet patterns 10 and 11"
+            },
+            {
+              "id": "s2-w11-2",
+              "text": "Review for jury and barrier exam"
+            }
+          ]
+        },
+        {
+          "n": "12-13",
+          "items": [
+            {
+              "id": "s2-w12-1",
+              "text": "Review for jury and barrier exam"
+            }
+          ]
+        }
       ],
       "transcription": "Solo transcription",
       "musicianship": [
-        {"id": "s2-m-1", "text": "Theory II (MUTH 1500): diatonic harmony, chord symbols, ii-V-I"},
-        {"id": "s2-m-2", "text": "Aural Skills II (MUTH 1510): identify maj7, m7, dom7 by ear"},
-        {"id": "s2-m-3", "text": "Keyboard Skills II (MUAG 1012): ii-V-I shell voicings in C, F, Bb"},
-        {"id": "s2-m-4", "text": "Jazz Performance Fundamentals II (MUJS 1132): sing and play tunes by ear"}
+        {
+          "id": "s2-m-1",
+          "text": "Theory II (MUTH 1500): diatonic harmony, chord symbols, ii-V-I"
+        },
+        {
+          "id": "s2-m-2",
+          "text": "Aural Skills II (MUTH 1510): identify maj7, m7, dom7 by ear"
+        },
+        {
+          "id": "s2-m-3",
+          "text": "Keyboard Skills II (MUAG 1012): ii-V-I shell voicings in C, F, Bb"
+        },
+        {
+          "id": "s2-m-4",
+          "text": "Jazz Performance Fundamentals II (MUJS 1132): sing and play tunes by ear"
+        }
       ],
       "electives": [],
       "listening": [
@@ -458,15 +1330,90 @@
         "John Coltrane, Coltrane Live at Birdland (Afro Blue, Elvin Jones)",
         "Count Basie, One More Once"
       ],
-      "tunes": ["If I Should Lose You", "Body and Soul", "Like Someone in Love", "I Hear a Rhapsody", "I'm Old Fashioned", "Groovin' High", "East of the Sun", "Dexterity"],
+      "tunes": [
+        "If I Should Lose You",
+        "Body and Soul",
+        "Like Someone in Love",
+        "I Hear a Rhapsody",
+        "I'm Old Fashioned",
+        "Groovin' High",
+        "East of the Sun",
+        "Dexterity"
+      ],
       "jury": [
-        {"id": "s2-j-1", "text": "Soph Big Band Primer p.29-34"},
-        {"id": "s2-j-2", "text": "Wilcoxon p.14 with feet patterns, sticks and brushes"},
-        {"id": "s2-j-3", "text": "Helbing Syncopation p.19-20 second-line variations"},
-        {"id": "s2-j-4", "text": "Helbing etudes 7, 11, 13, 22, 24"},
-        {"id": "s2-j-5", "text": "Vocabulary #2, 1-8, memorized"},
-        {"id": "s2-j-6", "text": "Solo transcription with the recording"},
-        {"id": "s2-j-7", "text": "Any tune or play-along from the semester"}
+        {
+          "id": "s2-j-1",
+          "text": "Soph Big Band Primer p.29-34"
+        },
+        {
+          "id": "s2-j-2",
+          "text": "Wilcoxon p.14 with feet patterns, sticks and brushes"
+        },
+        {
+          "id": "s2-j-3",
+          "text": "Helbing Syncopation p.19-20 second-line variations"
+        },
+        {
+          "id": "s2-j-4",
+          "text": "Helbing etudes 7, 11, 13, 22, 24"
+        },
+        {
+          "id": "s2-j-5",
+          "text": "Vocabulary #2, 1-8, memorized"
+        },
+        {
+          "id": "s2-j-6",
+          "text": "Solo transcription with the recording"
+        },
+        {
+          "id": "s2-j-7",
+          "text": "Any tune or play-along from the semester"
+        }
+      ],
+      "secondary": [
+        {
+          "track": "Snare",
+          "level": "Snare Level 1",
+          "source": "unt",
+          "materials": [
+            "Stone, Stick Control",
+            "Cirone, Portraits in Rhythm",
+            "Pratt, 14 Modern Contest Solos",
+            "PAS rudiments (faster tempo targets than Deficient)"
+          ],
+          "items": [
+            {
+              "id": "sn-1-1",
+              "text": "Stick Control: triplets and short roll sections"
+            },
+            {
+              "id": "sn-1-2",
+              "text": "Portraits in Rhythm: first 6 etudes (UNT's exact numbers weren't in the search results)"
+            },
+            {
+              "id": "sn-1-3",
+              "text": "Pratt, 14 Modern Contest Solos: 2 solos"
+            },
+            {
+              "id": "sn-1-4",
+              "text": "PAS rudiments at Level 1 tempos"
+            }
+          ],
+          "jury": [
+            {
+              "id": "sn-1-j-1",
+              "text": "A Portraits in Rhythm etude"
+            },
+            {
+              "id": "sn-1-j-2",
+              "text": "A Pratt solo"
+            },
+            {
+              "id": "sn-1-j-3",
+              "text": "Rudiments on request"
+            }
+          ]
+        }
       ]
     },
     {
@@ -497,75 +1444,231 @@
         "Elvin Jones triplet feel on modal tunes"
       ],
       "weeks": [
-        {"n": "1", "items": [
-          {"id": "s3-w1-1", "text": "Garibaldi p.32-33"},
-          {"id": "s3-w1-2", "text": "Triplets Between the Limbs, quarter = 50-60 (metronome always on upbeats)"},
-          {"id": "s3-w1-3", "text": "Tune: Cheryl"},
-          {"id": "s3-w1-4", "text": "Play-along: The Sidewinder (boogaloo)"}
-        ]},
-        {"n": "2", "items": [
-          {"id": "s3-w2-1", "text": "Garibaldi p.35-36"},
-          {"id": "s3-w2-2", "text": "Triplets, 60-70 bpm"},
-          {"id": "s3-w2-3", "text": "Tune: Bye-Ya"},
-          {"id": "s3-w2-4", "text": "Play-along: Una Mas (boogaloo)"}
-        ]},
-        {"n": "3", "items": [
-          {"id": "s3-w3-1", "text": "Garibaldi p.37-38"},
-          {"id": "s3-w3-2", "text": "Triplets, 70-80 bpm"},
-          {"id": "s3-w3-3", "text": "Tune: Hot House"},
-          {"id": "s3-w3-4", "text": "Play-along: I'll Remember April (Latin to swing)"}
-        ]},
-        {"n": "4", "items": [
-          {"id": "s3-w4-1", "text": "Garibaldi p.41-42"},
-          {"id": "s3-w4-2", "text": "Triplets, 80-100 bpm"},
-          {"id": "s3-w4-3", "text": "Tune: Dindi"},
-          {"id": "s3-w4-4", "text": "Play-along: I'll Remember April"}
-        ]},
-        {"n": "5", "items": [
-          {"id": "s3-w5-1", "text": "Garibaldi p.43-44"},
-          {"id": "s3-w5-2", "text": "Triplets, 50-75 bpm, substitute hi-hat for bass drum"},
-          {"id": "s3-w5-3", "text": "Tune: Just Friends"},
-          {"id": "s3-w5-4", "text": "Play-along: Brown (straight-eighth groove)"}
-        ]},
-        {"n": "6", "items": [
-          {"id": "s3-w6-1", "text": "Triplets, 75-100 bpm, hi-hat for bass drum"},
-          {"id": "s3-w6-2", "text": "Garibaldi p.24-25 (also on the barrier list)"},
-          {"id": "s3-w6-3", "text": "Tune: Yardbird Suite"},
-          {"id": "s3-w6-4", "text": "Play-along: Mystery and Illusions (straight-eighth groove)"}
-        ]},
-        {"n": "7", "items": [
-          {"id": "s3-w7-1", "text": "Tune: Equinox"},
-          {"id": "s3-w7-2", "text": "Play-along: Blues to Bechet (Elvin triplets)"}
-        ]},
-        {"n": "8", "items": [
-          {"id": "s3-w8-1", "text": "Tune: Lonnie's Lament"},
-          {"id": "s3-w8-2", "text": "Play-along: Deluge (Elvin triplets, counter melody)"}
-        ]},
-        {"n": "9", "items": [
-          {"id": "s3-w9-1", "text": "Tune: Stablemates"},
-          {"id": "s3-w9-2", "text": "Play-along: Light as a Feather and Impressions (up-tempo modal)"}
-        ]},
-        {"n": "10", "items": [
-          {"id": "s3-w10-1", "text": "Tune and play-along: Bolivia"}
-        ]},
-        {"n": "11", "items": [
-          {"id": "s3-w11-1", "text": "Play-along: Fun"}
-        ]},
-        {"n": "12-13", "items": [
-          {"id": "s3-w12-1", "text": "Review for jury and barrier exam"}
-        ]}
+        {
+          "n": "1",
+          "items": [
+            {
+              "id": "s3-w1-1",
+              "text": "Garibaldi p.32-33"
+            },
+            {
+              "id": "s3-w1-2",
+              "text": "Triplets Between the Limbs, quarter = 50-60 (metronome always on upbeats)"
+            },
+            {
+              "id": "s3-w1-3",
+              "text": "Tune: Cheryl"
+            },
+            {
+              "id": "s3-w1-4",
+              "text": "Play-along: The Sidewinder (boogaloo)"
+            }
+          ]
+        },
+        {
+          "n": "2",
+          "items": [
+            {
+              "id": "s3-w2-1",
+              "text": "Garibaldi p.35-36"
+            },
+            {
+              "id": "s3-w2-2",
+              "text": "Triplets, 60-70 bpm"
+            },
+            {
+              "id": "s3-w2-3",
+              "text": "Tune: Bye-Ya"
+            },
+            {
+              "id": "s3-w2-4",
+              "text": "Play-along: Una Mas (boogaloo)"
+            }
+          ]
+        },
+        {
+          "n": "3",
+          "items": [
+            {
+              "id": "s3-w3-1",
+              "text": "Garibaldi p.37-38"
+            },
+            {
+              "id": "s3-w3-2",
+              "text": "Triplets, 70-80 bpm"
+            },
+            {
+              "id": "s3-w3-3",
+              "text": "Tune: Hot House"
+            },
+            {
+              "id": "s3-w3-4",
+              "text": "Play-along: I'll Remember April (Latin to swing)"
+            }
+          ]
+        },
+        {
+          "n": "4",
+          "items": [
+            {
+              "id": "s3-w4-1",
+              "text": "Garibaldi p.41-42"
+            },
+            {
+              "id": "s3-w4-2",
+              "text": "Triplets, 80-100 bpm"
+            },
+            {
+              "id": "s3-w4-3",
+              "text": "Tune: Dindi"
+            },
+            {
+              "id": "s3-w4-4",
+              "text": "Play-along: I'll Remember April"
+            }
+          ]
+        },
+        {
+          "n": "5",
+          "items": [
+            {
+              "id": "s3-w5-1",
+              "text": "Garibaldi p.43-44"
+            },
+            {
+              "id": "s3-w5-2",
+              "text": "Triplets, 50-75 bpm, substitute hi-hat for bass drum"
+            },
+            {
+              "id": "s3-w5-3",
+              "text": "Tune: Just Friends"
+            },
+            {
+              "id": "s3-w5-4",
+              "text": "Play-along: Brown (straight-eighth groove)"
+            }
+          ]
+        },
+        {
+          "n": "6",
+          "items": [
+            {
+              "id": "s3-w6-1",
+              "text": "Triplets, 75-100 bpm, hi-hat for bass drum"
+            },
+            {
+              "id": "s3-w6-2",
+              "text": "Garibaldi p.24-25 (also on the barrier list)"
+            },
+            {
+              "id": "s3-w6-3",
+              "text": "Tune: Yardbird Suite"
+            },
+            {
+              "id": "s3-w6-4",
+              "text": "Play-along: Mystery and Illusions (straight-eighth groove)"
+            }
+          ]
+        },
+        {
+          "n": "7",
+          "items": [
+            {
+              "id": "s3-w7-1",
+              "text": "Tune: Equinox"
+            },
+            {
+              "id": "s3-w7-2",
+              "text": "Play-along: Blues to Bechet (Elvin triplets)"
+            }
+          ]
+        },
+        {
+          "n": "8",
+          "items": [
+            {
+              "id": "s3-w8-1",
+              "text": "Tune: Lonnie's Lament"
+            },
+            {
+              "id": "s3-w8-2",
+              "text": "Play-along: Deluge (Elvin triplets, counter melody)"
+            }
+          ]
+        },
+        {
+          "n": "9",
+          "items": [
+            {
+              "id": "s3-w9-1",
+              "text": "Tune: Stablemates"
+            },
+            {
+              "id": "s3-w9-2",
+              "text": "Play-along: Light as a Feather and Impressions (up-tempo modal)"
+            }
+          ]
+        },
+        {
+          "n": "10",
+          "items": [
+            {
+              "id": "s3-w10-1",
+              "text": "Tune and play-along: Bolivia"
+            }
+          ]
+        },
+        {
+          "n": "11",
+          "items": [
+            {
+              "id": "s3-w11-1",
+              "text": "Play-along: Fun"
+            }
+          ]
+        },
+        {
+          "n": "12-13",
+          "items": [
+            {
+              "id": "s3-w12-1",
+              "text": "Review for jury and barrier exam"
+            }
+          ]
+        }
       ],
       "transcription": "Jury transcription",
       "musicianship": [
-        {"id": "s3-m-1", "text": "Jazz Theory III (MUJS 2400): chord-scale relationships, modes, tritone substitution"},
-        {"id": "s3-m-2", "text": "Jazz Aural Skills III (MUJS 2410): hear ii-V-I roots and common forms"},
-        {"id": "s3-m-3", "text": "Jazz Keyboard III (MUJS 1013): shell voicings in all 12 keys"},
-        {"id": "s3-m-4", "text": "Jazz Improvisation I (MUJS 2360): learn and sing 3 bebop heads"},
-        {"id": "s3-m-5", "text": "African-American Music (MUET 3060): blues, gospel, R&B, and funk listening timeline"}
+        {
+          "id": "s3-m-1",
+          "text": "Jazz Theory III (MUJS 2400): chord-scale relationships, modes, tritone substitution"
+        },
+        {
+          "id": "s3-m-2",
+          "text": "Jazz Aural Skills III (MUJS 2410): hear ii-V-I roots and common forms"
+        },
+        {
+          "id": "s3-m-3",
+          "text": "Jazz Keyboard III (MUJS 1013): shell voicings in all 12 keys"
+        },
+        {
+          "id": "s3-m-4",
+          "text": "Jazz Improvisation I (MUJS 2360): learn and sing 3 bebop heads"
+        },
+        {
+          "id": "s3-m-5",
+          "text": "African-American Music (MUET 3060): blues, gospel, R&B, and funk listening timeline"
+        }
       ],
       "electives": [
-        {"id": "s3-e-1", "text": "Gospel basics: 6-stroke roll as a fill around the kit"},
-        {"id": "s3-e-2", "text": "Purdie shuffle (half-time triplet ghost groove)"}
+        {
+          "id": "s3-e-1",
+          "text": "Gospel basics: 6-stroke roll as a fill around the kit"
+        },
+        {
+          "id": "s3-e-2",
+          "text": "Purdie shuffle (half-time triplet ghost groove)"
+        }
       ],
       "listening": [
         "Lee Morgan, The Sidewinder (Billy Higgins)",
@@ -573,13 +1676,37 @@
         "Tower of Power, Tower of Power (David Garibaldi)",
         "Thelonious Monk, Genius of Modern Music (Bye-Ya)"
       ],
-      "tunes": ["Cheryl", "Bye-Ya", "Hot House", "Dindi", "Just Friends", "Yardbird Suite", "Equinox", "Lonnie's Lament", "Stablemates", "Bolivia"],
+      "tunes": [
+        "Cheryl",
+        "Bye-Ya",
+        "Hot House",
+        "Dindi",
+        "Just Friends",
+        "Yardbird Suite",
+        "Equinox",
+        "Lonnie's Lament",
+        "Stablemates",
+        "Bolivia"
+      ],
       "jury": [
-        {"id": "s3-j-1", "text": "Garibaldi Future Sounds, all assigned pages"},
-        {"id": "s3-j-2", "text": "Triplets Between the Limbs 1-34"},
-        {"id": "s3-j-3", "text": "Jury transcription memorized with the recording"},
-        {"id": "s3-j-4", "text": "Any tune or play-along from the semester"}
-      ]
+        {
+          "id": "s3-j-1",
+          "text": "Garibaldi Future Sounds, all assigned pages"
+        },
+        {
+          "id": "s3-j-2",
+          "text": "Triplets Between the Limbs 1-34"
+        },
+        {
+          "id": "s3-j-3",
+          "text": "Jury transcription memorized with the recording"
+        },
+        {
+          "id": "s3-j-4",
+          "text": "Any tune or play-along from the semester"
+        }
+      ],
+      "secondary": []
     },
     {
       "id": "s4",
@@ -611,64 +1738,204 @@
         "Pass the sophomore gates (UDE and piano proficiency)"
       ],
       "weeks": [
-        {"n": "1", "topic": "Brazilian rhythm fundamentals", "items": [
-          {"id": "s4-w1-1", "text": "Brazilian rhythmic and feel fundamentals"},
-          {"id": "s4-w1-2", "text": "Netto p.55; Castro p.13-16"},
-          {"id": "s4-w1-3", "text": "Tune: Sambadouro (LRB p.445)"}
-        ]},
-        {"n": "2-3", "topic": "Samba styles", "items": [
-          {"id": "s4-w2-1", "text": "Samba drum set orchestration options"},
-          {"id": "s4-w2-2", "text": "Netto p.51-55; Castro p.40-42"},
-          {"id": "s4-w2-3", "text": "Tune: Aquarela do Brasil (LRB p.49) or So Danco Samba (LRB p.471)"}
-        ]},
-        {"n": "4", "topic": "Bossa nova", "items": [
-          {"id": "s4-w4-1", "text": "Bossa nova drum set orchestration options"},
-          {"id": "s4-w4-2", "text": "Netto p.44-47; Castro p.55-59, 63-65"},
-          {"id": "s4-w4-3", "text": "Tune: Wave, Corcovado, or Meu Canario Vizinho Azul (LRB p.333)"}
-        ]},
-        {"n": "5", "topic": "Bossa nova brushes", "items": [
-          {"id": "s4-w5-1", "text": "Bossa nova brush applications"},
-          {"id": "s4-w5-2", "text": "Netto p.48"}
-        ]},
-        {"n": "6", "topic": "Samba in odd meters (3, 5, 7)", "items": [
-          {"id": "s4-w6-1", "text": "Netto p.50"},
-          {"id": "s4-w6-2", "text": "Tune: Cravo e Canela, Five Four (Flora Purim), or Tombo in 7/4 (LRB p.509)"}
-        ]},
-        {"n": "7", "topic": "Partido alto", "items": [
-          {"id": "s4-w7-1", "text": "Netto p.56-59; Castro p.52-55"},
-          {"id": "s4-w7-2", "text": "Tune: Partido Alto (Airto), Jogral (LRB p.249), or Coisa Feita (LRB p.129)"}
-        ]},
-        {"n": "8", "topic": "Baiao (Northeast, forro)", "items": [
-          {"id": "s4-w8-1", "text": "Netto p.73-76; Castro p.101-103, 106-107"},
-          {"id": "s4-w8-2", "text": "Tune: Ponteio (LRB p.411), Kalinda (LRB p.257), or Sorriso de Samanta"}
-        ]},
-        {"n": "9", "topic": "Frevo (Northeast)", "items": [
-          {"id": "s4-w9-1", "text": "Netto p.88-90"},
-          {"id": "s4-w9-2", "text": "Tune: Frevo (LRB p.229) or Frevo Mulher"}
-        ]},
-        {"n": "10", "topic": "Maracatu (Afro-Brazilian)", "items": [
-          {"id": "s4-w10-1", "text": "Netto p.94-96; Castro p.91-94, 98-99"},
-          {"id": "s4-w10-2", "text": "Tune: Maracatudo (Sergio Mendes) or similar"}
-        ]},
-        {"n": "11", "topic": "Samba reggae (Bahia)", "items": [
-          {"id": "s4-w11-1", "text": "Castro p.76-82"},
-          {"id": "s4-w11-2", "text": "Tune: Canto da Cidade or Olodum recordings"}
-        ]},
-        {"n": "12", "topic": "Afoxe (Bahia)", "items": [
-          {"id": "s4-w12-1", "text": "Netto p.91-93; Castro p.71-75"},
-          {"id": "s4-w12-2", "text": "Tune: Filhos de Gandhi, Lua Soberana (LRB p.309), or Sina (Djavan)"}
-        ]},
-        {"n": "13", "items": [
-          {"id": "s4-w13-1", "text": "Review for jury"}
-        ]}
+        {
+          "n": "1",
+          "topic": "Brazilian rhythm fundamentals",
+          "items": [
+            {
+              "id": "s4-w1-1",
+              "text": "Brazilian rhythmic and feel fundamentals"
+            },
+            {
+              "id": "s4-w1-2",
+              "text": "Netto p.55; Castro p.13-16"
+            },
+            {
+              "id": "s4-w1-3",
+              "text": "Tune: Sambadouro (LRB p.445)"
+            }
+          ]
+        },
+        {
+          "n": "2-3",
+          "topic": "Samba styles",
+          "items": [
+            {
+              "id": "s4-w2-1",
+              "text": "Samba drum set orchestration options"
+            },
+            {
+              "id": "s4-w2-2",
+              "text": "Netto p.51-55; Castro p.40-42"
+            },
+            {
+              "id": "s4-w2-3",
+              "text": "Tune: Aquarela do Brasil (LRB p.49) or So Danco Samba (LRB p.471)"
+            }
+          ]
+        },
+        {
+          "n": "4",
+          "topic": "Bossa nova",
+          "items": [
+            {
+              "id": "s4-w4-1",
+              "text": "Bossa nova drum set orchestration options"
+            },
+            {
+              "id": "s4-w4-2",
+              "text": "Netto p.44-47; Castro p.55-59, 63-65"
+            },
+            {
+              "id": "s4-w4-3",
+              "text": "Tune: Wave, Corcovado, or Meu Canario Vizinho Azul (LRB p.333)"
+            }
+          ]
+        },
+        {
+          "n": "5",
+          "topic": "Bossa nova brushes",
+          "items": [
+            {
+              "id": "s4-w5-1",
+              "text": "Bossa nova brush applications"
+            },
+            {
+              "id": "s4-w5-2",
+              "text": "Netto p.48"
+            }
+          ]
+        },
+        {
+          "n": "6",
+          "topic": "Samba in odd meters (3, 5, 7)",
+          "items": [
+            {
+              "id": "s4-w6-1",
+              "text": "Netto p.50"
+            },
+            {
+              "id": "s4-w6-2",
+              "text": "Tune: Cravo e Canela, Five Four (Flora Purim), or Tombo in 7/4 (LRB p.509)"
+            }
+          ]
+        },
+        {
+          "n": "7",
+          "topic": "Partido alto",
+          "items": [
+            {
+              "id": "s4-w7-1",
+              "text": "Netto p.56-59; Castro p.52-55"
+            },
+            {
+              "id": "s4-w7-2",
+              "text": "Tune: Partido Alto (Airto), Jogral (LRB p.249), or Coisa Feita (LRB p.129)"
+            }
+          ]
+        },
+        {
+          "n": "8",
+          "topic": "Baiao (Northeast, forro)",
+          "items": [
+            {
+              "id": "s4-w8-1",
+              "text": "Netto p.73-76; Castro p.101-103, 106-107"
+            },
+            {
+              "id": "s4-w8-2",
+              "text": "Tune: Ponteio (LRB p.411), Kalinda (LRB p.257), or Sorriso de Samanta"
+            }
+          ]
+        },
+        {
+          "n": "9",
+          "topic": "Frevo (Northeast)",
+          "items": [
+            {
+              "id": "s4-w9-1",
+              "text": "Netto p.88-90"
+            },
+            {
+              "id": "s4-w9-2",
+              "text": "Tune: Frevo (LRB p.229) or Frevo Mulher"
+            }
+          ]
+        },
+        {
+          "n": "10",
+          "topic": "Maracatu (Afro-Brazilian)",
+          "items": [
+            {
+              "id": "s4-w10-1",
+              "text": "Netto p.94-96; Castro p.91-94, 98-99"
+            },
+            {
+              "id": "s4-w10-2",
+              "text": "Tune: Maracatudo (Sergio Mendes) or similar"
+            }
+          ]
+        },
+        {
+          "n": "11",
+          "topic": "Samba reggae (Bahia)",
+          "items": [
+            {
+              "id": "s4-w11-1",
+              "text": "Castro p.76-82"
+            },
+            {
+              "id": "s4-w11-2",
+              "text": "Tune: Canto da Cidade or Olodum recordings"
+            }
+          ]
+        },
+        {
+          "n": "12",
+          "topic": "Afoxe (Bahia)",
+          "items": [
+            {
+              "id": "s4-w12-1",
+              "text": "Netto p.91-93; Castro p.71-75"
+            },
+            {
+              "id": "s4-w12-2",
+              "text": "Tune: Filhos de Gandhi, Lua Soberana (LRB p.309), or Sina (Djavan)"
+            }
+          ]
+        },
+        {
+          "n": "13",
+          "items": [
+            {
+              "id": "s4-w13-1",
+              "text": "Review for jury"
+            }
+          ]
+        }
       ],
       "transcription": "Jury transcription",
       "musicianship": [
-        {"id": "s4-m-1", "text": "Jazz Theory IV (MUJS 2500): reharmonization basics, modal harmony"},
-        {"id": "s4-m-2", "text": "Jazz Aural Skills IV (MUJS 2510): hear form and key changes in a tune"},
-        {"id": "s4-m-3", "text": "Jazz Keyboard IV (MUJS 1014): comp through a blues and rhythm changes"},
-        {"id": "s4-m-4", "text": "Jazz Improvisation II (MUJS 2370): sing a 2-chorus solo over blues"},
-        {"id": "s4-m-5", "text": "History of Jazz (MUJS 3070): 20-track drummer timeline from Baby Dodds to Brian Blade"}
+        {
+          "id": "s4-m-1",
+          "text": "Jazz Theory IV (MUJS 2500): reharmonization basics, modal harmony"
+        },
+        {
+          "id": "s4-m-2",
+          "text": "Jazz Aural Skills IV (MUJS 2510): hear form and key changes in a tune"
+        },
+        {
+          "id": "s4-m-3",
+          "text": "Jazz Keyboard IV (MUJS 1014): comp through a blues and rhythm changes"
+        },
+        {
+          "id": "s4-m-4",
+          "text": "Jazz Improvisation II (MUJS 2370): sing a 2-chorus solo over blues"
+        },
+        {
+          "id": "s4-m-5",
+          "text": "History of Jazz (MUJS 3070): 20-track drummer timeline from Baby Dodds to Brian Blade"
+        }
       ],
       "electives": [],
       "listening": [
@@ -677,13 +1944,98 @@
         "Milton Nascimento, Clube da Esquina",
         "Olodum, any live recording"
       ],
-      "tunes": ["Sambadouro", "Aquarela do Brasil", "Wave", "Tombo in 7/4", "Partido Alto", "Ponteio", "Frevo", "Sina"],
+      "tunes": [
+        "Sambadouro",
+        "Aquarela do Brasil",
+        "Wave",
+        "Tombo in 7/4",
+        "Partido Alto",
+        "Ponteio",
+        "Frevo",
+        "Sina"
+      ],
       "jury": [
-        {"id": "s4-j-1", "text": "Each Brazilian style on request: samba, bossa, partido alto, baiao, frevo, maracatu, samba reggae, afoxe"},
-        {"id": "s4-j-2", "text": "Samba in 3, 5, or 7"},
-        {"id": "s4-j-3", "text": "Jury transcription with the recording"},
-        {"id": "s4-j-4", "text": "Gate: Upper Divisional Exam (self-version: 20-minute program across all styles so far)"},
-        {"id": "s4-j-5", "text": "Gate: Piano Proficiency Exam (scales, voicings, comp a tune)"}
+        {
+          "id": "s4-j-1",
+          "text": "Each Brazilian style on request: samba, bossa, partido alto, baiao, frevo, maracatu, samba reggae, afoxe"
+        },
+        {
+          "id": "s4-j-2",
+          "text": "Samba in 3, 5, or 7"
+        },
+        {
+          "id": "s4-j-3",
+          "text": "Jury transcription with the recording"
+        },
+        {
+          "id": "s4-j-4",
+          "text": "Gate: Upper Divisional Exam (self-version: 20-minute program across all styles so far)"
+        },
+        {
+          "id": "s4-j-5",
+          "text": "Gate: Piano Proficiency Exam (scales, voicings, comp a tune)"
+        }
+      ],
+      "secondary": [
+        {
+          "track": "Snare",
+          "level": "Snare Level 2",
+          "source": "unt",
+          "materials": [
+            "Peters, Advanced Snare Drum Studies #4, 8, 10, 11, 17, 20, 25",
+            "Carroll, Orchestral Repertoire for the Snare Drum pp.7, 35, 62, 66, 70, 78",
+            "Stone, Accents and Rebounds pp.4-6, 12-14",
+            "PAS rudiments"
+          ],
+          "items": [
+            {
+              "id": "sn-2-1",
+              "text": "Peters Advanced: #4, 8, 10"
+            },
+            {
+              "id": "sn-2-2",
+              "text": "Peters Advanced: #11, 17, 20, 25"
+            },
+            {
+              "id": "sn-2-3",
+              "text": "Carroll orchestral excerpts: pp.7, 35, 62"
+            },
+            {
+              "id": "sn-2-4",
+              "text": "Carroll orchestral excerpts: pp.66, 70, 78"
+            },
+            {
+              "id": "sn-2-5",
+              "text": "Accents and Rebounds pp.4-6"
+            },
+            {
+              "id": "sn-2-6",
+              "text": "Accents and Rebounds pp.12-14"
+            },
+            {
+              "id": "sn-2-7",
+              "text": "PAS rudiments at Level 2 tempos"
+            }
+          ],
+          "jury": [
+            {
+              "id": "sn-2-j-1",
+              "text": "Any Peters Advanced etude on request"
+            },
+            {
+              "id": "sn-2-j-2",
+              "text": "Two Carroll excerpts"
+            },
+            {
+              "id": "sn-2-j-3",
+              "text": "Accents and Rebounds pages"
+            },
+            {
+              "id": "sn-2-j-4",
+              "text": "Rudiments on request"
+            }
+          ]
+        }
       ]
     },
     {
@@ -716,100 +2068,367 @@
         "Reed p.38 variations at 280-320 bpm"
       ],
       "weeks": [
-        {"n": "1", "items": [
-          {"id": "s5-w1-1", "text": "Wilcoxon p.15 with all feet patterns"},
-          {"id": "s5-w1-2", "text": "Diddle Displacement #1, all variations, quarter = 140"},
-          {"id": "s5-w1-3", "text": "Tune: Alone Together (odd form, open vibe)"}
-        ]},
-        {"n": "2", "items": [
-          {"id": "s5-w2-1", "text": "Wilcoxon p.15 with all feet patterns"},
-          {"id": "s5-w2-2", "text": "Diddle Displacement #1, quarter = 140"},
-          {"id": "s5-w2-3", "text": "Guiliana p.15-17"},
-          {"id": "s5-w2-4", "text": "Tune: Stablemates (odd form)"}
-        ]},
-        {"n": "3", "items": [
-          {"id": "s5-w3-1", "text": "Wilcoxon p.16 with all feet patterns"},
-          {"id": "s5-w3-2", "text": "Diddle Displacement #2, quarter = 140"},
-          {"id": "s5-w3-3", "text": "Guiliana p.19-25"},
-          {"id": "s5-w3-4", "text": "Tune: Dolphin Dance (odd form)"}
-        ]},
-        {"n": "4", "items": [
-          {"id": "s5-w4-1", "text": "Wilcoxon p.16 with all feet patterns"},
-          {"id": "s5-w4-2", "text": "Diddle Displacement #2"},
-          {"id": "s5-w4-3", "text": "Guiliana p.26-29"},
-          {"id": "s5-w4-4", "text": "Tune: Yes or No (odd form)"}
-        ]},
-        {"n": "5", "items": [
-          {"id": "s5-w5-1", "text": "Wilcoxon p.17 with all feet patterns"},
-          {"id": "s5-w5-2", "text": "Diddle Displacement #3, quarter = 80"},
-          {"id": "s5-w5-3", "text": "Guiliana p.39-40 (add dynamics, accents, doubles)"},
-          {"id": "s5-w5-4", "text": "Tune: Just You, Just Me and Evidence (orchestrating hits)"}
-        ]},
-        {"n": "6", "items": [
-          {"id": "s5-w6-1", "text": "Wilcoxon p.17, all feet patterns, sticks and brushes"},
-          {"id": "s5-w6-2", "text": "Diddle Displacement #3"},
-          {"id": "s5-w6-3", "text": "Guiliana p.41-42"},
-          {"id": "s5-w6-4", "text": "Tune: Pent-Up House (orchestrating hits)"}
-        ]},
-        {"n": "7", "items": [
-          {"id": "s5-w7-1", "text": "Wilcoxon p.20, all feet patterns, sticks and brushes"},
-          {"id": "s5-w7-2", "text": "Diddle Displacement #4, quarter = 80"},
-          {"id": "s5-w7-3", "text": "Guiliana p.43-44"},
-          {"id": "s5-w7-4", "text": "Tune: Bolivia (orchestrating hits)"}
-        ]},
-        {"n": "8", "items": [
-          {"id": "s5-w8-1", "text": "Wilcoxon p.20, sticks and brushes"},
-          {"id": "s5-w8-2", "text": "Diddle Displacement #4"},
-          {"id": "s5-w8-3", "text": "Guiliana p.45-46"},
-          {"id": "s5-w8-4", "text": "Tune: Moment's Notice (orchestrating hits)"}
-        ]},
-        {"n": "9", "items": [
-          {"id": "s5-w9-1", "text": "Wilcoxon p.14 orchestrated around the kit"},
-          {"id": "s5-w9-2", "text": "Diddle Displacement #5, quarter = 80"},
-          {"id": "s5-w9-3", "text": "Guiliana p.47-48 (verbatim)"},
-          {"id": "s5-w9-4", "text": "Reed p.38, 5 variations, 280 bpm"},
-          {"id": "s5-w9-5", "text": "Tune: Firm Roots (up-tempo)"}
-        ]},
-        {"n": "10", "items": [
-          {"id": "s5-w10-1", "text": "Wilcoxon p.15 orchestrated around the kit"},
-          {"id": "s5-w10-2", "text": "Diddle Displacement #5"},
-          {"id": "s5-w10-3", "text": "Reed p.38, 5 variations, 300 bpm"},
-          {"id": "s5-w10-4", "text": "Tune: Limehouse Blues (up-tempo)"}
-        ]},
-        {"n": "11", "items": [
-          {"id": "s5-w11-1", "text": "Wilcoxon p.16 orchestrated around the kit"},
-          {"id": "s5-w11-2", "text": "Reed p.38, 5 variations, 320 bpm"},
-          {"id": "s5-w11-3", "text": "Tunes: The Way You Look Tonight and Cherokee (up-tempo)"}
-        ]},
-        {"n": "12-13", "items": [
-          {"id": "s5-w12-1", "text": "Review for jury and barrier exam"}
-        ]}
+        {
+          "n": "1",
+          "items": [
+            {
+              "id": "s5-w1-1",
+              "text": "Wilcoxon p.15 with all feet patterns"
+            },
+            {
+              "id": "s5-w1-2",
+              "text": "Diddle Displacement #1, all variations, quarter = 140"
+            },
+            {
+              "id": "s5-w1-3",
+              "text": "Tune: Alone Together (odd form, open vibe)"
+            }
+          ]
+        },
+        {
+          "n": "2",
+          "items": [
+            {
+              "id": "s5-w2-1",
+              "text": "Wilcoxon p.15 with all feet patterns"
+            },
+            {
+              "id": "s5-w2-2",
+              "text": "Diddle Displacement #1, quarter = 140"
+            },
+            {
+              "id": "s5-w2-3",
+              "text": "Guiliana p.15-17"
+            },
+            {
+              "id": "s5-w2-4",
+              "text": "Tune: Stablemates (odd form)"
+            }
+          ]
+        },
+        {
+          "n": "3",
+          "items": [
+            {
+              "id": "s5-w3-1",
+              "text": "Wilcoxon p.16 with all feet patterns"
+            },
+            {
+              "id": "s5-w3-2",
+              "text": "Diddle Displacement #2, quarter = 140"
+            },
+            {
+              "id": "s5-w3-3",
+              "text": "Guiliana p.19-25"
+            },
+            {
+              "id": "s5-w3-4",
+              "text": "Tune: Dolphin Dance (odd form)"
+            }
+          ]
+        },
+        {
+          "n": "4",
+          "items": [
+            {
+              "id": "s5-w4-1",
+              "text": "Wilcoxon p.16 with all feet patterns"
+            },
+            {
+              "id": "s5-w4-2",
+              "text": "Diddle Displacement #2"
+            },
+            {
+              "id": "s5-w4-3",
+              "text": "Guiliana p.26-29"
+            },
+            {
+              "id": "s5-w4-4",
+              "text": "Tune: Yes or No (odd form)"
+            }
+          ]
+        },
+        {
+          "n": "5",
+          "items": [
+            {
+              "id": "s5-w5-1",
+              "text": "Wilcoxon p.17 with all feet patterns"
+            },
+            {
+              "id": "s5-w5-2",
+              "text": "Diddle Displacement #3, quarter = 80"
+            },
+            {
+              "id": "s5-w5-3",
+              "text": "Guiliana p.39-40 (add dynamics, accents, doubles)"
+            },
+            {
+              "id": "s5-w5-4",
+              "text": "Tune: Just You, Just Me and Evidence (orchestrating hits)"
+            }
+          ]
+        },
+        {
+          "n": "6",
+          "items": [
+            {
+              "id": "s5-w6-1",
+              "text": "Wilcoxon p.17, all feet patterns, sticks and brushes"
+            },
+            {
+              "id": "s5-w6-2",
+              "text": "Diddle Displacement #3"
+            },
+            {
+              "id": "s5-w6-3",
+              "text": "Guiliana p.41-42"
+            },
+            {
+              "id": "s5-w6-4",
+              "text": "Tune: Pent-Up House (orchestrating hits)"
+            }
+          ]
+        },
+        {
+          "n": "7",
+          "items": [
+            {
+              "id": "s5-w7-1",
+              "text": "Wilcoxon p.20, all feet patterns, sticks and brushes"
+            },
+            {
+              "id": "s5-w7-2",
+              "text": "Diddle Displacement #4, quarter = 80"
+            },
+            {
+              "id": "s5-w7-3",
+              "text": "Guiliana p.43-44"
+            },
+            {
+              "id": "s5-w7-4",
+              "text": "Tune: Bolivia (orchestrating hits)"
+            }
+          ]
+        },
+        {
+          "n": "8",
+          "items": [
+            {
+              "id": "s5-w8-1",
+              "text": "Wilcoxon p.20, sticks and brushes"
+            },
+            {
+              "id": "s5-w8-2",
+              "text": "Diddle Displacement #4"
+            },
+            {
+              "id": "s5-w8-3",
+              "text": "Guiliana p.45-46"
+            },
+            {
+              "id": "s5-w8-4",
+              "text": "Tune: Moment's Notice (orchestrating hits)"
+            }
+          ]
+        },
+        {
+          "n": "9",
+          "items": [
+            {
+              "id": "s5-w9-1",
+              "text": "Wilcoxon p.14 orchestrated around the kit"
+            },
+            {
+              "id": "s5-w9-2",
+              "text": "Diddle Displacement #5, quarter = 80"
+            },
+            {
+              "id": "s5-w9-3",
+              "text": "Guiliana p.47-48 (verbatim)"
+            },
+            {
+              "id": "s5-w9-4",
+              "text": "Reed p.38, 5 variations, 280 bpm"
+            },
+            {
+              "id": "s5-w9-5",
+              "text": "Tune: Firm Roots (up-tempo)"
+            }
+          ]
+        },
+        {
+          "n": "10",
+          "items": [
+            {
+              "id": "s5-w10-1",
+              "text": "Wilcoxon p.15 orchestrated around the kit"
+            },
+            {
+              "id": "s5-w10-2",
+              "text": "Diddle Displacement #5"
+            },
+            {
+              "id": "s5-w10-3",
+              "text": "Reed p.38, 5 variations, 300 bpm"
+            },
+            {
+              "id": "s5-w10-4",
+              "text": "Tune: Limehouse Blues (up-tempo)"
+            }
+          ]
+        },
+        {
+          "n": "11",
+          "items": [
+            {
+              "id": "s5-w11-1",
+              "text": "Wilcoxon p.16 orchestrated around the kit"
+            },
+            {
+              "id": "s5-w11-2",
+              "text": "Reed p.38, 5 variations, 320 bpm"
+            },
+            {
+              "id": "s5-w11-3",
+              "text": "Tunes: The Way You Look Tonight and Cherokee (up-tempo)"
+            }
+          ]
+        },
+        {
+          "n": "12-13",
+          "items": [
+            {
+              "id": "s5-w12-1",
+              "text": "Review for jury and barrier exam"
+            }
+          ]
+        }
       ],
       "transcription": "Jury transcription",
       "musicianship": [
-        {"id": "s5-m-1", "text": "Advanced Improv I (MUJS 3360): sing and play the rhythm of a famous horn solo"},
-        {"id": "s5-m-2", "text": "Jazz Arranging (MUJS 3610): arrange a blues with intro and ending; write the drum chart"},
-        {"id": "s5-m-3", "text": "Jazz Chamber Music (MUCM 3550): play in a combo or jam session"},
-        {"id": "s5-m-4", "text": "Fundamentals of DAW (MUAE 3100): mic the kit (2-4 mics), record and mix a trio play-along"},
-        {"id": "s5-m-5", "text": "Jazz Lecture Series (MUJS 3470): watch 3 drummer clinics and take notes"}
+        {
+          "id": "s5-m-1",
+          "text": "Advanced Improv I (MUJS 3360): sing and play the rhythm of a famous horn solo"
+        },
+        {
+          "id": "s5-m-2",
+          "text": "Jazz Arranging (MUJS 3610): arrange a blues with intro and ending; write the drum chart"
+        },
+        {
+          "id": "s5-m-3",
+          "text": "Jazz Chamber Music (MUCM 3550): play in a combo or jam session"
+        },
+        {
+          "id": "s5-m-4",
+          "text": "Fundamentals of DAW (MUAE 3100): mic the kit (2-4 mics), record and mix a trio play-along"
+        },
+        {
+          "id": "s5-m-5",
+          "text": "Jazz Lecture Series (MUJS 3470): watch 3 drummer clinics and take notes"
+        }
       ],
       "electives": [
-        {"id": "s5-e-1", "text": "Gospel chops: sextuplet singles and doubles around the kit"},
-        {"id": "s5-e-2", "text": "Hand-foot combinations (RLK, RLRLKK) placed musically inside a groove"}
+        {
+          "id": "s5-e-1",
+          "text": "Gospel chops: sextuplet singles and doubles around the kit"
+        },
+        {
+          "id": "s5-e-2",
+          "text": "Hand-foot combinations (RLK, RLRLKK) placed musically inside a groove"
+        }
       ],
       "listening": [
         "John Coltrane, Blue Train (Moment's Notice, Philly Joe Jones)",
         "Herbie Hancock, Maiden Voyage (Dolphin Dance, Tony Williams)",
         "Mark Guiliana, Beat Music or Jersey"
       ],
-      "tunes": ["Alone Together", "Stablemates", "Dolphin Dance", "Yes or No", "Evidence", "Pent-Up House", "Moment's Notice", "Firm Roots", "Limehouse Blues", "Cherokee"],
+      "tunes": [
+        "Alone Together",
+        "Stablemates",
+        "Dolphin Dance",
+        "Yes or No",
+        "Evidence",
+        "Pent-Up House",
+        "Moment's Notice",
+        "Firm Roots",
+        "Limehouse Blues",
+        "Cherokee"
+      ],
       "jury": [
-        {"id": "s5-j-1", "text": "Diddle Displacement 1-5, all variations"},
-        {"id": "s5-j-2", "text": "Wilcoxon p.15-16 (plus 17, 20) with feet patterns, sticks and brushes"},
-        {"id": "s5-j-3", "text": "Guiliana p.36-48"},
-        {"id": "s5-j-4", "text": "Reed p.38 up-tempo variations"},
-        {"id": "s5-j-5", "text": "Jury transcription with the recording"},
-        {"id": "s5-j-6", "text": "Any tune from the semester"}
+        {
+          "id": "s5-j-1",
+          "text": "Diddle Displacement 1-5, all variations"
+        },
+        {
+          "id": "s5-j-2",
+          "text": "Wilcoxon p.15-16 (plus 17, 20) with feet patterns, sticks and brushes"
+        },
+        {
+          "id": "s5-j-3",
+          "text": "Guiliana p.36-48"
+        },
+        {
+          "id": "s5-j-4",
+          "text": "Reed p.38 up-tempo variations"
+        },
+        {
+          "id": "s5-j-5",
+          "text": "Jury transcription with the recording"
+        },
+        {
+          "id": "s5-j-6",
+          "text": "Any tune from the semester"
+        }
+      ],
+      "secondary": [
+        {
+          "track": "Rudimental",
+          "level": "Rudimental Development Level 1",
+          "source": "synthesis",
+          "materials": [
+            "UNT requires this level for jazz majors, but its syllabus wasn't available. This is a self-study version.",
+            "PAS 40 rudiments",
+            "Pratt, 14 Modern Contest Solos",
+            "Wilcoxon, The All-American Drummer"
+          ],
+          "items": [
+            {
+              "id": "rd-1-1",
+              "text": "All 40 PAS rudiments, open-close-open (slow to fast to slow)"
+            },
+            {
+              "id": "rd-1-2",
+              "text": "Rudiments with feet patterns (bass drum and hi-hat quarter notes)"
+            },
+            {
+              "id": "rd-1-3",
+              "text": "Pratt: 2 more contest solos"
+            },
+            {
+              "id": "rd-1-4",
+              "text": "Wilcoxon All-American Drummer: 2 more solos"
+            },
+            {
+              "id": "rd-1-5",
+              "text": "Apply rudiments on the drum set: 3 solo ideas using flams, drags, and paradiddles"
+            }
+          ],
+          "jury": [
+            {
+              "id": "rd-1-j-1",
+              "text": "Any 10 PAS rudiments on request, open-close-open"
+            },
+            {
+              "id": "rd-1-j-2",
+              "text": "One Pratt and one Wilcoxon solo"
+            },
+            {
+              "id": "rd-1-j-3",
+              "text": "Short rudimental drum set solo"
+            }
+          ]
+        }
       ]
     },
     {
@@ -841,70 +2460,214 @@
         "Funk, soul, Motown, and Afrobeat feels"
       ],
       "weeks": [
-        {"n": "1", "items": [
-          {"id": "s6-w1-1", "text": "Plan a professional audition (UNT: discuss audition)"},
-          {"id": "s6-w1-2", "text": "Helbing p.83 on snare, then around the kit"},
-          {"id": "s6-w1-3", "text": "Garibaldi p.24 open-handed"},
-          {"id": "s6-w1-4", "text": "Helbing p.19 swing variations, open-handed"},
-          {"id": "s6-w1-5", "text": "Play-alongs: Take Five (5/4), Mother Popcorn (funk), Get Together (Afrobeat)"}
-        ]},
-        {"n": "2", "items": [
-          {"id": "s6-w2-1", "text": "Helbing p.85 on snare, around the kit"},
-          {"id": "s6-w2-2", "text": "Garibaldi p.29 open-handed"},
-          {"id": "s6-w2-3", "text": "Helbing p.20 swing variations, open-handed"},
-          {"id": "s6-w2-4", "text": "Play-alongs: Cherokee (Ahmad Jamal, up-tempo brushes), Kate Song (straight 5/4), Cissy Strut, Cold Sweat"}
-        ]},
-        {"n": "3", "items": [
-          {"id": "s6-w3-1", "text": "Helbing p.89 on snare, around the kit"},
-          {"id": "s6-w3-2", "text": "Garibaldi p.32 open-handed"},
-          {"id": "s6-w3-3", "text": "Triplets Between the Limbs p.1, open-handed"},
-          {"id": "s6-w3-4", "text": "Play-alongs: Young and Playful (7/4), Mean Streets (up-tempo brushes), Soul Vaccination, Oakland Stroke"}
-        ]},
-        {"n": "4", "items": [
-          {"id": "s6-w4-1", "text": "Helbing p.94 on snare, around the kit"},
-          {"id": "s6-w4-2", "text": "Garibaldi p.33 open-handed"},
-          {"id": "s6-w4-3", "text": "Put a standard into 3, 5, or 7 (Night and Day, Cherokee, How High the Moon, Autumn Leaves, It Might As Well Be Spring)"},
-          {"id": "s6-w4-4", "text": "Play-alongs: 50 Ways to Leave Your Lover (orchestrate different ways), Home at Last (Purdie shuffle)"}
-        ]},
-        {"n": "5", "items": [
-          {"id": "s6-w5-1", "text": "Standard in 3, 5, or 7, continued"},
-          {"id": "s6-w5-2", "text": "Play-alongs: Sofa Song (9/8), Blue Matter (slow groove), Isn't She Lovely (12/8 funk)"}
-        ]},
-        {"n": "6", "items": [
-          {"id": "s6-w6-1", "text": "Standard in 3, 5, or 7, playable"},
-          {"id": "s6-w6-2", "text": "Play-alongs: Punjab, The Dream Thief (11/8), Please Mr. Postman, I Can't Help Myself, Get Ready (Motown)"}
-        ]},
-        {"n": "7", "items": [
-          {"id": "s6-w7-1", "text": "Helbing p.97: orchestrate, create a groove from the mixed-meter grid"},
-          {"id": "s6-w7-2", "text": "Play-alongs: A Shade of Jade, The Dream Thief, I Can't Stand the Rain, Superstition, Let's Stay Together"}
-        ]},
-        {"n": "8", "items": [
-          {"id": "s6-w8-1", "text": "Helbing p.98: mixed-meter grid groove"},
-          {"id": "s6-w8-2", "text": "Play-alongs: Dreaming (13/8), Rock with You, Afro-Centric"}
-        ]},
-        {"n": "9", "items": [
-          {"id": "s6-w9-1", "text": "Helbing p.99: mixed-meter grid groove"},
-          {"id": "s6-w9-2", "text": "Play-alongs: Straight Street, Dreaming, Aja (orchestrating funk)"}
-        ]},
-        {"n": "10", "items": [
-          {"id": "s6-w10-1", "text": "Helbing p.100: mixed-meter grid groove"},
-          {"id": "s6-w10-2", "text": "Play-alongs: Humpty Dumpty; As This Moment Slips Away (The Bad Plus, transcribe the mixed-meter section)"}
-        ]},
-        {"n": "11-13", "items": [
-          {"id": "s6-w11-1", "text": "Review for jury and barrier exam"}
-        ]}
+        {
+          "n": "1",
+          "items": [
+            {
+              "id": "s6-w1-1",
+              "text": "Plan a professional audition (UNT: discuss audition)"
+            },
+            {
+              "id": "s6-w1-2",
+              "text": "Helbing p.83 on snare, then around the kit"
+            },
+            {
+              "id": "s6-w1-3",
+              "text": "Garibaldi p.24 open-handed"
+            },
+            {
+              "id": "s6-w1-4",
+              "text": "Helbing p.19 swing variations, open-handed"
+            },
+            {
+              "id": "s6-w1-5",
+              "text": "Play-alongs: Take Five (5/4), Mother Popcorn (funk), Get Together (Afrobeat)"
+            }
+          ]
+        },
+        {
+          "n": "2",
+          "items": [
+            {
+              "id": "s6-w2-1",
+              "text": "Helbing p.85 on snare, around the kit"
+            },
+            {
+              "id": "s6-w2-2",
+              "text": "Garibaldi p.29 open-handed"
+            },
+            {
+              "id": "s6-w2-3",
+              "text": "Helbing p.20 swing variations, open-handed"
+            },
+            {
+              "id": "s6-w2-4",
+              "text": "Play-alongs: Cherokee (Ahmad Jamal, up-tempo brushes), Kate Song (straight 5/4), Cissy Strut, Cold Sweat"
+            }
+          ]
+        },
+        {
+          "n": "3",
+          "items": [
+            {
+              "id": "s6-w3-1",
+              "text": "Helbing p.89 on snare, around the kit"
+            },
+            {
+              "id": "s6-w3-2",
+              "text": "Garibaldi p.32 open-handed"
+            },
+            {
+              "id": "s6-w3-3",
+              "text": "Triplets Between the Limbs p.1, open-handed"
+            },
+            {
+              "id": "s6-w3-4",
+              "text": "Play-alongs: Young and Playful (7/4), Mean Streets (up-tempo brushes), Soul Vaccination, Oakland Stroke"
+            }
+          ]
+        },
+        {
+          "n": "4",
+          "items": [
+            {
+              "id": "s6-w4-1",
+              "text": "Helbing p.94 on snare, around the kit"
+            },
+            {
+              "id": "s6-w4-2",
+              "text": "Garibaldi p.33 open-handed"
+            },
+            {
+              "id": "s6-w4-3",
+              "text": "Put a standard into 3, 5, or 7 (Night and Day, Cherokee, How High the Moon, Autumn Leaves, It Might As Well Be Spring)"
+            },
+            {
+              "id": "s6-w4-4",
+              "text": "Play-alongs: 50 Ways to Leave Your Lover (orchestrate different ways), Home at Last (Purdie shuffle)"
+            }
+          ]
+        },
+        {
+          "n": "5",
+          "items": [
+            {
+              "id": "s6-w5-1",
+              "text": "Standard in 3, 5, or 7, continued"
+            },
+            {
+              "id": "s6-w5-2",
+              "text": "Play-alongs: Sofa Song (9/8), Blue Matter (slow groove), Isn't She Lovely (12/8 funk)"
+            }
+          ]
+        },
+        {
+          "n": "6",
+          "items": [
+            {
+              "id": "s6-w6-1",
+              "text": "Standard in 3, 5, or 7, playable"
+            },
+            {
+              "id": "s6-w6-2",
+              "text": "Play-alongs: Punjab, The Dream Thief (11/8), Please Mr. Postman, I Can't Help Myself, Get Ready (Motown)"
+            }
+          ]
+        },
+        {
+          "n": "7",
+          "items": [
+            {
+              "id": "s6-w7-1",
+              "text": "Helbing p.97: orchestrate, create a groove from the mixed-meter grid"
+            },
+            {
+              "id": "s6-w7-2",
+              "text": "Play-alongs: A Shade of Jade, The Dream Thief, I Can't Stand the Rain, Superstition, Let's Stay Together"
+            }
+          ]
+        },
+        {
+          "n": "8",
+          "items": [
+            {
+              "id": "s6-w8-1",
+              "text": "Helbing p.98: mixed-meter grid groove"
+            },
+            {
+              "id": "s6-w8-2",
+              "text": "Play-alongs: Dreaming (13/8), Rock with You, Afro-Centric"
+            }
+          ]
+        },
+        {
+          "n": "9",
+          "items": [
+            {
+              "id": "s6-w9-1",
+              "text": "Helbing p.99: mixed-meter grid groove"
+            },
+            {
+              "id": "s6-w9-2",
+              "text": "Play-alongs: Straight Street, Dreaming, Aja (orchestrating funk)"
+            }
+          ]
+        },
+        {
+          "n": "10",
+          "items": [
+            {
+              "id": "s6-w10-1",
+              "text": "Helbing p.100: mixed-meter grid groove"
+            },
+            {
+              "id": "s6-w10-2",
+              "text": "Play-alongs: Humpty Dumpty; As This Moment Slips Away (The Bad Plus, transcribe the mixed-meter section)"
+            }
+          ]
+        },
+        {
+          "n": "11-13",
+          "items": [
+            {
+              "id": "s6-w11-1",
+              "text": "Review for jury and barrier exam"
+            }
+          ]
+        }
       ],
       "transcription": "Jury transcription",
       "musicianship": [
-        {"id": "s6-m-1", "text": "Advanced Improv II (MUJS 3370): compose a drum solo with a clear shape"},
-        {"id": "s6-m-2", "text": "Jazz Arranging (MUJS 3620): write an original tune (lead sheet)"},
-        {"id": "s6-m-3", "text": "Jazz Chamber Music (MUCM 3550): combo or jam session"},
-        {"id": "s6-m-4", "text": "Issues in Western Music History (MUMH 3520): survey reading"}
+        {
+          "id": "s6-m-1",
+          "text": "Advanced Improv II (MUJS 3370): compose a drum solo with a clear shape"
+        },
+        {
+          "id": "s6-m-2",
+          "text": "Jazz Arranging (MUJS 3620): write an original tune (lead sheet)"
+        },
+        {
+          "id": "s6-m-3",
+          "text": "Jazz Chamber Music (MUCM 3550): combo or jam session"
+        },
+        {
+          "id": "s6-m-4",
+          "text": "Issues in Western Music History (MUMH 3520): survey reading"
+        }
       ],
       "electives": [
-        {"id": "s6-e-1", "text": "Prog: Gavin Harrison, Rhythmic Illusions, first chapters"},
-        {"id": "s6-e-2", "text": "Prog: polymeter, groupings of 5 or 7 over 4/4"},
-        {"id": "s6-e-3", "text": "Bass drum endurance: 16ths at 100-140 bpm (double pedal if you have one)"}
+        {
+          "id": "s6-e-1",
+          "text": "Prog: Gavin Harrison, Rhythmic Illusions, first chapters"
+        },
+        {
+          "id": "s6-e-2",
+          "text": "Prog: polymeter, groupings of 5 or 7 over 4/4"
+        },
+        {
+          "id": "s6-e-3",
+          "text": "Bass drum endurance: 16ths at 100-140 bpm (double pedal if you have one)"
+        }
       ],
       "listening": [
         "James Brown, Cold Sweat (Clyde Stubblefield)",
@@ -912,15 +2675,41 @@
         "Steely Dan, Aja (Steve Gadd)",
         "Tigran Hamasyan, Mockroot / Seamus Blake, Sofa Song"
       ],
-      "tunes": ["Take Five", "Cherokee", "Night and Day", "How High the Moon", "Autumn Leaves", "It Might As Well Be Spring"],
+      "tunes": [
+        "Take Five",
+        "Cherokee",
+        "Night and Day",
+        "How High the Moon",
+        "Autumn Leaves",
+        "It Might As Well Be Spring"
+      ],
       "jury": [
-        {"id": "s6-j-1", "text": "Helbing Syncopation p.19, 20, 83, 85, 89, 94, 97-100"},
-        {"id": "s6-j-2", "text": "Garibaldi p.24, 29, 32, 33 open-handed"},
-        {"id": "s6-j-3", "text": "Triplets p.1 open-handed"},
-        {"id": "s6-j-4", "text": "A standard in 3, 5, or 7"},
-        {"id": "s6-j-5", "text": "Any listed play-along"},
-        {"id": "s6-j-6", "text": "Jury transcription with the recording"}
-      ]
+        {
+          "id": "s6-j-1",
+          "text": "Helbing Syncopation p.19, 20, 83, 85, 89, 94, 97-100"
+        },
+        {
+          "id": "s6-j-2",
+          "text": "Garibaldi p.24, 29, 32, 33 open-handed"
+        },
+        {
+          "id": "s6-j-3",
+          "text": "Triplets p.1 open-handed"
+        },
+        {
+          "id": "s6-j-4",
+          "text": "A standard in 3, 5, or 7"
+        },
+        {
+          "id": "s6-j-5",
+          "text": "Any listed play-along"
+        },
+        {
+          "id": "s6-j-6",
+          "text": "Jury transcription with the recording"
+        }
+      ],
+      "secondary": []
     },
     {
       "id": "s7",
@@ -948,68 +2737,212 @@
         "Mozambique, salsa, songo, timba on the kit"
       ],
       "weeks": [
-        {"n": "1", "topic": "Clave", "items": [
-          {"id": "s7-w1-1", "text": "The clave concept"},
-          {"id": "s7-w1-2", "text": "Hernandez p.13-18, 23-26"}
-        ]},
-        {"n": "2", "topic": "Afro-Cuban 6/8", "items": [
-          {"id": "s7-w2-1", "text": "Bembe and Abakua"},
-          {"id": "s7-w2-2", "text": "Hernandez p.61-67 (6/8 coordination); Lopez-Nusa p.77, 81"},
-          {"id": "s7-w2-3", "text": "Tune: Afro Blue (LRB p.7) or Eastern Joy Dance (LRB p.187)"}
-        ]},
-        {"n": "3", "topic": "Rumba", "items": [
-          {"id": "s7-w3-1", "text": "Yambu, guaguanco, columbia"},
-          {"id": "s7-w3-2", "text": "Hernandez p.117-119 (rumba coordination)"},
-          {"id": "s7-w3-3", "text": "Tune: Dejala Que Baile Sola (LRB p.153) or Dime Tu Que Lo Sabes (LRB p.173)"}
-        ]},
-        {"n": "4", "topic": "Danzon and baqueteo", "items": [
-          {"id": "s7-w4-1", "text": "Hernandez p.117-119 (baqueteo); Lopez-Nusa p.92-93"},
-          {"id": "s7-w4-2", "text": "Tune: Almendra (LRB p.13) or Danzon for My Father (LRB p.147)"}
-        ]},
-        {"n": "5", "topic": "Son: cascara", "items": [
-          {"id": "s7-w5-1", "text": "Hernandez p.81-85; Lopez-Nusa p.98-99"},
-          {"id": "s7-w5-2", "text": "Tune: Dile a Catalina (LRB p.169) or Camina y Prende el Fogon (LRB p.107)"}
-        ]},
-        {"n": "6", "topic": "Son: campana", "items": [
-          {"id": "s7-w6-1", "text": "Hernandez p.88-89 (bongo bell systems); Lopez-Nusa p.98-99"}
-        ]},
-        {"n": "7", "topic": "Mambo", "items": [
-          {"id": "s7-w7-1", "text": "Mambo bell flow; Hernandez p.86-90; Lopez-Nusa p.96-97"},
-          {"id": "s7-w7-2", "text": "Tune: Mambo #5 (LRB p.315), Sabor (LRB p.443), or Mambo Inn (LRB p.321)"}
-        ]},
-        {"n": "8", "topic": "Cha-cha-cha", "items": [
-          {"id": "s7-w8-1", "text": "Cha bell flow; Hernandez p.117-119; Lopez-Nusa p.94-95"},
-          {"id": "s7-w8-2", "text": "Tune: La Enganadora (LRB p.265) or Calzada del Cerro (LRB p.115)"}
-        ]},
-        {"n": "9", "topic": "Mozambique", "items": [
-          {"id": "s7-w9-1", "text": "Cuban and New York approaches; Hernandez p.117-119; Lopez-Nusa p.114-115"},
-          {"id": "s7-w9-2", "text": "Tune: Bamboleate (Palmieri) or El Mozambique (Pello el Afrokan)"}
-        ]},
-        {"n": "10", "topic": "Salsa format", "items": [
-          {"id": "s7-w10-1", "text": "Salsa drum set applications; review Hernandez p.81-85, 88-89"},
-          {"id": "s7-w10-2", "text": "Tune: Sin Tu Carino (LRB p.467) or Indestructible (LRB p.241)"}
-        ]},
-        {"n": "11", "topic": "Songo", "items": [
-          {"id": "s7-w11-1", "text": "Hernandez p.111, 117-119; Lopez-Nusa p.104-107"},
-          {"id": "s7-w11-2", "text": "Tune: Lo Que Va a Pasar (LRB p.293) or Sandunguera (LRB p.449)"}
-        ]},
-        {"n": "12", "topic": "Timba", "items": [
-          {"id": "s7-w12-1", "text": "Timba drum set approach; Hernandez p.77-79"},
-          {"id": "s7-w12-2", "text": "Tune: Que Sorpresa (LRB p.427) or Un Tipo Como Yo (LRB p.515)"}
-        ]},
-        {"n": "13", "items": [
-          {"id": "s7-w13-1", "text": "Review for jury"}
-        ]}
+        {
+          "n": "1",
+          "topic": "Clave",
+          "items": [
+            {
+              "id": "s7-w1-1",
+              "text": "The clave concept"
+            },
+            {
+              "id": "s7-w1-2",
+              "text": "Hernandez p.13-18, 23-26"
+            }
+          ]
+        },
+        {
+          "n": "2",
+          "topic": "Afro-Cuban 6/8",
+          "items": [
+            {
+              "id": "s7-w2-1",
+              "text": "Bembe and Abakua"
+            },
+            {
+              "id": "s7-w2-2",
+              "text": "Hernandez p.61-67 (6/8 coordination); Lopez-Nusa p.77, 81"
+            },
+            {
+              "id": "s7-w2-3",
+              "text": "Tune: Afro Blue (LRB p.7) or Eastern Joy Dance (LRB p.187)"
+            }
+          ]
+        },
+        {
+          "n": "3",
+          "topic": "Rumba",
+          "items": [
+            {
+              "id": "s7-w3-1",
+              "text": "Yambu, guaguanco, columbia"
+            },
+            {
+              "id": "s7-w3-2",
+              "text": "Hernandez p.117-119 (rumba coordination)"
+            },
+            {
+              "id": "s7-w3-3",
+              "text": "Tune: Dejala Que Baile Sola (LRB p.153) or Dime Tu Que Lo Sabes (LRB p.173)"
+            }
+          ]
+        },
+        {
+          "n": "4",
+          "topic": "Danzon and baqueteo",
+          "items": [
+            {
+              "id": "s7-w4-1",
+              "text": "Hernandez p.117-119 (baqueteo); Lopez-Nusa p.92-93"
+            },
+            {
+              "id": "s7-w4-2",
+              "text": "Tune: Almendra (LRB p.13) or Danzon for My Father (LRB p.147)"
+            }
+          ]
+        },
+        {
+          "n": "5",
+          "topic": "Son: cascara",
+          "items": [
+            {
+              "id": "s7-w5-1",
+              "text": "Hernandez p.81-85; Lopez-Nusa p.98-99"
+            },
+            {
+              "id": "s7-w5-2",
+              "text": "Tune: Dile a Catalina (LRB p.169) or Camina y Prende el Fogon (LRB p.107)"
+            }
+          ]
+        },
+        {
+          "n": "6",
+          "topic": "Son: campana",
+          "items": [
+            {
+              "id": "s7-w6-1",
+              "text": "Hernandez p.88-89 (bongo bell systems); Lopez-Nusa p.98-99"
+            }
+          ]
+        },
+        {
+          "n": "7",
+          "topic": "Mambo",
+          "items": [
+            {
+              "id": "s7-w7-1",
+              "text": "Mambo bell flow; Hernandez p.86-90; Lopez-Nusa p.96-97"
+            },
+            {
+              "id": "s7-w7-2",
+              "text": "Tune: Mambo #5 (LRB p.315), Sabor (LRB p.443), or Mambo Inn (LRB p.321)"
+            }
+          ]
+        },
+        {
+          "n": "8",
+          "topic": "Cha-cha-cha",
+          "items": [
+            {
+              "id": "s7-w8-1",
+              "text": "Cha bell flow; Hernandez p.117-119; Lopez-Nusa p.94-95"
+            },
+            {
+              "id": "s7-w8-2",
+              "text": "Tune: La Enganadora (LRB p.265) or Calzada del Cerro (LRB p.115)"
+            }
+          ]
+        },
+        {
+          "n": "9",
+          "topic": "Mozambique",
+          "items": [
+            {
+              "id": "s7-w9-1",
+              "text": "Cuban and New York approaches; Hernandez p.117-119; Lopez-Nusa p.114-115"
+            },
+            {
+              "id": "s7-w9-2",
+              "text": "Tune: Bamboleate (Palmieri) or El Mozambique (Pello el Afrokan)"
+            }
+          ]
+        },
+        {
+          "n": "10",
+          "topic": "Salsa format",
+          "items": [
+            {
+              "id": "s7-w10-1",
+              "text": "Salsa drum set applications; review Hernandez p.81-85, 88-89"
+            },
+            {
+              "id": "s7-w10-2",
+              "text": "Tune: Sin Tu Carino (LRB p.467) or Indestructible (LRB p.241)"
+            }
+          ]
+        },
+        {
+          "n": "11",
+          "topic": "Songo",
+          "items": [
+            {
+              "id": "s7-w11-1",
+              "text": "Hernandez p.111, 117-119; Lopez-Nusa p.104-107"
+            },
+            {
+              "id": "s7-w11-2",
+              "text": "Tune: Lo Que Va a Pasar (LRB p.293) or Sandunguera (LRB p.449)"
+            }
+          ]
+        },
+        {
+          "n": "12",
+          "topic": "Timba",
+          "items": [
+            {
+              "id": "s7-w12-1",
+              "text": "Timba drum set approach; Hernandez p.77-79"
+            },
+            {
+              "id": "s7-w12-2",
+              "text": "Tune: Que Sorpresa (LRB p.427) or Un Tipo Como Yo (LRB p.515)"
+            }
+          ]
+        },
+        {
+          "n": "13",
+          "items": [
+            {
+              "id": "s7-w13-1",
+              "text": "Review for jury"
+            }
+          ]
+        }
       ],
       "transcription": "Jury transcription",
       "musicianship": [
-        {"id": "s7-m-1", "text": "Jazz Chamber Music (MUCM 3550): combo or jam session"},
-        {"id": "s7-m-2", "text": "Music Cultures of the World (MUET 3030): listen across 5 traditions (Cuba, Brazil, West Africa, India, Indonesia)"},
-        {"id": "s7-m-3", "text": "Jazz Lecture Series (MUJS 3470): 3 more clinics"},
-        {"id": "s7-m-4", "text": "Choose 6-8 senior recital tunes and arrange 2 of them"}
+        {
+          "id": "s7-m-1",
+          "text": "Jazz Chamber Music (MUCM 3550): combo or jam session"
+        },
+        {
+          "id": "s7-m-2",
+          "text": "Music Cultures of the World (MUET 3030): listen across 5 traditions (Cuba, Brazil, West Africa, India, Indonesia)"
+        },
+        {
+          "id": "s7-m-3",
+          "text": "Jazz Lecture Series (MUJS 3470): 3 more clinics"
+        },
+        {
+          "id": "s7-m-4",
+          "text": "Choose 6-8 senior recital tunes and arrange 2 of them"
+        }
       ],
       "electives": [
-        {"id": "s7-e-1", "text": "Record a 3-song demo in 3 styles"}
+        {
+          "id": "s7-e-1",
+          "text": "Record a 3-song demo in 3 styles"
+        }
       ],
       "listening": [
         "Irakere, Irakere (Enrique Pla)",
@@ -1017,12 +2950,28 @@
         "Eddie Palmieri, Azucar Pa' Ti",
         "Horacio 'El Negro' Hernandez with Michel Camilo, Live at the Blue Note"
       ],
-      "tunes": ["Afro Blue", "Mambo Inn", "Bamboleate", "Sandunguera", "Almendra"],
+      "tunes": [
+        "Afro Blue",
+        "Mambo Inn",
+        "Bamboleate",
+        "Sandunguera",
+        "Almendra"
+      ],
       "jury": [
-        {"id": "s7-j-1", "text": "Each Afro-Cuban style on request, with clave"},
-        {"id": "s7-j-2", "text": "Jury transcription with the recording"},
-        {"id": "s7-j-3", "text": "Senior recital program chosen"}
-      ]
+        {
+          "id": "s7-j-1",
+          "text": "Each Afro-Cuban style on request, with clave"
+        },
+        {
+          "id": "s7-j-2",
+          "text": "Jury transcription with the recording"
+        },
+        {
+          "id": "s7-j-3",
+          "text": "Senior recital program chosen"
+        }
+      ],
+      "secondary": []
     },
     {
       "id": "s8",
@@ -1038,37 +2987,83 @@
         "No applied lessons this term"
       ],
       "theme": "The senior recital.",
-      "barriers": ["Senior recital performed"],
+      "barriers": [
+        "Senior recital performed"
+      ],
       "goals": [
         "Perform a 45-minute recital",
         "Show range: swing, brushes, Brazilian, Afro-Cuban, funk, odd meter, an original",
         "Record it as your capstone"
       ],
       "weeks": [
-        {"n": "1-6", "topic": "Rehearse", "items": [
-          {"id": "s8-w1-1", "text": "Weekly run-throughs of the full program"},
-          {"id": "s8-w1-2", "text": "Book a venue, band, and date"}
-        ]},
-        {"n": "7-10", "topic": "Preview", "items": [
-          {"id": "s8-w7-1", "text": "Preview performance for friends or a teacher"},
-          {"id": "s8-w7-2", "text": "Fix issues from the preview"}
-        ]},
-        {"n": "11-14", "topic": "Perform", "items": [
-          {"id": "s8-w11-1", "text": "Perform the recital"},
-          {"id": "s8-w11-2", "text": "Record and archive it"}
-        ]}
+        {
+          "n": "1-6",
+          "topic": "Rehearse",
+          "items": [
+            {
+              "id": "s8-w1-1",
+              "text": "Weekly run-throughs of the full program"
+            },
+            {
+              "id": "s8-w1-2",
+              "text": "Book a venue, band, and date"
+            }
+          ]
+        },
+        {
+          "n": "7-10",
+          "topic": "Preview",
+          "items": [
+            {
+              "id": "s8-w7-1",
+              "text": "Preview performance for friends or a teacher"
+            },
+            {
+              "id": "s8-w7-2",
+              "text": "Fix issues from the preview"
+            }
+          ]
+        },
+        {
+          "n": "11-14",
+          "topic": "Perform",
+          "items": [
+            {
+              "id": "s8-w11-1",
+              "text": "Perform the recital"
+            },
+            {
+              "id": "s8-w11-2",
+              "text": "Record and archive it"
+            }
+          ]
+        }
       ],
       "transcription": null,
       "musicianship": [
-        {"id": "s8-m-1", "text": "Conducting Jazz Ensembles (MUJS 3800): beat patterns in 2, 3, 4; cue a big band chart"},
-        {"id": "s8-m-2", "text": "Write program notes for each tune"}
+        {
+          "id": "s8-m-1",
+          "text": "Conducting Jazz Ensembles (MUJS 3800): beat patterns in 2, 3, 4; cue a big band chart"
+        },
+        {
+          "id": "s8-m-2",
+          "text": "Write program notes for each tune"
+        }
       ],
       "electives": [],
-      "listening": ["Re-listen to every album from Prep 1. Notice what you hear now."],
-      "tunes": ["Your recital program"],
+      "listening": [
+        "Re-listen to every album from Prep 1. Notice what you hear now."
+      ],
+      "tunes": [
+        "Your recital program"
+      ],
       "jury": [
-        {"id": "s8-j-1", "text": "Senior recital performed and recorded"}
-      ]
+        {
+          "id": "s8-j-1",
+          "text": "Senior recital performed and recorded"
+        }
+      ],
+      "secondary": []
     }
   ]
 }

@@ -106,6 +106,34 @@
 - [ ] Learn the piano keyboard layout; play C, F, G major scales
 - [ ] Sing the melody of every play-along tune
 
+## Snare Deficient (UNT syllabus)
+- Peters, Intermediate Snare Drum Studies
+- Wilcoxon, The All-American Drummer
+- Stone, Stick Control
+- PAS 40 International Drum Rudiments
+
+- [ ] Peters Intermediate: exercises I, II, III, V, VI, IX, XI
+- [ ] Peters Intermediate: etudes 1, 2, 5, 10, 11, 20, 29
+- [ ] Wilcoxon All-American Drummer: 4 solos (my pick: start with the first 10)
+- [ ] Stick Control: single beat combinations p.5-7 at 100+ bpm
+- [ ] PAS rudiments: singles, doubles, paradiddles, flams, drags, slow to fast to slow
+
+**Barrier:**
+
+- [ ] Any assigned Peters exercise or etude on request
+- [ ] One Wilcoxon solo
+- [ ] Rudiments on request
+
+## Mock UNT audition (based on UNT's reported audition)
+- Based on UNT's reported undergraduate percussion audition. Jazz applicants submit a screening video.
+
+- [ ] Screening video: a Wilcoxon or Pratt rudimental etude on snare
+- [ ] Concert snare etude (Peters Intermediate Snare Drum Studies)
+- [ ] Concert roll: pp to ff to pp, one continuous roll
+- [ ] Rudiments clean at a moderate tempo: singles, doubles, flams
+- [ ] Sight-read a snare excerpt
+- [ ] Drum set: swing at 3 tempos, brushes, a Latin groove, trade 4s with a play-along
+
 ## Listening
 - Miles Davis, Kind of Blue (Freddie Freeloader)
 - Count Basie, Jumpin' at the Woodside

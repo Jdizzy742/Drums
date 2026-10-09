@@ -44,6 +44,12 @@ def semester_md(s, prev, nxt):
     if s["transcriptionItems"]:
         parts.append(f"## {s['transcription']}\n" + checks(s["transcriptionItems"]))
     parts.append("## Musicianship (classroom courses)\n" + checks(s["musicianship"]))
+    for x in s["secondary"]:
+        tag = {"unt": "UNT syllabus", "synthesis": "self-study version", "reported": "based on UNT's reported audition"}[x["source"]]
+        block = f"## {x['level']} ({tag})\n" + bullets(x["materials"]) + "\n\n" + checks(x["items"])
+        if x["jury"]:
+            block += "\n\n**Barrier:**\n\n" + checks(x["jury"])
+        parts.append(block)
     if s["electives"]:
         parts.append("## Electives (your interests, not UNT)\n" + checks(s["electives"]))
     parts += [

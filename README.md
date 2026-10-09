@@ -59,15 +59,23 @@ UNT's routine for every assigned tune:
 - 10 min: reading (Morgan, Helbing, Reed)
 - 10 min: tune routine, play-along, or musicianship
 
-## Not covered yet
+## Snare and rudimental track
 
-UNT jazz drummers also pass barriers on other instruments. Their syllabi weren't in the uploaded files:
+UNT jazz drummers also pass snare and rudimental barriers. These run alongside the drum set levels in your 10-minute hands slot:
 
-- Snare: Deficient, Level 1, Level 2
-- Rudimental development: Level 1
-- Mallets: Deficient, Level 1 (2 semesters), Level 2 (2 semesters)
+| Paired with | Level | Source |
+|---|---|---|
+| Prep 2 | Snare Deficient | UNT snare syllabus (Fall 2018) |
+| Prep 2 | Mock UNT audition | UNT's reported audition requirements |
+| Year 1 Spring | Snare Level 1 | UNT snare syllabus (exact etude numbers not found) |
+| Year 2 Spring | Snare Level 2 | UNT snare syllabus |
+| Year 3 Fall | Rudimental Development Level 1 | Self-study version (UNT syllabus not found) |
 
-The degree also includes university core courses (math, science, English, government, US and African American history). Only the music-related ones are included here.
+## Not covered
+
+- Mallets (Deficient, Level 1, Level 2): UNT requires these for jazz majors, but they need a marimba or xylophone.
+- Timpani: not required for jazz studies majors.
+- University core courses (math, science, English, government, history). Only the music-related ones are included.
 
 ## Books
 
@@ -92,6 +100,7 @@ This regenerates `curriculum/*.md` and `tracker/index.html`.
 
 - UNT Percussion, Applied Lesson Syllabus, Drum Set - Jazz (Rev. 8/1/22)
 - UNT Jazz Studies (Instrumental) B.M. semester plan, 2025-2026 (Updated May 2025). UNT notes it is not an official degree plan.
+- [UNT Percussion Applied Lesson Syllabus, Snare (Fall 2018)](https://music.unt.edu/percussion/files/snare_syllabi_template_fall_2018_updated_0928.pdf)
 - [UNT Percussion Area Policy Handbook (Fall 2023)](https://music.unt.edu/files/default/files/percussion_handbook-posted_8-9-23_0.pdf)
 
 Weekly lessons for UNT levels follow the syllabus. Prep 1, the musicianship tasks, listening lists, and electives are self-study additions.
