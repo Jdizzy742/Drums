@@ -77,6 +77,10 @@ UNT jazz drummers also pass snare and rudimental barriers. These run alongside t
 - Timpani: not required for jazz studies majors.
 - University core courses (math, science, English, government, history). Only the music-related ones are included.
 
+## Course catalog
+
+See [courses.md](courses.md) for every course by year, what it covers, and whether it is built out yet.
+
 ## Books
 
 See [materials.md](materials.md).
